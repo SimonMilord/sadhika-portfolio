@@ -1,0 +1,25 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.header {
+  @include display-flex(row,space-between,center);
+  @include paddingSection;
+
+  .nav {
+    width: 40%;
+
+    &__list {
+      @include display-flex(row,space-around,center);
+    }
+    &__item {
+
+    }
+    &__link {
+      text-decoration: none;
+    }
+  }
+
+  &__dmIcon img{
+    height: 28px;
+  }
+}

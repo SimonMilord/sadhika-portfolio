@@ -1,3 +1,31 @@
 @use "./styles/partials/reset" as *;
 @import "./styles/partials/mixins";
 @import "./styles/partials/variables";
+
+body {
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+.App {
+  height: 100vh;
+}
+
+
+body.day {
+  transition: 0.3s;
+  background-color: $background-day;
+  color: $font-lm;
+  a {
+    color: $font-lm;
+  }
+}
+
+body.night {
+  transition: 0.3s;
+  background-color: $background-night;
+  color: $font-dm;
+  a {
+    color: $font-dm;
+  }
+}
