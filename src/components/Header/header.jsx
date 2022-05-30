@@ -33,30 +33,32 @@ export default function Header(props) {
       body.classList.replace(dayTheme, nightTheme);
       sessionStorage.setItem("theme", "night");
     }
-    props.getTheme(theme);
+    props.getTheme && props.getTheme(theme);
   };
 
   return (
     <div className="header">
-      <div className="header__logo">Hello</div>
+      <Link className="header__homeLink" to="/">
+        <div className="header__logo">Hello</div>
+      </Link>
       <nav className="nav">
         <ul className="nav__list">
-          <li className="nav__item">
-            <Link className="nav__link" to="/">
+          <li className={props.activePage === "introPage" ? "nav__item nav__item--active": "nav__item"}>
+            <Link className="nav__link" to="/intro">
               Intro
             </Link>
           </li>
-          <li className="nav__item">
+          <li className={props.activePage === "workPage" ? "nav__item nav__item--active": "nav__item"}>
             <Link className="nav__link" to="/work">
               Work
             </Link>
           </li>
-          <li className="nav__item">
+          <li className={props.activePage === "funPage" ? "nav__item nav__item--active": "nav__item"}>
             <Link className="nav__link" to="/fun">
               Fun
             </Link>
           </li>
-          <li className="nav__item">
+          <li className={props.activePage === "contactPage" ? "nav__item nav__item--active": "nav__item"}>
             <Link className="nav__link" to="/contact">
               Contact
             </Link>

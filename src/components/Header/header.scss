@@ -4,7 +4,6 @@
 .header {
   @include display-flex(row,space-between,center);
   @include paddingSection;
-
   .nav {
     width: 40%;
 
@@ -13,9 +12,15 @@
     }
     &__item {
 
+      &--active {
+        border-bottom: 3px solid $highlight-lm;
+      }
     }
     &__link {
       text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
     }
   }
 

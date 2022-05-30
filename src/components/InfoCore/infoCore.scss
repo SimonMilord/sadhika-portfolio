@@ -1,2 +1,24 @@
 @import "../../styles/partials/variables";
 @import "../../styles/partials/mixins";
+
+.infoCore {
+  width: 60%;
+  @include display-flex(column,center,center);
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 3px solid $highlight-lm;
+    padding-bottom: 0.5rem;
+  }
+  &__subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 1.5rem 0rem;
+  }
+  &__content {
+
+  }
+}

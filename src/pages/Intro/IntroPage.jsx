@@ -1,9 +1,9 @@
-import React from "react";
-import "./ContactPage.scss";
+import React from 'react';
+import "./IntroPage.scss";
 import Header from "../../components/Header/header";
 import InfoCore from "../../components/InfoCore/infoCore";
 
-export default function ContactPage(props) {
+export default function IntroPage(props) {
   const content = {
     title: "Hey there",
     subtitle: "I'm Sadhika, a Senior Product Designer, currently at Shopify.",
@@ -11,9 +11,10 @@ export default function ContactPage(props) {
   };
 
   return (
-    <div className="contactPage">
-      <Header activePage="contactPage"/>
+    <div className='introPage'>
+      <Header activePage="introPage"/>
       <InfoCore content={content}/>
     </div>
   );
 }
+

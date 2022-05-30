@@ -2,5 +2,14 @@
 @import "../../styles/partials/variables";
 
 .mainPage {
-  @include paddingSection;
+  height: 100%;
+  background-image: url("../../assets/Images/Day.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  &__main {
+    height: 30%;
+    @include display-flex(row,center,center);
+  }
 }
