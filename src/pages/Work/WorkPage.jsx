@@ -5,9 +5,9 @@ import InfoCore from "../../components/InfoCore/infoCore";
 
 export default function WorkPage(props) {
   const content = {
-    title: "Hey there",
-    subtitle: "I'm Sadhika, a Senior Product Designer, currently at Shopify.",
-    desc: "By day, I work on the Money team, designing the experience for Shopify Balance. I previously led UX for Shopify's Sales Tax and Billing products.",
+    title: "Work",
+    subtitle: "Take a peek at some of my work.",
+    desc: "If you'd like to learn more about my work or see detailed case studies, contact me at sadhika.billa@gmail.com.",
   };
   return (
     <div className='workPage'>

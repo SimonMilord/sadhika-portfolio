@@ -5,9 +5,9 @@ import InfoCore from "../../components/InfoCore/infoCore";
 
 export default function IntroPage(props) {
   const content = {
-    title: "Hey there",
-    subtitle: "I'm Sadhika, a Senior Product Designer, currently at Shopify.",
-    desc: "By day, I work on the Money team, designing the experience for Shopify Balance. I previously led UX for Shopify's Sales Tax and Billing products.",
+    title: "Intro",
+    subtitle: "I'm a Product Designer with a background in Computer Science and Interactive Media.",
+    desc: "I’m a curious learner and adventurer from Singapore, currently living and working in Canada. I have a background in both web and mobile design and I thrive in solving beefy, ambigious problems. I have knack for being able to dive into highly technical and complex domains and find elegant ways to simplify them. I’m also passionate about mentorship and I mentor early-career designers at Brainstation, Technovation Girls and on ADPList. I’m currently designing at Shopify and was previously at Cognizant. ",
   };
 
   return (

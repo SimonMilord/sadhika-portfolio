@@ -6,9 +6,9 @@ import InfoCore from "../../components/InfoCore/infoCore";
 export default function FunPage(props) {
 
   const content = {
-    title: "Hey there",
-    subtitle: "I'm Sadhika, a Senior Product Designer, currently at Shopify.",
-    desc: "By day, I work on the Money team, designing the experience for Shopify Balance. I previously led UX for Shopify's Sales Tax and Billing products.",
+    title: "Fun",
+    subtitle: "I design and code for fun too.",
+    desc: "From enrichment feeders for Orangutans to VR drumsets, I’ve designed and developed some really cool things.",
   };
 
   return (
