@@ -2,6 +2,9 @@ import React from "react";
 import "./ContactPage.scss";
 import Header from "../../components/Header/header";
 import InfoCore from "../../components/InfoCore/infoCore";
+import Github from "../../assets/Icons/github.svg";
+import Email from "../../assets/Icons/email.svg";
+import Linkedin from "../../assets/Icons/linkedin.svg";
 
 export default function ContactPage(props) {
   const content = {
@@ -12,8 +15,19 @@ export default function ContactPage(props) {
 
   return (
     <div className="contactPage">
-      <Header activePage="contactPage"/>
-      <InfoCore content={content}/>
+      <Header activePage="contactPage" />
+      <InfoCore content={content} />
+      <div className="contactPage__links">
+        <a href="https://github.com/sadhikabilla" className="contactPage__link">
+          <img className="contactPage__img" src={Github} alt="github logo"></img>
+        </a>
+        <a href="https://www.linkedin.com/in/sadhikabilla/" className="contactPage__link">
+          <img className="contactPage__img" src={Linkedin} alt="linkedin logo"></img>
+        </a>
+        <a href="mailto:svjbilla@gmail.com" className="contactPage__link">
+          <img className="contactPage__img" src={Email} alt="email logo"></img>
+        </a>
+      </div>
     </div>
   );
 }

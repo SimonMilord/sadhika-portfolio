@@ -2,5 +2,16 @@
 @import "../../styles/partials/variables";
 
 .introPage {
-  // @include paddingSection;
+
+  &__resume {
+    @include display-flex(row,center,center);
+    margin-top: 2rem;
+  }
+
+  &__btn {
+    border: 1.2px solid $font-lm;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    line-height: 20px;
+  }
 }

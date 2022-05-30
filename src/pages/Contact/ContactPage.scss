@@ -3,4 +3,14 @@
 
 .contactPage {
 
+  &__links {
+    @include display-flex(row,center,center);
+    padding: 1rem;
+  }
+  &__link {
+    margin: 0rem 1rem;
+  }
+  &__img {
+    height: 2rem;
+  }
 }
