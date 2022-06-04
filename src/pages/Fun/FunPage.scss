@@ -3,7 +3,10 @@
 
 .funPage {
   // @include paddingSection;
-
+  height: 100%;
+  &__main {
+    margin-top: 5rem;
+  }
   &__cards {
     @include display-flex(column,space-around,center);
     margin: 1rem 0rem;

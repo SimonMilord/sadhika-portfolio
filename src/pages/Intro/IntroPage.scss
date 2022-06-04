@@ -2,10 +2,14 @@
 @import "../../styles/partials/variables";
 
 .introPage {
-
+  height: 100%;
+  &__main {
+    margin-top: 5rem;
+    // height: 70%;
+    // @include display-flex(column,center,center);
+  }
   &__resume {
     @include display-flex(row,center,center);
-    margin-top: 2rem;
   }
 
   &__btn {

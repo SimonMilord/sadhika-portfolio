@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./MainPage.scss";
 import Header from "../../components/Header/header";
-import InfoCore from "../../components/InfoCore/infoCore";
 
 export default function MainPage(props) {
   let [currTheme, setCurrTheme] = useState("");
@@ -26,9 +25,15 @@ export default function MainPage(props) {
       <Header getTheme={getTheme} />
       <div className="mainPage__main">
         {currTheme === "day" ? (
-          <InfoCore content={contentNight} />
+          <div className="mainPage__info">
+            <h1 className="mainPage__subtitle">{contentDay.subtitle}</h1>
+            <h2 className="mainPage__content">{contentDay.desc}</h2>
+        </div>
         ) : (
-          <InfoCore content={contentDay} />
+          <div className="mainPage__info">
+            <h1 className="mainPage__subtitle">{contentNight.subtitle}</h1>
+            <h2 className="mainPage__content">{contentNight.desc}</h2>
+        </div>
         )}
       </div>
     </div>

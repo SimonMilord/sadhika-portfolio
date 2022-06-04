@@ -19,6 +19,10 @@
     margin: 1.5rem 0rem;
   }
   &__content {
+    line-height: 29px;
 
+    &--current {
+      margin: 2rem 0rem;
+    }
   }
 }
