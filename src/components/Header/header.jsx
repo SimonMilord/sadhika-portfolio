@@ -39,7 +39,7 @@ export default function Header(props) {
   return (
     <div className="header">
       <Link className="header__homeLink" to="/">
-        <div className="header__logo">Hello</div>
+        <div className="header__logo">Sadhika Billa</div>
       </Link>
       <nav className="nav">
         <ul className="nav__list">

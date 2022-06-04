@@ -3,4 +3,12 @@
 
 .funPage {
   // @include paddingSection;
+
+  &__cards {
+    @include display-flex(column,space-around,center);
+    margin: 1rem 0rem;
+    @include desktop {
+      @include display-flex(row,space-evenly,center);
+    }
+  }
 }

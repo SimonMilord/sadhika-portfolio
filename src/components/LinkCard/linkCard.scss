@@ -1,2 +1,30 @@
 @import "../../styles/partials/variables";
 @import "../../styles/partials/mixins";
+
+.card {
+  border: 1px solid $font-lm;
+  width: 224px;
+  height: 224px;
+  margin: 1rem 0rem;
+  padding: 2rem;
+  @include display-flex(column,flex-end,flex-start);
+  transition: 0.3s all ease;
+  cursor: pointer;
+
+  &__inner {
+    height: 70%;
+    width: 100%;
+    @include display-flex(column,space-between,flex-start);
+  }
+  &__title {
+    font-size: 24px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+  &:hover {
+    color: $font-dm;
+    background-color: $font-lm;
+  }
+}

@@ -13,5 +13,11 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     line-height: 20px;
+    transition: 0.3s all ease;
+    &:hover {
+      color: $font-dm;
+      background-color: $font-lm;
+    }
   }
+
 }

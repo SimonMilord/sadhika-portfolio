@@ -3,4 +3,28 @@
 
 .workPage {
   // @include paddingSection;
+
+
+  &__cards {
+    @include display-flex(column,space-around,center);
+    margin: 1rem 0rem;
+    @include tablet {
+      @include display-flex(row,space-evenly,center);
+    }
+    @include desktop {
+      @include display-flex(row,space-around,center);
+    }
+  }
+  .cards-top {
+    @include desktop {
+      width: 50%;
+      @include display-flex(row,space-around,center);
+    }
+  }
+  .cards-bottom {
+    @include desktop {
+      width: 50%;
+      @include display-flex(row,space-around,center);
+    }
+  }
 }

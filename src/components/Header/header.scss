@@ -4,6 +4,13 @@
 .header {
   @include display-flex(row,space-between,center);
   @include paddingSection;
+
+  &__homeLink {
+    text-decoration: none;
+  }
+  &__logo {
+    // display: none;
+  }
   .nav {
     width: 40%;
 
@@ -11,7 +18,7 @@
       @include display-flex(row,space-around,center);
     }
     &__item {
-
+      padding: 5px 0px;
       &--active {
         border-bottom: 3px solid $highlight-lm;
       }
