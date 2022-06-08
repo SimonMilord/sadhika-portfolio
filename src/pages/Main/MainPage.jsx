@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MainPage.scss";
 import Header from "../../components/Header/header";
 
 export default function MainPage(props) {
-  let [currTheme, setCurrTheme] = useState("");
+  const [currTheme, setCurrTheme] = useState("");
 
   const contentDay = {
     subtitle: "I'm Sadhika, a Senior Product Designer, currently at Shopify.",
@@ -15,27 +15,35 @@ export default function MainPage(props) {
     desc: "By night, I'm a doodler and a painter. I also spend my time messing around with code (most recently JS animations) and taking lots of pictures of my dog.",
   };
 
-  const getTheme = async (theme) => {
+  const getTheme = async(theme) => {
     await setCurrTheme(theme);
-    console.log(currTheme);
+    console.log("the theme is: "+ theme)
+    console.log("the current theme is: " + currTheme);
   };
 
   return (
-    <div className="mainPage">
-      <Header getTheme={getTheme} />
-      <div className="mainPage__main">
-        {currTheme === "day" ? (
-          <div className="mainPage__info">
-            <h1 className="mainPage__subtitle">{contentDay.subtitle}</h1>
-            <h2 className="mainPage__content">{contentDay.desc}</h2>
+    <>
+      {currTheme === "day" || currTheme === "" ? (
+        <div className="mainPage">
+          <Header getTheme={getTheme} />
+          <div className="mainPage__main">
+            <div className="mainPage__info">
+              <h1 className="mainPage__subtitle">{contentDay.subtitle}</h1>
+              <h2 className="mainPage__content">{contentDay.desc}</h2>
+            </div>
+          </div>
         </div>
-        ) : (
-          <div className="mainPage__info">
-            <h1 className="mainPage__subtitle">{contentNight.subtitle}</h1>
-            <h2 className="mainPage__content">{contentNight.desc}</h2>
+      ) : (
+        <div className="mainPage-dm">
+          <Header getTheme={getTheme} />
+          <div className="mainPage-dm__main">
+            <div className="mainPage-dm__info">
+              <h1 className="mainPage-dm__subtitle">{contentNight.subtitle}</h1>
+              <h2 className="mainPage-dm__content">{contentNight.desc}</h2>
+            </div>
+          </div>
         </div>
-        )}
-      </div>
-    </div>
+      )}
+    </>
   );
 }

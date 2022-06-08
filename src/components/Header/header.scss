@@ -4,6 +4,9 @@
 .header {
   @include display-flex(row,space-between,center);
   @include paddingSection;
+  @include desktop {
+    padding: 60px 3rem 2rem 3rem;
+  }
 
   &__homeLink {
     text-decoration: none;

@@ -15,6 +15,7 @@ export default function Header(props) {
     if (sessionStorage.getItem("theme")) {
       setTheme(sessionStorage.getItem("theme"));
     }
+    props.getTheme && props.getTheme(theme);
   }, []);
 
   if (theme === dayTheme || theme === nightTheme) {
@@ -25,15 +26,15 @@ export default function Header(props) {
 
   const switchTheme = async (e) => {
     if (theme === nightTheme) {
-      await setTheme(dayTheme);
+      setTheme(dayTheme);
       body.classList.replace(nightTheme, dayTheme);
       sessionStorage.setItem("theme", "day");
     } else {
-      await setTheme(nightTheme);
+      setTheme(nightTheme);
       body.classList.replace(dayTheme, nightTheme);
       sessionStorage.setItem("theme", "night");
     }
-    props.getTheme && props.getTheme(theme);
+    props.getTheme(theme);
   };
 
   return (
@@ -53,11 +54,11 @@ export default function Header(props) {
               Work
             </Link>
           </li>
-          <li className={props.activePage === "funPage" ? "nav__item nav__item--active": "nav__item"}>
+          {/* <li className={props.activePage === "funPage" ? "nav__item nav__item--active": "nav__item"}>
             <Link className="nav__link" to="/fun">
               Fun
             </Link>
-          </li>
+          </li> */}
           <li className={props.activePage === "contactPage" ? "nav__item nav__item--active": "nav__item"}>
             <Link className="nav__link" to="/contact">
               Contact

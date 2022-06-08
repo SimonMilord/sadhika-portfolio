@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./WorkPage.scss";
 import Header from "../../components/Header/header";
 import Card from "../../components/LinkCard/linkCard";
@@ -31,16 +32,28 @@ export default function WorkPage(props) {
         <div className="infoCore">
           <h1 className="infoCore__title">{content.title}</h1>
           <h2 className="infoCore__subtitle">{content.subtitle}</h2>
-          <p className="infoCore__content">If you'd like to learn more about my work or see detailed case studies, contact me at <a href="mailto:svjbilla@gmail.com">sadhika.billa@gmail.com</a></p>
+          <p className="infoCore__content">
+            If you'd like to learn more about my work or see detailed case
+            studies, contact me at{" "}
+            <a href="mailto:svjbilla@gmail.com">sadhika.billa@gmail.com</a>
+          </p>
         </div>
         <div className="workPage__cards">
           <div className="cards-top">
-            <Card card={card1} />
-            <Card card={card2} />
+            <Link to="/taxliab" className="workPage__link">
+              <Card card={card1} />
+            </Link>
+            <Link to="/salesTax" className="workPage__link">
+              <Card card={card2} />
+            </Link>
           </div>
           <div className="cards-bottom">
-            <Card card={card3} />
-            <Card card={card4} />
+            <Link to="/billing" className="workPage__link">
+              <Card card={card3} />
+            </Link>
+            <Link to="/balance" className="workPage__link">
+              <Card card={card4} />
+            </Link>
           </div>
         </div>
       </div>

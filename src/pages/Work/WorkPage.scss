@@ -29,4 +29,8 @@
       @include display-flex(row,space-around,center);
     }
   }
+
+  &__link {
+    text-decoration: none;
+  }
 }
