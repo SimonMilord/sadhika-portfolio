@@ -1,4 +1,5 @@
 import React from "react";
+import "../../components/InfoCore/infoCore.scss";
 import "./FunPage.scss";
 import Header from "../../components/Header/header";
 import Card from "../../components/LinkCard/linkCard";

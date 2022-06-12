@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import { CgArrowLongLeft } from "react-icons/cg";
+
 
 export default function Billing(props) {
   const content = {
@@ -28,11 +30,14 @@ export default function Billing(props) {
   return (
     <div className="project billing">
       <div className="top">
-        <Link to="/work">Back</Link>
+        <Link to="/work" className="top__link">
+          <CgArrowLongLeft className="arrowIcon" />
+          Back
+        </Link>
       </div>
       <section className="subsection subsection__intro">
         <div className="content">
-          <div className="content__left">
+          <div className="content__leftIntro">
             <div className="content__yearBox">
               <div className="content__introTitle">Year</div>
               <div className="content__year">2020</div>

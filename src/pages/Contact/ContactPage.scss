@@ -9,6 +9,7 @@
   &__links {
     @include display-flex(row,center,center);
     padding: 1rem;
+    margin-top: 2rem;
   }
   &__link {
     margin: 0rem 1rem;

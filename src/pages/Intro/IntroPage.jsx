@@ -1,5 +1,6 @@
 import React from "react";
 import "./IntroPage.scss";
+import "../../components/InfoCore/infoCore.scss";
 import Header from "../../components/Header/header";
 
 export default function IntroPage(props) {

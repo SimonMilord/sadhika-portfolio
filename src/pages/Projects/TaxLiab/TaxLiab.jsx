@@ -1,19 +1,20 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../project.scss";
+import { CgArrowLongLeft } from "react-icons/cg";
 
 export default function TaxLiab(props) {
   const content = {
     intro:
       "Collecting and paying sales tax is a legal obligation for every business owner but sales tax rules are complex. In the U.S., there are 45 different set of rules and regulations that determine where and when your business needs to collect sales tax.",
-    intro2:
-      "Our goal was to decode the complexities of tax laws for our merchants and help them collect taxes in all the right states. Today, the Tax Liability Insights dashboard is being used by merchants all over the U.S. to understand their tax obligations and remain compliant with tax laws.",
     section11:
       "We had early indicators from support that merchants were struggling to understand and manage tax obligations.",
     section12:
       "At the outset of the project we didn't have a clear idea of how we were going to support our merchants. Without pre-existing insights, I partnered with our researcher to understand how merchants dealt with sales tax.",
-    section21: "Merchants were struggling with the very first step of tax management - Awareness. If they weren't sure where to collect taxes, they weren't able to register for and remit taxes in the right states.",
-    section22: "To move forward, we needed to tackle the first step of awareness. Our goal was to make it really simple for merchants to understand if, where, and when they need to register and collect sales tax in a state.",
+    section21:
+      "Merchants were struggling with the very first step of tax management - Awareness. If they weren't sure where to collect taxes, they weren't able to register for and remit taxes in the right states.",
+    section22:
+      "To move forward, we needed to tackle the first step of awareness. Our goal was to make it really simple for merchants to understand if, where, and when they need to register and collect sales tax in a state.",
     section31:
       "During the iteration process, I spent time refining the visual language and creating design patterns that were scalable and could be easily extended to other countries and regions.",
     section32:
@@ -27,11 +28,14 @@ export default function TaxLiab(props) {
   return (
     <div className="project taxLiab">
       <div className="top">
-        <Link to="/work">Back</Link>
+        <Link to="/work" className="top__link">
+          <CgArrowLongLeft className="arrowIcon" />
+          Back
+        </Link>
       </div>
       <section className="subsection subsection__intro">
         <div className="content">
-          <div className="content__left">
+          <div className="content__leftIntro">
             <div className="content__yearBox">
               <div className="content__introTitle">Year</div>
               <div className="content__year">2021</div>
@@ -51,7 +55,16 @@ export default function TaxLiab(props) {
               Decoding sales tax obligations in the United States
             </h1>
             <p className="content__text">{content.intro}</p>
-            <p className="content__text">{content.intro2}</p>
+            <p className="content__text">
+              Our goal was to decode the complexities of tax laws for our
+              merchants and help them collect taxes in all the right states.
+              Today, the{" "}
+              <span style={{ fontWeight: "bold" }}>
+                Tax Liability Insights dashboard is being used by merchants all
+                over the U.S. to understand their tax obligations and remain
+                compliant with tax laws.
+              </span>
+            </p>
           </div>
         </div>
       </section>
@@ -62,7 +75,9 @@ export default function TaxLiab(props) {
             <h2 className="content__title">The origin story</h2>
           </div>
           <div className="content__right">
-            <p className="content__text">{content.section11}</p>
+            <p className="content__text" style={{ fontWeight: "bold" }}>
+              {content.section11}
+            </p>
             <p className="content__text">{content.section12}</p>
           </div>
         </div>
@@ -77,8 +92,8 @@ export default function TaxLiab(props) {
             <p className="content__text">
               I worked with the researcher to plan and conduct generative
               research. Research revealed that there are five core steps of
-              sales tax management - Awareness, Registration, Collection,
-              Reporting and Remittance and the friction in our merchants journey
+              sales tax management - <span style={{ fontWeight: "bold" }}>Awareness, Registration, Collection,
+              Reporting</span> and <span style={{ fontWeight: "bold" }}>Remittance</span> and the friction in our merchants journey
               began at the first step.
             </p>
           </div>
@@ -94,7 +109,7 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.section21}</p>
-            <p className="content__text">{content.section22}</p>
+            <p className="content__text" style={{ fontWeight: "bold" }}>{content.section22}</p>
           </div>
         </div>
       </section>
@@ -110,8 +125,8 @@ export default function TaxLiab(props) {
             <p className="content__text">
               I started the design process by defining the core jobs to be done,
               mapping out the end to end user flow, and identifying content
-              needs. The content needs helped inform the visual hierarchy and
-              IA.
+              needs. <span style={{ fontWeight: "bold" }}>The content needs helped inform the visual hierarchy and
+              IA.</span>
             </p>
           </div>
         </div>
@@ -142,7 +157,7 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.final}</p>
-            <p className="content__text">{content.final2}</p>
+            <p className="content__text" style={{ fontWeight: "bold" }}>{content.final2}</p>
             <p className="content__text">
               To learn more about this feature, check out Shopify's{" "}
               <a href="https://www.shopify.ca/">blog post</a>.

@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactPage.scss";
+import "../../components/InfoCore/infoCore.scss";
 import Header from "../../components/Header/header";
 import Github from "../../assets/Icons/github.svg";
 import Email from "../../assets/Icons/email.svg";
