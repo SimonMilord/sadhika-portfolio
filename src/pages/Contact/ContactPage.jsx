@@ -13,6 +13,8 @@ export default function ContactPage(props) {
     desc: "If any of my work looks interesting and you'd like to learn more about what I do and who I am, feel free to contact me. I'm always happy to learn new things and meet new people. ",
   };
 
+  document.title = "Sadhika Billa - Contact";
+
   return (
     <div className="contactPage">
       <Header activePage="contactPage" />

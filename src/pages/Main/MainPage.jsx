@@ -21,6 +21,8 @@ export default function MainPage(props) {
     console.log("the current theme is: " + currTheme);
   };
 
+  document.title = "Sadhika Billa";
+
   return (
     <>
       {currTheme === "day" || currTheme === "" ? (

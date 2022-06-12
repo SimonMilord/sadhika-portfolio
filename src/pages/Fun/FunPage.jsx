@@ -25,6 +25,8 @@ export default function FunPage(props) {
     desc: "From enrichment feeders for Orangutans to VR drumsets, I've designed and developed some really cool things.",
   };
 
+  document.title = "Sadhika Billa - Fun";
+
   return (
     <div className="funPage">
       <Header activePage="funPage" />

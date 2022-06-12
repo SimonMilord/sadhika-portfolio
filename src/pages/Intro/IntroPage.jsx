@@ -9,6 +9,7 @@ export default function IntroPage(props) {
     subtitle:
       "I'm a Product Designer with a background in Computer Science and Interactive Media.",
   };
+  document.title = "Sadhika Billa - Intro";
 
   return (
     <div className="introPage">

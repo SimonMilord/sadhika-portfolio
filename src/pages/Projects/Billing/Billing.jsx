@@ -27,6 +27,8 @@ export default function Billing(props) {
       "",
   };
 
+  document.title = "Sadhika Billa - Billing";
+
   return (
     <div className="project billing">
       <div className="top">

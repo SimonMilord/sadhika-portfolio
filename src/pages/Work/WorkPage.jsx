@@ -25,6 +25,9 @@ export default function WorkPage(props) {
     title: "Work",
     subtitle: "Take a peek at some of my work.",
   };
+
+  document.title = "Sadhika Billa - Work";
+
   return (
     <div className="workPage">
       <Header activePage="workPage" />

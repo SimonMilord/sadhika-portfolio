@@ -17,6 +17,7 @@ export default function BalancePage(props) {
     final: "",
     final2: "",
   };
+  document.title = "Sadhika Billa - Balance";
 
   return (
     <div className="project balance">

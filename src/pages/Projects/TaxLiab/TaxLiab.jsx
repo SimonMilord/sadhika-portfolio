@@ -25,6 +25,8 @@ export default function TaxLiab(props) {
       "In the first month of launch, hundreds of thousands of tax registrations were added and we've seen a reduction in the gap of outstanding liabilities. Our product also has a high conversion rate of over 30%.",
   };
 
+  document.title = "Sadhika Billa - Tax Liability";
+
   return (
     <div className="project taxLiab">
       <div className="top">

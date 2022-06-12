@@ -26,6 +26,8 @@ export default function SalesTax(props) {
       "This redesign paved the way for new features and functionality and  has helped influence the future direction of Sales Tax at Shopify.",
   };
 
+  document.title = "Sadhika Billa - Sales Tax";
+
   return (
     <div className="project salesTax">
       <div className="top">
