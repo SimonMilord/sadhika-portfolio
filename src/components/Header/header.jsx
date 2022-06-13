@@ -5,6 +5,7 @@ import Sun from "../../assets/Icons/sun.svg";
 import Moon from "../../assets/Icons/moon.svg";
 
 export default function Header(props) {
+  let clickedClass = "clicked";
   const body = document.body;
   const dayTheme = "day";
   const nightTheme = "night";
@@ -15,7 +16,6 @@ export default function Header(props) {
     if (sessionStorage.getItem("theme")) {
       setTheme(sessionStorage.getItem("theme"));
     }
-    props.getTheme && props.getTheme(theme);
   }, []);
 
   if (theme === dayTheme || theme === nightTheme) {
@@ -26,15 +26,18 @@ export default function Header(props) {
 
   const switchTheme = async (e) => {
     if (theme === nightTheme) {
-      setTheme(dayTheme);
+      await setTheme(dayTheme);
       body.classList.replace(nightTheme, dayTheme);
+      e.target.classList.remove(clickedClass);
       sessionStorage.setItem("theme", "day");
+      props.getTheme('day');
     } else {
-      setTheme(nightTheme);
+      await setTheme(nightTheme);
       body.classList.replace(dayTheme, nightTheme);
+      e.target.classList.add(clickedClass);
       sessionStorage.setItem("theme", "night");
+      props.getTheme('night');
     }
-    props.getTheme(theme);
   };
 
   return (

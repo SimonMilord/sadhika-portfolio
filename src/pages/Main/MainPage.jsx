@@ -15,10 +15,14 @@ export default function MainPage(props) {
     desc: "By night, I'm a doodler and a painter. I also spend my time messing around with code (most recently JS animations) and taking lots of pictures of my dog.",
   };
 
-  const getTheme = async(theme) => {
-    await setCurrTheme(theme);
-    console.log("the theme is: "+ theme)
-    console.log("the current theme is: " + currTheme);
+  useEffect(()=> {
+    if (sessionStorage.getItem('theme')) {
+      setCurrTheme(sessionStorage.getItem('theme'))
+    }
+  }, []);
+
+  const getTheme = (theme) => {
+    setCurrTheme(theme);
   };
 
   document.title = "Sadhika Billa";
