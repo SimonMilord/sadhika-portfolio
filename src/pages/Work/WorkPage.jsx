@@ -7,7 +7,7 @@ import Card from "../../components/LinkCard/linkCard";
 export default function WorkPage(props) {
   const card1 = {
     title: "Tax Liability Insights",
-    subtitle: "0 -> 1 product",
+    subtitle: "0 to 1 product",
   };
   const card2 = {
     title: "Sales Tax Collection",
@@ -19,11 +19,11 @@ export default function WorkPage(props) {
   };
   const card4 = {
     title: "Shopify Balance",
-    subtitle: "0 -> 1 product",
+    subtitle: "0 to 1 product",
   };
   const content = {
     title: "Work",
-    subtitle: "Take a peek at some of my work.",
+    subtitle: "Take a peek at some of my work",
   };
 
   document.title = "Sadhika Billa - Work";
@@ -33,31 +33,25 @@ export default function WorkPage(props) {
       <Header activePage="workPage" />
       <div className="workPage__main">
         <div className="infoCore">
-          <h1 className="infoCore__title">{content.title}</h1>
           <h2 className="infoCore__subtitle">{content.subtitle}</h2>
           <p className="infoCore__content">
             If you'd like to learn more about my work or see detailed case
-            studies, contact me at{" "}
-            <a href="mailto:svjbilla@gmail.com">sadhika.billa@gmail.com</a>
+            studies,<br></br> please feel free to contact me.
           </p>
         </div>
         <div className="workPage__cards">
-          <div className="cards-top">
             <Link to="/taxliab" className="workPage__link">
               <Card card={card1} />
             </Link>
             <Link to="/salesTax" className="workPage__link">
               <Card card={card2} />
             </Link>
-          </div>
-          <div className="cards-bottom">
             <Link to="/billing" className="workPage__link">
               <Card card={card3} />
             </Link>
             <Link to="/balance" className="workPage__link">
               <Card card={card4} />
             </Link>
-          </div>
         </div>
       </div>
     </div>

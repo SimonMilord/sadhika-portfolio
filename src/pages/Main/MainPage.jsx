@@ -35,7 +35,7 @@ export default function MainPage(props) {
           <div className="mainPage__main">
             <div className="mainPage__info">
               <h1 className="mainPage__subtitle">{contentDay.subtitle}</h1>
-              <h2 className="mainPage__content">{contentDay.desc}</h2>
+              <p className="mainPage__content">{contentDay.desc}</p>
             </div>
           </div>
         </div>

@@ -4,16 +4,18 @@
 .workPage {
   height: 100%;
   &__main {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   &__cards {
+    width: 90%;
+    margin: 0 auto;
     @include display-flex(column,space-around,center);
     margin-top: 5rem;
     @include tablet {
-      @include display-flex(row,space-evenly,center);
+      @include display-flex(column,space-evenly,center);
     }
     @include desktop {
-      @include display-flex(row,space-around,center);
+      @include display-flex(row,space-evenly,center);
     }
   }
   .cards-top {
@@ -25,7 +27,7 @@
   .cards-bottom {
     @include desktop {
       width: 50%;
-      @include display-flex(row,space-around,center);
+      @include display-flex(row,space-evenly,center);
     }
   }
 

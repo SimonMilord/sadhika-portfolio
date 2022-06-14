@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./header.scss";
 import Sun from "../../assets/Icons/sun.svg";
 import Moon from "../../assets/Icons/moon.svg";
+import Home from "../../assets/Icons/home.svg";
 
 export default function Header(props) {
   let clickedClass = "clicked";
@@ -43,7 +44,7 @@ export default function Header(props) {
   return (
     <div className="header">
       <Link className="header__homeLink" to="/">
-        <div className="header__logo">Sadhika Billa</div>
+        <img src={Home} className="header__logo" alt="house"></img>
       </Link>
       <nav className="nav">
         <ul className="nav__list">
@@ -64,7 +65,7 @@ export default function Header(props) {
           </li> */}
           <li className={props.activePage === "contactPage" ? "nav__item nav__item--active": "nav__item"}>
             <Link className="nav__link" to="/contact">
-              Contact
+              Hello
             </Link>
           </li>
         </ul>

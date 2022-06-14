@@ -12,6 +12,12 @@
   }
 }
 
+@mixin wide {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
 // general mixins:
 
 @mixin display-flex($direction, $justify, $align) {

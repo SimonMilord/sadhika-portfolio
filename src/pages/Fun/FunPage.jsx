@@ -32,7 +32,7 @@ export default function FunPage(props) {
       <Header activePage="funPage" />
       <div className="funPage__main">
         <div className="infoCore">
-          <h1 className="infoCore__title">{content.title}</h1>
+          {/* <h1 className="infoCore__title">{content.title}</h1> */}
           <h2 className="infoCore__subtitle">{content.subtitle}</h2>
           <p className="infoCore__content">{content.desc}</p>
         </div>

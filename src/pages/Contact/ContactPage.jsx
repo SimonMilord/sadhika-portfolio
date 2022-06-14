@@ -9,8 +9,8 @@ import Linkedin from "../../assets/Icons/linkedin.svg";
 export default function ContactPage(props) {
   const content = {
     title: "Contact",
-    subtitle: "Like what you see? Say hello.",
-    desc: "If any of my work looks interesting and you'd like to learn more about what I do and who I am, feel free to contact me. I'm always happy to learn new things and meet new people. ",
+    subtitle: "Like what you see? Say hello",
+    desc: "If any of my work looks interesting and you'd like to learn more about who I am and what I do, please reach out to me.",
   };
 
   document.title = "Sadhika Billa - Contact";
@@ -20,19 +20,15 @@ export default function ContactPage(props) {
       <Header activePage="contactPage" />
       <div className="contactPage__main">
         <div className="infoCore">
-          <h1 className="infoCore__title">{content.title}</h1>
           <h2 className="infoCore__subtitle">{content.subtitle}</h2>
-          <p className="infoCore__content">{content.desc}</p>
+          <p className="infoCore__content contactDesc">{content.desc}</p>
         </div>
         <div className="contactPage__links">
-          <a
-            href="https://github.com/sadhikabilla"
-            className="contactPage__link"
-          >
+          <a href="mailto:svjbilla@gmail.com" className="contactPage__link">
             <img
               className="contactPage__img"
-              src={Github}
-              alt="github logo"
+              src={Email}
+              alt="email logo"
             ></img>
           </a>
           <a
@@ -45,11 +41,14 @@ export default function ContactPage(props) {
               alt="linkedin logo"
             ></img>
           </a>
-          <a href="mailto:svjbilla@gmail.com" className="contactPage__link">
+          <a
+            href="https://github.com/sadhikabilla"
+            className="contactPage__link"
+          >
             <img
               className="contactPage__img"
-              src={Email}
-              alt="email logo"
+              src={Github}
+              alt="github logo"
             ></img>
           </a>
         </div>
