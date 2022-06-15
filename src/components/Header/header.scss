@@ -5,7 +5,7 @@
   @include display-flex(row,space-between,center);
   @include paddingSection;
   @include desktop {
-    padding: 2rem 3.5rem;
+    padding: 2rem 10rem;
   }
 
   &__homeLink {
@@ -15,7 +15,7 @@
   .nav {
 
     &__list {
-      @include display-flex(row,center,center);
+      @include display-flex(row,flex-end,center);
     }
     &__item {
       @include display-flex(row,center,center);

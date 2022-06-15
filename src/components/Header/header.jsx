@@ -4,6 +4,7 @@ import "./header.scss";
 import Sun from "../../assets/Icons/sun.svg";
 import Moon from "../../assets/Icons/moon.svg";
 import Home from "../../assets/Icons/home.svg";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header(props) {
   let clickedClass = "clicked";
