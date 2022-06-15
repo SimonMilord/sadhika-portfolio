@@ -11,11 +11,8 @@
   &__homeLink {
     text-decoration: none;
   }
-  &__logo {
-    // display: none;
-  }
+
   .nav {
-    width: 40%;
 
     &__list {
       @include display-flex(row,center,center);
@@ -28,7 +25,7 @@
       letter-spacing: 2.5px;
 
       &--active {
-        border-bottom: 2px solid $highlight-lm;
+        border-bottom: 2px solid $accent-color;
       }
     }
     &__link {

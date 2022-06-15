@@ -31,45 +31,18 @@ export default function Header(props) {
       body.classList.replace(nightTheme, dayTheme);
       e.target.classList.remove(clickedClass);
       sessionStorage.setItem("theme", "day");
-      props.getTheme('day');
+      props.getTheme("day");
     } else {
       await setTheme(nightTheme);
       body.classList.replace(dayTheme, nightTheme);
       e.target.classList.add(clickedClass);
       sessionStorage.setItem("theme", "night");
-      props.getTheme('night');
+      props.getTheme("night");
     }
   };
 
   return (
     <div className="header">
-      <Link className="header__homeLink" to="/">
-        <img src={Home} className="header__logo" alt="house"></img>
-      </Link>
-      <nav className="nav">
-        <ul className="nav__list">
-          <li className={props.activePage === "introPage" ? "nav__item nav__item--active": "nav__item"}>
-            <Link className="nav__link" to="/intro">
-              Intro
-            </Link>
-          </li>
-          <li className={props.activePage === "workPage" ? "nav__item nav__item--active": "nav__item"}>
-            <Link className="nav__link" to="/work">
-              Work
-            </Link>
-          </li>
-          {/* <li className={props.activePage === "funPage" ? "nav__item nav__item--active": "nav__item"}>
-            <Link className="nav__link" to="/fun">
-              Fun
-            </Link>
-          </li> */}
-          <li className={props.activePage === "contactPage" ? "nav__item nav__item--active": "nav__item"}>
-            <Link className="nav__link" to="/contact">
-              Hello
-            </Link>
-          </li>
-        </ul>
-      </nav>
       <div className="header__dmIcon">
         {theme === "day" ? (
           <img src={Sun} alt="sun icon" onClick={(e) => switchTheme(e)} />
@@ -77,6 +50,49 @@ export default function Header(props) {
           <img src={Moon} alt="moon icon" onClick={(e) => switchTheme(e)} />
         )}
       </div>
+
+      <nav className="nav">
+        <ul className="nav__list">
+          <li
+            className={"nav__item nav__item--active"
+              // props.activePage === "/"
+              //   ? "nav__item nav__item--active"
+              //   : "nav__item"
+            }
+          >
+            <Link className="nav__link" to="/">
+              Home
+            </Link>
+          </li>
+          <li
+            className={
+              props.activePage === "introPage"
+                ? "nav__item nav__item--active"
+                : "nav__item"
+            }
+          >
+            <Link className="nav__link" to="/intro">
+              About
+            </Link>
+          </li>
+          <li
+            className={
+              props.activePage === "workPage"
+                ? "nav__item nav__item--active"
+                : "nav__item"
+            }
+          >
+            <Link className="nav__link" to="/work">
+              Work
+            </Link>
+          </li>
+          <li className="nav__item">
+            <a className="nav__link resume" href="/resume.pdf">
+            Resume
+          </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
