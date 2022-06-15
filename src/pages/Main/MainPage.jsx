@@ -7,7 +7,7 @@ export default function MainPage(props) {
 
   const contentDay = {
     subtitle: "I'm Sadhika, a Senior Product Designer, currently at Shopify.",
-    desc: "By day, I work on the Money team, designing the experience for Shopify Balance. I previously led UX for Shopify's Sales Tax and Billing products.",
+    desc: "By day, I work on the Money team, designing the experience for Shopify Balance.",
   };
 
   const contentNight = {
