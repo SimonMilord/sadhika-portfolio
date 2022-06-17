@@ -3,33 +3,37 @@
 
 .mainPage {
   height: 100vh;
-  background-image: url("../../assets/Images/wedge.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   // to change later
-  // @include paddingSection;
-  // @include desktop {
-  //   padding: 2rem 10rem;
-  // }
+  @include desktop {
+    background-image: url("../../assets/Images/wedgeYellow.svg");
+  }
   @include wide {
     // background-image: url("../../assets/Images/under-1669.svg");
   }
 
   &__main {
     margin-top: 5rem;
-    @include display-flex(row,center,center);
-    padding: 0rem 10rem;
+    @include display-flex(column-reverse,center,center);
+    @include paddingSection;
+    @include desktop {
+      @include display-flex(row,center,center);
+      height: 80%;
+    }
   }
 
   &__left {
-    width: 40%;
+    width: 50%;
+    height: 100%;
+    @include display-flex(column,center,flex-start);
   }
 
   &__title {
     font-weight: 600;
-    font-size: 64px;
-    line-height: 80.66px;
+    font-size: 42px;
+    line-height: 60px;
   }
 
   &__content {
@@ -40,23 +44,31 @@
   }
 
   &__arrow {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    display: none;
+    cursor: pointer;
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__right {
-    width: 60%;
-    @include display-flex(row,flex-end,flex-start);
+    width: 50%;
+    height: 100%;
+    @include display-flex(row,flex-end,center);
   }
 
+  // svg to modify
   &__illustration {
-
+    // max-height: 500px;
+    max-width: 575px;
+    overflow: hidden;
   }
-
-
 }
 
 .myWork {
   // height: 2000px;
+  height: 100vh;
   padding: 5rem 10rem;
 
   .subtitle {
@@ -71,37 +83,80 @@
 
 
 
+// DM
+.mainPage-dm {
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  // to change later
+  @include desktop {
+    background-image: url("../../assets/Images/wedgePurple.svg");
+
+  }
+  @include wide {
+    // background-image: url("../../assets/Images/under-1669.svg");
+  }
+
+  &__main {
+    margin-top: 5rem;
+    @include display-flex(column-reverse,center,center);
+    @include paddingSection;
+    @include desktop {
+      @include display-flex(row,center,center);
+      height: 80%;
+    }
+  }
+
+  &__left {
+    width: 50%;
+    height: 100%;
+    @include display-flex(column,center,flex-start);
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 60px;
+  }
+
+  &__content {
+    margin: 1.5rem 0rem;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+  }
+
+  &__arrow {
+    margin-top: 3rem;
+    display: none;
+    cursor: pointer;
+    @include desktop {
+      display: flex;
+    }
+    .arrow {
+      &--day {
+        filter: invert(28%) sepia(66%) saturate(1131%) hue-rotate(299deg) brightness(92%) contrast(90%);
+      }
+      &--night {
+        color: $accent-night;
+      }
+    }
+  }
+
+  &__right {
+    width: 50%;
+    height: 100%;
+    @include display-flex(row,flex-end,center);
+  }
+
+  // svg to modify
+  &__illustration {
+    // max-height: 500px;
+    max-width: 575px;
+    overflow: hidden;
+  }
+}
 
 
 
-// .mainPage-dm {
-//   height: 100%;
-//   background-image: url("../../assets/Images/Night-bg.svg");
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   background-position: bottom;
-
-//   &__main {
-//     height: 30%;
-//     @include display-flex(row,center,center);
-//   }
-
-//   &__info {
-//     width: 60%;
-//     @include display-flex(column,center,center);
-//     margin: 0 auto;
-//     text-align: center;
-//   }
-
-//   &__subtitle {
-//     font-size: 38px;
-//     font-weight: 600;
-//     margin-bottom: 36px;
-//     margin-top: 2rem;
-//   }
-
-//   &__content {
-//     line-height: 160%;
-//     font-size: 18px;
-//   }
-// }

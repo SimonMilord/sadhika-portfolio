@@ -54,43 +54,30 @@ export default function Header(props) {
 
       <nav className="nav">
         <ul className="nav__list">
-          <li
-            className={"nav__item nav__item--active"
-              // props.activePage === "/"
-              //   ? "nav__item nav__item--active"
-              //   : "nav__item"
-            }
-          >
+          <li className={theme === "night" ? "nav__item nav__item--night" : "nav__item nav__item--day"}>
             <Link className="nav__link" to="/">
               Home
             </Link>
           </li>
-          <li
-            className={
-              props.activePage === "introPage"
-                ? "nav__item nav__item--active"
-                : "nav__item"
-            }
-          >
+          <li className="nav__item">
+            <ScrollLink
+              className="nav__link"
+              activeClass="active"
+              to="myWork"
+              smooth={true}
+            >
+              Work
+            </ScrollLink>
+          </li>
+          <li className="nav__item">
             <Link className="nav__link" to="/intro">
               About
             </Link>
           </li>
-          <li
-            className={
-              props.activePage === "workPage"
-                ? "nav__item nav__item--active"
-                : "nav__item"
-            }
-          >
-            <Link className="nav__link" to="/work">
-              Work
-            </Link>
-          </li>
           <li className="nav__item">
-            <a className="nav__link resume" href="/resume.pdf">
-            Resume
-          </a>
+            <Link className="nav__link" to="/contact">
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

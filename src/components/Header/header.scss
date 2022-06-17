@@ -4,9 +4,9 @@
 .header {
   @include display-flex(row,space-between,center);
   @include paddingSection;
-  @include desktop {
-    padding: 2rem 10rem;
-  }
+  // @include desktop {
+  //   padding: 2rem 10rem;
+  // }
 
   &__homeLink {
     text-decoration: none;
@@ -24,11 +24,16 @@
       margin: 0px 32px;
       letter-spacing: 2.5px;
 
-      &--active {
-        border-bottom: 2px solid $accent-color;
+      &--day {
+        border-bottom: 2px solid $accent-day;
       }
+      &--night {
+        border-bottom: 2px solid $accent-night;
+      }
+
     }
     &__link {
+      cursor: pointer;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 500;
@@ -37,7 +42,7 @@
   }
 
   &__dmIcon img{
-    // height: 28px;
+
     &:hover {
       cursor: pointer;
     }

@@ -1,23 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./MainPage.scss";
 import Header from "../../components/Header/header";
-import Illustration from "../../assets/Images/final.svg";
-import Arrow from "../../assets/Icons/arrow.svg";
-import { Element } from "react-scroll";
+import DayIllo from "../../assets/Images/day-illo.svg";
+import NightIllo from "../../assets/Images/night-illo.svg";
+import ArrowDay from "../../assets/Icons/arrow-day.svg";
+import ArrowNight from "../../assets/Icons/arrow-night.svg";
+import { Element, Link as ScrollLink } from "react-scroll";
 import WorkList from "../../components/WorkList/workList";
 
 export default function MainPage(props) {
   const [currTheme, setCurrTheme] = useState("");
-
-  const contentDay = {
-    subtitle: "I'm Sadhika, a Senior Product Designer, currently at Shopify.",
-    desc: "By day, I work on the Money team, designing the experience for Shopify Balance.",
-  };
-
-  const contentNight = {
-    subtitle: `I'm Sadhika, a Senior Product Designer, currently at Shopify.`,
-    desc: "By night, I'm a doodler and a painter. I also spend my time messing around with code (most recently JS animations) and taking lots of pictures of my dog.",
-  };
 
   useEffect(() => {
     if (sessionStorage.getItem("theme")) {
@@ -39,26 +31,24 @@ export default function MainPage(props) {
           <div className="mainPage__main">
             <div className="mainPage__left">
               <h1 className="mainPage__title">
-                Oh hey there, I'm{" "}
-                <span style={{ color: "#5653D8" }}>Sadhika</span>
+                I'm Sadhika, a Product Designer at Shopify. <span style={{color: "#AD3862"}}>By day</span>, I create
+                beautiful and human-centric experiences for Shopify Balance.
               </h1>
               <p className="mainPage__content">
-                I'm a Senior Product Designer, currently @ Shopify.
+                I previously led UX for Shopify Tax.
               </p>
-              <p className="mainPage__content">
-                <span style={{ fontWeight: "bold" }}>By day</span>, I work on
-                the Money team, designing the experience for Shopify Balance. I
-                previously led UX for Shopify's Sales Tax product.
-              </p>
-
-              <div className="mainPage__arrow">
-                <img src={Arrow} alt="arrow" className="arrow"></img>
-              </div>
+              <ScrollLink
+                activeClass="active"
+                to="myWork"
+                smooth={true}
+                className="mainPage__arrow">
+                <img src={ArrowDay} alt="arrow" className="arrow--day"></img>
+              </ScrollLink>
             </div>
 
             <div className="mainPage__right">
               <img
-                src={Illustration}
+                src={DayIllo}
                 alt="illustration of me"
                 className="mainPage__illustration"
               ></img>
@@ -67,21 +57,51 @@ export default function MainPage(props) {
         </div>
       ) : (
         <div className="mainPage-dm">
-          <Header getTheme={getTheme} />
-          <div className="mainPage-dm__main">
-            <div className="mainPage-dm__info">
-              <h1 className="mainPage-dm__subtitle">{contentNight.subtitle}</h1>
-              <h2 className="mainPage-dm__content">{contentNight.desc}</h2>
-            </div>
+        <Header getTheme={getTheme} />
+        <div className="mainPage-dm__main">
+          <div className="mainPage-dm__left">
+            <h1 className="mainPage-dm__title">
+              I'm Sadhika, a Product Designer at Shopify. <span style={{color: "#F5F488"}}>By night</span>, I enjoy
+              spending my time painting, doodling and messing around with code.
+            </h1>
+            <p className="mainPage-dm__content">
+              I also love long walks with my dog.
+            </p>
+            <ScrollLink
+            activeClass="active"
+            to="myWork"
+            smooth={true}
+             className="mainPage-dm__arrow">
+              <img src={ArrowNight} alt="arrow" className="arrow--night"></img>
+            </ScrollLink>
+          </div>
+
+          <div className="mainPage-dm__right">
+            <img
+              src={NightIllo}
+              alt="illustration of me"
+              className="mainPage-dm__illustration"
+            ></img>
           </div>
         </div>
+      </div>
       )}
-      <div className="myWork">
-        <h2 className="subtitle">Take a peek at my <span style={{color: "#5653D8"}}>work</span></h2>
+      {/* <div className="myWork">
+        <h2 className="subtitle">
+          Take a peek at my <span style={{ color: "#5653D8" }}>work</span>
+        </h2>
         <div className="worklist-box">
           <WorkList />
         </div>
-      </div>
+      </div> */}
+      <Element name="myWork" id="myWork" className="myWork section">
+      <h2 className="subtitle">
+          Take a peek at my <span style={{ color: "#5653D8" }}>work</span>
+        </h2>
+        <div className="worklist-box">
+          <WorkList />
+        </div>
+      </Element>
     </>
   );
 }
