@@ -5,36 +5,34 @@ import "./workList.scss";
 
 export default function WorkList(props) {
   const card1 = {
-    title: "Tax Liability Insights",
-    subtitle: "0 to 1 product",
+    title: "Decoding sales tax liabilities",
+    desc: "Helping merchants understand where, when, and why they should collect sales tax.",
   };
   const card2 = {
-    title: "Sales Tax Collection",
-    subtitle: "Redesign",
+    title: "Redesigning sales tax collection",
+    desc: "Rethinking how sales tax collection should work.",
   };
   const card3 = {
-    title: "Shopify Billing",
-    subtitle: "Service Design",
-  };
-  const card4 = {
-    title: "Shopify Balance",
-    subtitle: "0 to 1 product",
+    title: "Building Shopify Balance",
+    desc: "Building financial services for independent businesses.",
   };
 
   return (
     <div className="worklist">
-      <Link to="/taxliab" className="worklist__link">
-        <Card card={card1} />
-      </Link>
-      <Link to="/salesTax" className="worklist__link">
-        <Card card={card2} />
-      </Link>
-      <Link to="/billing" className="worklist__link">
-        <Card card={card3} />
-      </Link>
-      <Link to="/balance" className="worklist__link">
-        <Card card={card4} />
-      </Link>
+      <div className="worklist__box">
+        <Link to="/taxliab" className="worklist__link">
+          <Card card={card1} />
+        </Link>
+        <Link to="/salesTax" className="worklist__link">
+          <Card card={card2} />
+        </Link>
+        <Link to="/balance" className="worklist__link">
+          <Card card={card3} />
+        </Link>
+      </div>
+      <div className="worklist__more">
+        <p>I've also contributed to Shopify Markets and Facebook Shops. To learn more about my work, please contact me.</p>
+      </div>
     </div>
   );
 }

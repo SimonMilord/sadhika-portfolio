@@ -30,14 +30,14 @@
 @mixin paddingSection {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0rem 1rem;
   @include tablet {
-    padding: 2rem;
+    padding: 0rem 2rem;
   }
   @include desktop {
-    padding: 2rem 5rem;
+    padding: 0rem 5rem;
   }
-  // @include wide {
-  //   padding: 2rem 10rem;
-  // }
+  @include wide {
+    padding: 0rem 10rem;
+  }
 }

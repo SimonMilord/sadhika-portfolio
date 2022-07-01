@@ -2,7 +2,6 @@
 @import "../../styles/partials/variables";
 
 .mainPage {
-  height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -10,17 +9,13 @@
   @include desktop {
     background-image: url("../../assets/Images/wedgeYellow.svg");
   }
-  @include wide {
-    // background-image: url("../../assets/Images/under-1669.svg");
-  }
 
   &__main {
-    margin-top: 5rem;
+    height: calc(100vh - 94px);
     @include display-flex(column-reverse,center,center);
     @include paddingSection;
     @include desktop {
-      @include display-flex(row,center,center);
-      height: 80%;
+    @include display-flex(row,center,center);
     }
   }
 
@@ -71,18 +66,28 @@
 }
 
 .myWork {
-  // height: 2000px;
   height: 100vh;
   padding: 5rem 10rem;
+  background-image: url("../../assets/Images/wedgeYellow.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
 
   .subtitle {
     font-size: 44px;
     font-weight: 600;
     line-height: 55px;
-  }
-  .worklist-box {
     @include display-flex(row,center,center);
   }
+  .worklist-box {
+    width: 100%;
+    // @include display-flex(row,center,center);
+
+  }
+}
+
+.about {
+  height: 100vh;
+  padding: 5rem 10rem;
 }
 
 

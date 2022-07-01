@@ -2,6 +2,7 @@
 @import "../../styles/partials/variables";
 
 .introPage {
+  transition: 0.3s all ease;
   height: 100%;
   &__main {
     margin-top: 5rem;

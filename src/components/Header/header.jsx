@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./header.scss";
 import Sun from "../../assets/Icons/sun.svg";
 import Moon from "../../assets/Icons/moon.svg";
-import Home from "../../assets/Icons/home.svg";
 import { Link as ScrollLink } from "react-scroll";
 
 export default function Header(props) {
@@ -43,7 +42,7 @@ export default function Header(props) {
   };
 
   return (
-    <div className="header">
+    <header className={theme === dayTheme ? "header" : "header-night"}>
       <div className="header__dmIcon">
         {theme === "day" ? (
           <img src={Sun} alt="sun icon" onClick={(e) => switchTheme(e)} />
@@ -54,14 +53,25 @@ export default function Header(props) {
 
       <nav className="nav">
         <ul className="nav__list">
-          <li className={theme === "night" ? "nav__item nav__item--night" : "nav__item nav__item--day"}>
-            <Link className="nav__link" to="/">
+          <li
+            className={
+              theme === "night"
+                ? "nav__item nav__item--night"
+                : "nav__item nav__item--day"
+            }
+          >
+            <div
+              className="nav__link"
+              onClick={()=> {
+                window.scrollTo({top:0, left:0, behavior: 'smooth'});
+              }}
+            >
               Home
-            </Link>
+            </div>
           </li>
           <li className="nav__item">
             <ScrollLink
-              className="nav__link"
+              className={theme === "night" ? "nav__link nav__link--night" : "nav__link nav__link--day"}
               activeClass="active"
               to="myWork"
               smooth={true}
@@ -70,17 +80,22 @@ export default function Header(props) {
             </ScrollLink>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/intro">
+            <ScrollLink
+            className={theme === "night" ? "nav__link nav__link--night" : "nav__link nav__link--day"}
+            activeClass="active"
+            to="about"
+            smooth={true}
+            >
               About
-            </Link>
+            </ScrollLink>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="/contact">
-              Contact
-            </Link>
+            <a className={theme === "night" ? "nav__link nav__link--night" : "nav__link nav__link--day"} href="/resume.pdf">
+              Resumé
+            </a>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }

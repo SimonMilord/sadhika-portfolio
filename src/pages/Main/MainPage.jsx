@@ -7,6 +7,7 @@ import ArrowDay from "../../assets/Icons/arrow-day.svg";
 import ArrowNight from "../../assets/Icons/arrow-night.svg";
 import { Element, Link as ScrollLink } from "react-scroll";
 import WorkList from "../../components/WorkList/workList";
+import About from "../Intro/IntroPage";
 
 export default function MainPage(props) {
   const [currTheme, setCurrTheme] = useState("");
@@ -27,7 +28,7 @@ export default function MainPage(props) {
     <>
       {currTheme === "day" || currTheme === "" ? (
         <div className="mainPage">
-          <Header getTheme={getTheme} />
+          <Header getTheme={getTheme}/>
           <div className="mainPage__main">
             <div className="mainPage__left">
               <h1 className="mainPage__title">
@@ -57,7 +58,7 @@ export default function MainPage(props) {
         </div>
       ) : (
         <div className="mainPage-dm">
-        <Header getTheme={getTheme} />
+        <Header getTheme={getTheme}/>
         <div className="mainPage-dm__main">
           <div className="mainPage-dm__left">
             <h1 className="mainPage-dm__title">
@@ -86,20 +87,15 @@ export default function MainPage(props) {
         </div>
       </div>
       )}
-      {/* <div className="myWork">
-        <h2 className="subtitle">
-          Take a peek at my <span style={{ color: "#5653D8" }}>work</span>
-        </h2>
-        <div className="worklist-box">
-          <WorkList />
-        </div>
-      </div> */}
       <Element name="myWork" id="myWork" className="myWork section">
-      <h2 className="subtitle">
-          Take a peek at my <span style={{ color: "#5653D8" }}>work</span>
+        <h2 className="subtitle">
+          <span style={{ color: "#AD3862" }}>Work</span>&nbsp;Samples
         </h2>
-        <div className="worklist-box">
-          <WorkList />
+        <WorkList />
+      </Element>
+      <Element name="about" id="about" className="about section">
+        <div className="about-box">
+          <About />
         </div>
       </Element>
     </>

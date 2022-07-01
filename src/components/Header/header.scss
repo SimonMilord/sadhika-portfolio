@@ -1,12 +1,22 @@
 @import "../../styles/partials/variables";
 @import "../../styles/partials/mixins";
 
-.header {
+header {
   @include display-flex(row,space-between,center);
-  @include paddingSection;
-  // @include desktop {
-  //   padding: 2rem 10rem;
-  // }
+  background-color: $background-day;
+  transition: 0.3s all ease;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+  @include tablet {
+    padding: 2rem 2rem;
+  }
+  @include desktop {
+    padding: 2rem 5rem;
+  }
+  @include wide {
+    padding: 2rem 10rem;
+  }
 
   &__homeLink {
     text-decoration: none;
@@ -25,10 +35,14 @@
       letter-spacing: 2.5px;
 
       &--day {
-        border-bottom: 2px solid $accent-day;
+        &:hover {
+          color: $accent-day;
+        }
       }
       &--night {
-        border-bottom: 2px solid $accent-night;
+        &:hover {
+          color: $accent-night;
+        }
       }
 
     }
@@ -38,6 +52,17 @@
       text-transform: uppercase;
       font-weight: 500;
       font-size: 12px;
+
+      &--day {
+        &:hover {
+          color: $accent-day;
+        }
+      }
+      &--night {
+        &:hover {
+          color: $accent-night;
+        }
+      }
     }
   }
 
@@ -47,4 +72,9 @@
       cursor: pointer;
     }
   }
+}
+
+.header-night {
+  background-color: $background-night;
+  transition: 0.3s all ease;
 }

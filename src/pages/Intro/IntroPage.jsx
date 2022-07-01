@@ -13,10 +13,8 @@ export default function IntroPage(props) {
 
   return (
     <div className="introPage">
-      <Header activePage="introPage" />
       <div className="introPage__main">
         <div className="infoCore">
-          {/* <h1 className="infoCore__title">{content.title}</h1> */}
           <h2 className="infoCore__subtitle">{content.subtitle}</h2>
           <p className="infoCore__content">
             I'm a curious learner and adventurer from Singapore, currently
