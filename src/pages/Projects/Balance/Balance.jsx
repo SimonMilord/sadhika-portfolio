@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useLayoutEffect} from "react";
 import { Link } from "react-router-dom";
 import { CgArrowLongLeft } from "react-icons/cg";
 
@@ -18,6 +18,10 @@ export default function BalancePage(props) {
     final2: "",
   };
   document.title = "Sadhika Billa - Balance";
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
 
   return (
     <div className="project balance">

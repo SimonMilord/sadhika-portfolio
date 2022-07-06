@@ -1,0 +1,67 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.about {
+  // padding: 3rem;
+  height: 100%;
+  @include display-flex(row,center,center);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: bottom;
+  // // to change later
+  // @include desktop {
+  //   background-image: url("../../assets/Images/wedgeYellow.svg");
+  // }
+  &__profile {
+    width: 40%;
+  }
+
+  &__box {
+    position: relative;
+    width: 440px;
+    height: 555px;
+
+    &--inner {
+      height: 100%;
+      width: 100%;
+      border: 1.5px solid $accent-day;
+    }
+    &--innerDM {
+      height: 100%;
+      width: 100%;
+      border: 1.5px solid $font-dm;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    left: -1.5rem;
+    top: -1.5rem;
+    transition: 0.3s all ease;
+    &:hover {
+      left: 0rem;
+      top: 0rem;
+    }
+  }
+
+
+
+  &__content {
+    @include display-flex(column,center,flex-start);
+    width: 50%;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 1rem 0rem;
+
+    .day {
+      text-decoration: none;
+      color: $accent-day;
+    }
+    .night {
+      text-decoration: none;
+      color: $accent-night;
+    }
+  }
+}

@@ -4,24 +4,44 @@
 .worklist {
   width: 100%;
   margin: 0 auto;
-  padding: 0rem 2rem;
+  // padding: 0rem 0rem;
 
   @include display-flex(column,space-around,center);
-  margin-top: 5rem;
+  margin-top: 3rem;
   @include tablet {
     @include display-flex(column,space-evenly,center);
   }
   @include desktop {
-    @include display-flex(column,space-between,center);
+    @include display-flex(column,space-around,center);
   }
 
   &__box {
-    @include display-flex(row,space-between,center);
+    @include display-flex(row,space-evenly,center);
     width: 100%;
 
   }
 
   &__link {
     text-decoration: none;
+  }
+
+  &__more {
+    margin-top: 3rem;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+
+    a {
+      text-decoration: none;
+    }
+  }
+  &__ref {
+    color: $accent-day !important;
+    &--dm {
+      color: $accent-night !important;
+    }
   }
 }

@@ -55,65 +55,106 @@
     width: 50%;
     height: 100%;
     @include display-flex(row,flex-end,center);
+    .cloud {
+      z-index: 9000;
+      position: absolute;
+    }
+    .cloud1 {
+      left: 51%;
+      top: 43%;
+      @include animation-cloud(float1, 0, 30%);
+      animation: float1 7s linear infinite;
+    }
+    .cloud2 {
+      left: 55%;
+      top: 34%;
+      @include animation-cloud(float1, 0, 30%);
+      animation: float1 7s linear infinite;
+    }
+    .cloud3 {
+      left: 72%;
+      top: 27%;
+      @include animation-cloud(float1, 0, 40%);
+      animation: float1 6s linear infinite;
+    }
+    .cloud4 {
+      left: 80%;
+      top: 23%;
+      @include animation-cloud(float1, 0, 20%);
+      animation: float1 8s linear infinite;
+    }
+    .cloud5 {
+      left: 88%;
+      top: 36%;
+      @include animation-cloud(float1, 0, 90%);
+      animation: float1 6s linear infinite;
+    }
   }
 
   // svg to modify
   &__illustration {
-    // max-height: 500px;
     max-width: 575px;
     overflow: hidden;
+    z-index: 1;
   }
 }
 
 .myWork {
   height: 100vh;
-  padding: 5rem 10rem;
-  background-image: url("../../assets/Images/wedgeYellow.svg");
+  padding-top: 5rem;
+  background-image: url("../../assets/Images/wedgeYellow2.svg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: bottom;
+
 
   .subtitle {
     font-size: 44px;
     font-weight: 600;
     line-height: 55px;
     @include display-flex(row,center,center);
+    &__span {
+      color: $accent-day;
+    }
   }
   .worklist-box {
     width: 100%;
-    // @include display-flex(row,center,center);
-
   }
 }
 
-.about {
+.aboutSection {
   height: 100vh;
-  padding: 5rem 10rem;
+  // padding: 5rem 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  // to change later
+  @include desktop {
+    background-image: url("../../assets/Images/wedgeYellow.svg");
+  }
 }
+
+
+
 
 
 
 // DM
 .mainPage-dm {
-  height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   // to change later
   @include desktop {
     background-image: url("../../assets/Images/wedgePurple.svg");
-
-  }
-  @include wide {
-    // background-image: url("../../assets/Images/under-1669.svg");
   }
 
   &__main {
-    margin-top: 5rem;
+    height: calc(100vh - 94px);
     @include display-flex(column-reverse,center,center);
     @include paddingSection;
     @include desktop {
-      @include display-flex(row,center,center);
-      height: 80%;
+    @include display-flex(row,center,center);
     }
   }
 
@@ -153,15 +194,64 @@
     width: 50%;
     height: 100%;
     @include display-flex(row,flex-end,center);
+    .fly {
+      z-index: 9000;
+      position: absolute;
+    }
+    .fly1 {
+      left: 53%;
+      top: 40%;
+      @include animation-fly(bug2, 0, 0);
+      animation: bug2 6s linear infinite;
+    }
+    .fly2 {
+      left: 73%;
+      top: 26%;
+      @include animation-fly(bug1, 0, 0);
+      animation: bug1 8s linear infinite;
+    }
+    .fly3 {
+      left: 85%;
+      top: 29%;
+      @include animation-fly(bug2, 0, 0);
+      animation: bug2 7s linear infinite;
+    }
   }
 
   // svg to modify
   &__illustration {
-    // max-height: 500px;
     max-width: 575px;
     overflow: hidden;
+    z-index: 1;
+  }
+
+}
+
+.myWork--dm {
+  height: 100vh;
+  padding-top: 5rem;
+  background-image: url("../../assets/Images/wedgePurple2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+
+  .subtitle {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 55px;
+    @include display-flex(row,center,center);
+    &__span--dm {
+      color: $accent-night;
+    }
+  }
+  .worklist-box {
+    width: 100%;
   }
 }
 
-
+.aboutSection {
+  height: 100vh;
+  // padding: 5rem 55px;
+}
 

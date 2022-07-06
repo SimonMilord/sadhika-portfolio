@@ -41,3 +41,24 @@
     padding: 0rem 10rem;
   }
 }
+
+
+// animation
+
+@mixin animation-cloud($name, $from, $to) {
+  @keyframes float1 {
+    0% { transform: translate3d(0,$from,0);}
+    50% { transform: translate3d(0,$to,0);}
+  }
+}
+
+@mixin animation-fly($name,$from,$to) {
+  @keyframes bug1 {
+    from {transform: rotate(0deg) translate(20px) rotate(0deg);}
+    to {transform: rotate(-360deg) translate(20px) rotate(360deg);}
+  }
+  @keyframes bug2 {
+    from {transform: rotate(0deg) translate(15px) rotate(0deg);}
+    to {transform: rotate(360deg) translate(15px) rotate(-360deg);}
+  }
+}

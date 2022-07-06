@@ -7,7 +7,15 @@ import ArrowDay from "../../assets/Icons/arrow-day.svg";
 import ArrowNight from "../../assets/Icons/arrow-night.svg";
 import { Element, Link as ScrollLink } from "react-scroll";
 import WorkList from "../../components/WorkList/workList";
-import About from "../Intro/IntroPage";
+import About from "../About/AboutPage";
+import Cloud1 from "../../assets/Svgs/cloud1.svg";
+import Cloud2 from "../../assets/Svgs/cloud2.svg";
+import Cloud3 from "../../assets/Svgs/cloud3.svg";
+import Cloud4 from "../../assets/Svgs/cloud4.svg";
+import Cloud5 from "../../assets/Svgs/cloud5.svg";
+import Fly1 from "../../assets/Svgs/fly1.svg";
+import Fly2 from "../../assets/Svgs/fly2.svg";
+import Fly3 from "../../assets/Svgs/fly3.svg";
 
 export default function MainPage(props) {
   const [currTheme, setCurrTheme] = useState("");
@@ -53,6 +61,11 @@ export default function MainPage(props) {
                 alt="illustration of me"
                 className="mainPage__illustration"
               ></img>
+              <img src={Cloud1} alt="cloud" className="cloud cloud1"></img>
+              <img src={Cloud2} alt="cloud" className="cloud cloud2"></img>
+              <img src={Cloud3} alt="cloud" className="cloud cloud3"></img>
+              <img src={Cloud4} alt="cloud" className="cloud cloud4"></img>
+              <img src={Cloud5} alt="cloud" className="cloud cloud5"></img>
             </div>
           </div>
         </div>
@@ -83,20 +96,21 @@ export default function MainPage(props) {
               alt="illustration of me"
               className="mainPage-dm__illustration"
             ></img>
+            <img src={Fly1} alt="fly" className="fly fly1"></img>
+            <img src={Fly2} alt="fly" className="fly fly2"></img>
+            <img src={Fly3} alt="fly" className="fly fly3"></img>
           </div>
         </div>
       </div>
       )}
-      <Element name="myWork" id="myWork" className="myWork section">
-        <h2 className="subtitle">
-          <span style={{ color: "#AD3862" }}>Work</span>&nbsp;Samples
-        </h2>
-        <WorkList />
+      <Element name="myWork" id="myWork" className={currTheme === "day" ? "myWork section" : "myWork--dm section"}>
+        <h2 className="subtitle">Work Samples</h2>
+        <WorkList theme={currTheme}/>
       </Element>
-      <Element name="about" id="about" className="about section">
-        <div className="about-box">
-          <About />
-        </div>
+      <Element name="about" id="about" className="aboutSection section">
+        {/* <div className="about-box"> */}
+          <About theme={currTheme}/>
+        {/* </div> */}
       </Element>
     </>
   );
