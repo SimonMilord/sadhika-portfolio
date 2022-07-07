@@ -124,12 +124,12 @@ export default function BalancePage(props) {
           </div>
         </div>
       </section>
-      <div className="top">
-        <Link to="/work" className="top__link">
+      <div className="bottom">
+        <Link to="/work" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
           Back to projects
         </Link>
-        <Link to="/sales" className="top__link">
+        <Link to="/work" className="bottom__link">
           Next
           <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
         </Link>

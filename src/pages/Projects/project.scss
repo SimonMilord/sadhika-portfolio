@@ -108,4 +108,30 @@
       }
     }
   }
+  .bottom {
+    @include display-flex(row,space-between,center);
+    &__link {
+      color: $font-lm;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      @include display-flex(row,center,center);
+
+      .arrowIcon-left {
+        transition: 0.3s all ease;
+        margin-right: 0.5rem;
+      }
+      .arrowIcon-right {
+        transition: 0.3s all ease;
+        margin-left: 0.5rem;
+      }
+      &:hover .arrowIcon-left {
+        transition: 0.3s all ease;
+        transform: translateX(-0.5rem);
+      }
+      &:hover .arrowIcon-right {
+        transition: 0.3s all ease;
+        transform: translateX(0.5rem);
+      }
+    }  }
 }
