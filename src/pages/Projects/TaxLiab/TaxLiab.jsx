@@ -176,6 +176,16 @@ export default function TaxLiab(props) {
           </div>
         </div>
       </section>
+      <div className="bottom">
+        <Link to="/work" className="top__link">
+          <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
+          Back to projects
+        </Link>
+        <Link to="/sales" className="top__link">
+          Next
+          <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
+        </Link>
+      </div>
     </div>
   );
 }

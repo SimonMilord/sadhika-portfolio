@@ -91,8 +91,8 @@
         display: flex;
         left: 55%;
         top: 34%;
-        @include animation-cloud(float1, 0, 30%);
-        animation: float1 7s linear infinite;
+        @include animation-cloud(float1, 0, 90%);
+        animation: float1 6s linear infinite;
       }
     }
     .cloud3 {
@@ -119,7 +119,7 @@
         animation: float1 8s linear infinite;
       }
       @include wide {
-        left: 75%;
+        left: 73%;
         top: 30%;
       }
     }
@@ -128,13 +128,13 @@
       @include desktop {
         display: flex;
         left: 88%;
-        top: 36%;
+        top: 43%;
         @include animation-cloud(float1, 0, 90%);
         animation: float1 6s linear infinite;
       }
       @include wide {
-        left: 83%;
-        top: 36%;
+        left: 79%;
+        top: 33%;
       }
     }
   }
@@ -272,7 +272,7 @@
         animation: bug1 8s linear infinite;
       }
       @include wide {
-        left: 68%;
+        left: 66%;
         top: 26%;
       }
     }
@@ -286,7 +286,7 @@
         animation: bug2 7s linear infinite;
       }
       @include wide {
-        left: 80%;
+        left: 78%;
         top: 29%;
       }
     }
