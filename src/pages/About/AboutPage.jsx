@@ -1,7 +1,5 @@
 import React from "react";
 import "./AboutPage.scss";
-// import "../../components/InfoCore/infoCore.scss";
-// import Header from "../../components/Header/header";
 import ProfileDay from "../../assets/Images/profileDay.png";
 import ProfileNight from "../../assets/Images/profileNight.png";
 
@@ -9,7 +7,7 @@ export default function IntroPage(props) {
   const theme = props.theme;
 
   return (
-    <div className="about">
+    <div className={theme === "day" ? "about" : "about about--dm"}>
       <div className="about__profile">
         <div className="about__box">
           <div
@@ -32,6 +30,21 @@ export default function IntroPage(props) {
             )}
           </div>
         </div>
+      </div>
+      <div className="about__profile--mobile">
+        {theme === "day" ? (
+          <img
+            src={ProfileDay}
+            alt="profile pic"
+            className="about__picture-mobile"
+          ></img>
+        ) : (
+          <img
+            src={ProfileNight}
+            alt="profile pic"
+            className="about__picture-mobile"
+          ></img>
+        )}
       </div>
       <div className="about__content">
         <p className="about__text about__text--1">

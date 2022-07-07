@@ -1,6 +1,7 @@
-import React, {useLayoutEffect} from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
-import { CgArrowLongLeft } from "react-icons/cg";
+import ArrowBack from "../../../assets/Icons/arrowBack.svg";
+import ArrowForward from "../../../assets/Icons/arrowForward.svg";
 
 export default function BalancePage(props) {
   const content = {
@@ -20,15 +21,27 @@ export default function BalancePage(props) {
   document.title = "Sadhika Billa - Balance";
 
   useLayoutEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   });
 
   return (
     <div className="project balance">
       <div className="top">
         <Link to="/work" className="top__link">
-          <CgArrowLongLeft className="arrowIcon" />
-          Back
+          <img
+            src={ArrowBack}
+            className="arrowIcon-left"
+            alt="back arrow"
+          ></img>
+          Back to projects
+        </Link>
+        <Link to="/work" className="top__link">
+          Next
+          <img
+            src={ArrowForward}
+            className="arrowIcon-right"
+            alt="back arrow"
+          ></img>
         </Link>
       </div>
       <section className="subsection subsection__intro">
@@ -87,24 +100,9 @@ export default function BalancePage(props) {
             </p>
             <p className="content__text">
               You can also read about Balance in articles from{" "}
-              <a
-                href="https://www.shopify.com/balance"
-              >
-                Forbes
-              </a>
-              ,{" "}
-              <a
-                href="https://www.shopify.com/balance"
-              >
-                TechCrunch
-              </a>
-              {" "}and{" "}
-              <a
-                href="https://www.shopify.com/balance"
-              >
-                BetaKit
-              </a>
-              .
+              <a href="https://www.shopify.com/balance">Forbes</a>,{" "}
+              <a href="https://www.shopify.com/balance">TechCrunch</a> and{" "}
+              <a href="https://www.shopify.com/balance">BetaKit</a>.
             </p>
           </div>
         </div>

@@ -5,7 +5,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  // to change later
   @include desktop {
     background-image: url("../../assets/Images/wedgeYellow.svg");
   }
@@ -20,15 +19,23 @@
   }
 
   &__left {
-    width: 50%;
-    height: 100%;
     @include display-flex(column,center,flex-start);
+    @include desktop {
+      width: 50%;
+      height: 100%;
+      @include display-flex(column,center,flex-start);
+    }
   }
 
   &__title {
     font-weight: 600;
-    font-size: 42px;
-    line-height: 60px;
+    font-size: 21px;
+    line-height: 30px;
+    @include desktop {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 60px;
+    }
   }
 
   &__content {
@@ -52,42 +59,83 @@
   }
 
   &__right {
-    width: 50%;
+    width: 75%;
     height: 100%;
-    @include display-flex(row,flex-end,center);
+    @include display-flex(row,center,center);
+    @include tablet {
+      width: 75%;
+      margin-top: 200px;
+    }
+    @include desktop {
+      @include display-flex(row,flex-end,center);
+      margin-top: 0px;
+      width: 50%;
+    }
     .cloud {
       z-index: 9000;
       position: absolute;
     }
     .cloud1 {
-      left: 51%;
-      top: 43%;
-      @include animation-cloud(float1, 0, 30%);
-      animation: float1 7s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 51%;
+        top: 43%;
+        @include animation-cloud(float1, 0, 30%);
+        animation: float1 6s linear infinite;
+      }
     }
     .cloud2 {
-      left: 55%;
-      top: 34%;
-      @include animation-cloud(float1, 0, 30%);
-      animation: float1 7s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 55%;
+        top: 34%;
+        @include animation-cloud(float1, 0, 30%);
+        animation: float1 7s linear infinite;
+      }
     }
     .cloud3 {
-      left: 72%;
-      top: 27%;
-      @include animation-cloud(float1, 0, 40%);
-      animation: float1 6s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 72%;
+        top: 33%;
+        @include animation-cloud(float1, 0, 40%);
+        animation: float1 6s linear infinite;
+      }
+      @include wide {
+        left: 67%;
+        top: 33%;
+      }
     }
     .cloud4 {
-      left: 80%;
-      top: 23%;
-      @include animation-cloud(float1, 0, 20%);
-      animation: float1 8s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 80%;
+        top: 30%;
+        @include animation-cloud(float1, 0, 20%);
+        animation: float1 8s linear infinite;
+      }
+      @include wide {
+        left: 75%;
+        top: 30%;
+      }
     }
     .cloud5 {
-      left: 88%;
-      top: 36%;
-      @include animation-cloud(float1, 0, 90%);
-      animation: float1 6s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 88%;
+        top: 36%;
+        @include animation-cloud(float1, 0, 90%);
+        animation: float1 6s linear infinite;
+      }
+      @include wide {
+        left: 83%;
+        top: 36%;
+      }
     }
   }
 
@@ -100,12 +148,14 @@
 }
 
 .myWork {
-  height: 100vh;
   padding-top: 5rem;
-  background-image: url("../../assets/Images/wedgeYellow2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  @include desktop {
+    height: 100vh;
+    background-image: url("../../assets/Images/wedgeYellow2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 
 
   .subtitle {
@@ -123,13 +173,13 @@
 }
 
 .aboutSection {
-  height: 100vh;
   // padding: 5rem 55px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   // to change later
   @include desktop {
+    height: 100vh;
     background-image: url("../../assets/Images/wedgeYellow.svg");
   }
 }
@@ -199,22 +249,46 @@
       position: absolute;
     }
     .fly1 {
-      left: 53%;
-      top: 40%;
-      @include animation-fly(bug2, 0, 0);
-      animation: bug2 6s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 53%;
+        top: 40%;
+        @include animation-fly(bug2, 0, 0);
+        animation: bug2 6s linear infinite;
+      }
+      @include wide {
+        left: 53%;
+        top: 40%;
+      }
     }
     .fly2 {
-      left: 73%;
-      top: 26%;
-      @include animation-fly(bug1, 0, 0);
-      animation: bug1 8s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 73%;
+        top: 26%;
+        @include animation-fly(bug1, 0, 0);
+        animation: bug1 8s linear infinite;
+      }
+      @include wide {
+        left: 68%;
+        top: 26%;
+      }
     }
     .fly3 {
-      left: 85%;
-      top: 29%;
-      @include animation-fly(bug2, 0, 0);
-      animation: bug2 7s linear infinite;
+      display: none;
+      @include desktop {
+        display: flex;
+        left: 85%;
+        top: 29%;
+        @include animation-fly(bug2, 0, 0);
+        animation: bug2 7s linear infinite;
+      }
+      @include wide {
+        left: 80%;
+        top: 29%;
+      }
     }
   }
 

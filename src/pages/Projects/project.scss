@@ -6,7 +6,7 @@
   background-color: #FFF;
   color: $font-lm;
   .top {
-    @include display-flex(row,flex-end,center);
+    @include display-flex(row,space-between,center);
     &__link {
       color: $font-lm;
       text-decoration: none;
@@ -14,10 +14,21 @@
       font-size: 14px;
       @include display-flex(row,center,center);
 
-      .arrowIcon {
-        height: 16px;
+      .arrowIcon-left {
+        transition: 0.3s all ease;
         margin-right: 0.5rem;
-        color: $font-lm;
+      }
+      .arrowIcon-right {
+        transition: 0.3s all ease;
+        margin-left: 0.5rem;
+      }
+      &:hover .arrowIcon-left {
+        transition: 0.3s all ease;
+        transform: translateX(-0.5rem);
+      }
+      &:hover .arrowIcon-right {
+        transition: 0.3s all ease;
+        transform: translateX(0.5rem);
       }
     }
   }
@@ -58,12 +69,7 @@
         line-height: 20px;
         font-weight: 400;
       }
-      &__resp {
 
-      }
-      &__respList {
-
-      }
       &__respItem {
         font-size: 16px;
         line-height: 32px;

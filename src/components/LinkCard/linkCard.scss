@@ -3,7 +3,7 @@
 
 .card {
   border: 1.5px solid $font-lm;
-  width: 300px;
+  max-width: 300px;
   height: 375px;
   margin: 1rem 0rem;
   padding: 1.875rem;
@@ -11,6 +11,10 @@
   @include display-flex(column,center,flex-start);
   transition: 0.3s all ease;
   cursor: pointer;
+  @include desktop {
+    width: 300px;
+    height: 375px;
+  }
 
   &__top {
     height: 30%;

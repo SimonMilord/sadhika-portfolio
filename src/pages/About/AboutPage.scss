@@ -2,9 +2,13 @@
 @import "../../styles/partials/variables";
 
 .about {
-  // padding: 3rem;
   height: 100%;
-  @include display-flex(row,center,center);
+  padding: 1rem;
+  @include display-flex(column,center,center);
+  @include desktop {
+    padding: 0rem 2rem;
+    @include display-flex(row,center,center);
+  }
   // background-size: contain;
   // background-repeat: no-repeat;
   // background-position: bottom;
@@ -13,7 +17,11 @@
   //   background-image: url("../../assets/Images/wedgeYellow.svg");
   // }
   &__profile {
-    width: 40%;
+    display: none;
+    @include desktop {
+      display: flex;
+      width: 40%;
+    }
   }
 
   &__box {
@@ -42,13 +50,31 @@
       left: 0rem;
       top: 0rem;
     }
+
+  }
+  &__profile--mobile {
+    display: flex;
+    position: relative;
+    min-width: 100px;
+    @include desktop {
+      display: none;
+    }
+  }
+  &__picture-mobile {
+    display: flex;
+    @include desktop {
+      display: none;
+    }
   }
 
 
 
   &__content {
     @include display-flex(column,center,flex-start);
-    width: 50%;
+    width: 100%;
+    @include desktop {
+      width: 50%;
+    }
   }
   &__text {
     font-size: 20px;
@@ -63,5 +89,14 @@
       text-decoration: none;
       color: $accent-night;
     }
+  }
+}
+
+.about--dm {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @include desktop {
+    background-image: url("../../assets/Images/wedgePurple.svg");
   }
 }

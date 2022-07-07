@@ -1,7 +1,8 @@
 import React, {useLayoutEffect} from "react";
 import { Link } from "react-router-dom";
 import "../project.scss";
-import { CgArrowLongLeft } from "react-icons/cg";
+import ArrowBack from "../../../assets/Icons/arrowBack.svg";
+import ArrowForward from "../../../assets/Icons/arrowForward.svg";
 
 export default function TaxLiab(props) {
   const content = {
@@ -35,8 +36,12 @@ export default function TaxLiab(props) {
     <div className="project taxLiab">
       <div className="top">
         <Link to="/work" className="top__link">
-          <CgArrowLongLeft className="arrowIcon" />
-          Back
+          <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
+          Back to projects
+        </Link>
+        <Link to="/salesTax" className="top__link">
+          Next
+          <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
         </Link>
       </div>
       <section className="subsection subsection__intro">
