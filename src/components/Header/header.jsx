@@ -96,6 +96,7 @@ export default function Header(props) {
           </li>
         </ul>
       </nav>
+      <button className="btn" onMouseDown={props.handleMouseDown} aria-label="menu button">x</button>
     </header>
   );
 }

@@ -3,5 +3,35 @@
 
 .projectDesc {
   background-color: inherit;
+  width: 50%;
+  transition: 0.3s all ease-in-out;
 
+
+  &__title {
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  &__info {
+    font-size: 25px;
+    line-height: 39px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: $accent-day;
+    @include display-flex(row,flex-start,center);
+    transition: 0.3s all ease-in-out;
+
+    &:hover .projectDesc__arrow {
+      transform: translateX(10px);
+      transition: 0.3s all ease-in-out;
+
+    }
+  }
+  &__arrow {
+    margin-left: 1rem;
+  }
 }

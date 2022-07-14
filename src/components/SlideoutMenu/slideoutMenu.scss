@@ -1,0 +1,28 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+#slideoutmenu {
+  width: 40vw;
+  height: 100vh;
+  background-color: lightgray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform .3s
+              cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
+}
+
+.menu {
+  @include display-flex(column, flex-end,center);
+}
+
+#slideoutmenu.hide {
+  transform: translate3d(200vw, 0, 0);
+
+}
+#slideoutmenu.show {
+  transform: translate3d(60vw, 0, 0);
+  overflow: hidden;
+}

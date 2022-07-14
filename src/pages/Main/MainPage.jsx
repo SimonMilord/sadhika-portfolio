@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./MainPage.scss";
 import Header from "../../components/Header/header";
+import SlideoutMenu from "../../components/SlideoutMenu/slideoutMenu";
 import DayIllo from "../../assets/Images/day-illo.svg";
 import NightIllo from "../../assets/Images/night-illo.svg";
 import ArrowDay from "../../assets/Icons/arrow-day.svg";
 import ArrowNight from "../../assets/Icons/arrow-night.svg";
 import { Element, Link as ScrollLink } from "react-scroll";
 import WorkList from "../../components/WorkList/workList";
-import About from "../About/AboutPage";
 import Cloud1 from "../../assets/Svgs/cloud1.svg";
 import Cloud2 from "../../assets/Svgs/cloud2.svg";
 import Cloud3 from "../../assets/Svgs/cloud3.svg";
@@ -19,6 +19,7 @@ import Fly3 from "../../assets/Svgs/fly3.svg";
 
 export default function MainPage(props) {
   const [currTheme, setCurrTheme] = useState("");
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     if (sessionStorage.getItem("theme")) {
@@ -30,13 +31,27 @@ export default function MainPage(props) {
     setCurrTheme(theme);
   };
 
+  const toggleMenu = () => {
+    if (visible === "false") {
+      setVisible('true');
+    } else {
+      setVisible('false');
+    }
+  };
+
+  const handleMouseDown = (e) => {
+    toggleMenu();
+    e.stopPropagation();
+  }
+
   document.title = "Sadhika Billa";
 
   return (
     <>
       {currTheme === "day" || currTheme === "" ? (
         <div className="mainPage">
-          <Header getTheme={getTheme}/>
+          <Header getTheme={getTheme} handleMouseDown={handleMouseDown} menuVis={visible}/>
+          <SlideoutMenu theme={currTheme}/>
           <div className="mainPage__main">
             <div className="mainPage__top">
               <div className="mainPage__left">
