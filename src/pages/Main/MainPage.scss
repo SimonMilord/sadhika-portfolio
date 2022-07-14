@@ -2,11 +2,8 @@
 @import "../../styles/partials/variables";
 
 .mainPage {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
   @include desktop {
-    background-image: url("../../assets/Images/wedgeYellow.svg");
+    // background-color: red;
   }
 
   &__main {
@@ -14,8 +11,12 @@
     @include display-flex(column-reverse,center,center);
     @include paddingSection;
     @include desktop {
-    @include display-flex(row,center,center);
+    @include display-flex(column,center,center);
     }
+  }
+
+  &__top {
+    @include display-flex(row,center,center);
   }
 
   &__left {
@@ -80,7 +81,7 @@
       @include desktop {
         display: flex;
         left: 51%;
-        top: 43%;
+        top: 36%;
         @include animation-cloud(float1, 0, 30%);
         animation: float1 6s linear infinite;
       }
@@ -90,7 +91,7 @@
       @include desktop {
         display: flex;
         left: 55%;
-        top: 34%;
+        top: 28%;
         @include animation-cloud(float1, 0, 90%);
         animation: float1 6s linear infinite;
       }
@@ -100,7 +101,7 @@
       @include desktop {
         display: flex;
         left: 72%;
-        top: 33%;
+        top: 23%;
         @include animation-cloud(float1, 0, 40%);
         animation: float1 6s linear infinite;
       }
@@ -114,7 +115,7 @@
       @include desktop {
         display: flex;
         left: 80%;
-        top: 30%;
+        top: 22%;
         @include animation-cloud(float1, 0, 20%);
         animation: float1 8s linear infinite;
       }
@@ -128,7 +129,7 @@
       @include desktop {
         display: flex;
         left: 88%;
-        top: 43%;
+        top: 33%;
         @include animation-cloud(float1, 0, 90%);
         animation: float1 6s linear infinite;
       }
@@ -145,16 +146,16 @@
     overflow: hidden;
     z-index: 1;
   }
+
+  &__bottom {
+    @include display-flex(row,center,center);
+  }
 }
 
 .myWork {
   padding-top: 5rem;
   @include desktop {
     height: 100vh;
-    background-image: url("../../assets/Images/wedgeYellow2.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
   }
 
 
@@ -172,17 +173,6 @@
   }
 }
 
-.aboutSection {
-  // padding: 5rem 55px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  // to change later
-  @include desktop {
-    height: 100vh;
-    background-image: url("../../assets/Images/wedgeYellow.svg");
-  }
-}
 
 
 
@@ -196,7 +186,6 @@
   background-position: bottom;
   // to change later
   @include desktop {
-    background-image: url("../../assets/Images/wedgePurple.svg");
   }
 
   &__main {
@@ -304,10 +293,6 @@
 .myWork--dm {
   height: 100vh;
   padding-top: 5rem;
-  background-image: url("../../assets/Images/wedgePurple2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
 
 
   .subtitle {
@@ -324,8 +309,4 @@
   }
 }
 
-.aboutSection {
-  height: 100vh;
-  // padding: 5rem 55px;
-}
 
