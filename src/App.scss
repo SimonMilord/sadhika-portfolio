@@ -11,13 +11,11 @@ body {
 }
 
 .App {
-  // background-color: red;
 }
 
 
 body.day {
   transition: 0.3s;
-  // background-color: $background-day;
   @include backgroundGradientDay;
   height: 100%;
   margin: 0;
@@ -31,7 +29,6 @@ body.day {
 
 body.night {
   transition: 0.3s;
-  // background-color: $background-night;
   @include backgroundGradientNight;
   height: 100%;
   margin: 0;
