@@ -4,6 +4,7 @@ import "./header.scss";
 import Sun from "../../assets/Icons/sun.svg";
 import Moon from "../../assets/Icons/moon.svg";
 import { Link as ScrollLink } from "react-scroll";
+import MenuBtn from "../MenuBtn/menuBtn";
 
 export default function Header(props) {
   let clickedClass = "clicked";
@@ -96,7 +97,9 @@ export default function Header(props) {
           </li>
         </ul>
       </nav>
-      <button className="btn" onMouseDown={props.handleMouseDown} aria-label="menu button">x</button>
+      <div className="menuBtn">
+        <MenuBtn handleMouseDown={props.handleMouseDown}/>
+      </div>
     </header>
   );
 }

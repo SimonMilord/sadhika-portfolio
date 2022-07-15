@@ -32,10 +32,10 @@ export default function MainPage(props) {
   };
 
   const toggleMenu = () => {
-    if (visible === "false") {
-      setVisible('true');
+    if (visible === false) {
+      setVisible(true);
     } else {
-      setVisible('false');
+      setVisible(false);
     }
   };
 
@@ -51,7 +51,7 @@ export default function MainPage(props) {
       {currTheme === "day" || currTheme === "" ? (
         <div className="mainPage">
           <Header getTheme={getTheme} handleMouseDown={handleMouseDown} menuVis={visible}/>
-          <SlideoutMenu theme={currTheme}/>
+          <SlideoutMenu theme={currTheme} menuVis={visible} handleMouseDown={handleMouseDown}/>
           <div className="mainPage__main">
             <div className="mainPage__top">
               <div className="mainPage__left">

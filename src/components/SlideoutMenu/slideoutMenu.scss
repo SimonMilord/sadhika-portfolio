@@ -2,20 +2,34 @@
 @import "../../styles/partials/mixins";
 
 #slideoutmenu {
-  width: 40vw;
+  width: 60vw;
   height: 100vh;
   background-color: lightgray;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -15px;
   transition: transform .3s
               cubic-bezier(0, .52, 0, 1);
   overflow: scroll;
-  z-index: 1000;
+  z-index: 9002;
+
+  .top {
+    width: 100%;
+    @include display-flex(row,flex-end,center);
+
+    .btn {
+      top: 1rem;
+      right: 1rem;
+      position: absolute;
+    }
+  }
 }
 
 .menu {
   @include display-flex(column, flex-end,center);
+  width: 100%;
+  position: absolute;
+  top: 100px;
 }
 
 #slideoutmenu.hide {
@@ -23,6 +37,6 @@
 
 }
 #slideoutmenu.show {
-  transform: translate3d(60vw, 0, 0);
+  transform: translate3d(40vw, 0, 0);
   overflow: hidden;
 }

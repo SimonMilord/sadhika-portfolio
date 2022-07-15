@@ -88,3 +88,10 @@ header {
   background-color: $background-night;
   transition: 0.3s all ease;
 }
+
+.menuBtn {
+  display: flex;
+  @include tablet {
+    display: none;
+  }
+}

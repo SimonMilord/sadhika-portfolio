@@ -5,11 +5,21 @@ import "./slideoutMenu.scss";
 export default function SlideoutMenu(props) {
   let visibility = "hide";
 
+
   if (props.menuVis) {
     visibility = "show";
   }
+
+  const handleClick = (e) => {
+    visibility = "hide";
+    props.handleMouseDown(e);
+  }
+
   return (
-    <div className={visibility} id="slideoutmenu">
+    <div id="slideoutmenu" className={visibility} onMouseDown={handleClick}>
+      <div className='top'>
+        <button className="btn" onMouseDown={props.handleMouseDown} aria-label="menu button">x</button>
+      </div>
       <ul className='menu'>
         <li className='menu__item'>
           <ScrollLink
