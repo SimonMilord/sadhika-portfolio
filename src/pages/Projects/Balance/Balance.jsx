@@ -35,7 +35,7 @@ export default function BalancePage(props) {
           ></img>
           Back to projects
         </Link>
-        <Link to="/work" className="top__link">
+        <Link to="/taxliab" className="top__link">
           Next
           <img
             src={ArrowForward}
@@ -127,9 +127,9 @@ export default function BalancePage(props) {
       <div className="bottom">
         <Link to="/work" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
-          Back to projects
+          Back
         </Link>
-        <Link to="/work" className="bottom__link">
+        <Link to="/taxliab" className="bottom__link">
           Next
           <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
         </Link>

@@ -11,7 +11,33 @@
     padding: 0;
     margin-bottom: 2rem;
     @include display-flex(row,space-between,center);
-    background-color: $background-day;
+    // background-color: $background-day;
+    background-color: transparent;
+
+    &--reverse {
+      @include display-flex(row-reverse, space-between, center);
+    }
+    .hideImg {
+      // visibility: hidden;
+      opacity: 0;
+    }
+    .showImg {
+      // visibility: visible;
+      animation: fadeIn 5s;
+
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    }
+  }
+
+  .projectDm {
+    width: 90%;
+    padding: 0;
+    margin-bottom: 2rem;
+    @include display-flex(row,space-between,center);
+    background-color: transparent;
 
     &--reverse {
       @include display-flex(row-reverse, space-between, center);

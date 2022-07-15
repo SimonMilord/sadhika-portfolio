@@ -4,7 +4,7 @@
 .projectDesc {
   background-color: inherit;
   width: 50%;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease;
 
 
   &__title {
@@ -23,15 +23,12 @@
     text-decoration: none;
     color: $accent-day;
     @include display-flex(row,flex-start,center);
-    transition: 0.3s all ease-in-out;
-
-    &:hover .projectDesc__arrow {
-      transform: translateX(10px);
-      transition: 0.3s all ease-in-out;
-
-    }
+  }
+  &__link:hover > .projectDesc__arrow {
+    transform: translateX(10px);
   }
   &__arrow {
+    transition: 0.3s all ease;
     margin-left: 1rem;
   }
 }

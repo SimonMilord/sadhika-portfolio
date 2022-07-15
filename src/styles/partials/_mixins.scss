@@ -62,3 +62,31 @@
     to {transform: rotate(360deg) translate(15px) rotate(-360deg);}
   }
 }
+
+// gradient day
+@mixin backgroundGradientDay {
+  background: linear-gradient(
+    0deg,
+    #fef4d7,
+    #fdf0cb,
+    #FFEEC1,
+    #fce6a9,
+    #fbdf93
+  );
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  }
+
+// gradient night
+@mixin backgroundGradientNight {
+  background: linear-gradient(
+    0deg,
+    #844ac2,
+    #6936a0,
+    #5B2C8E,
+    #4f237e,
+    #421d69
+  );
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  }

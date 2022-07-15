@@ -3,7 +3,7 @@
 
 header {
   @include display-flex(row,space-between,center);
-  background-color: $background-day;
+  // background-color: $background-day;
   transition: 0.3s all ease;
   max-width: 1200px;
   margin: 0 auto;
@@ -85,7 +85,7 @@ header {
 }
 
 .header-night {
-  background-color: $background-night;
+  // background-color: $background-night;
   transition: 0.3s all ease;
 }
 

@@ -16,7 +16,7 @@ export default function SlideoutMenu(props) {
   }
 
   return (
-    <div id="slideoutmenu" className={visibility} onMouseDown={handleClick}>
+    <div id={props.theme === "day" ? "slideoutmenu" : "slideoutmenuNight"} className={visibility} onMouseDown={handleClick}>
       <div className='top'>
         <button className="btn" onMouseDown={props.handleMouseDown} aria-label="menu button">x</button>
       </div>
@@ -51,7 +51,7 @@ export default function SlideoutMenu(props) {
               About
           </ScrollLink>
         </li>
-        <li className="nav__item">
+        <li className="menu__item">
           <a className={props.theme === "night" ? "nav__link nav__link--night" : "nav__link nav__link--day"} href="/resume.pdf">
             Resumé
           </a>

@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useInView } from 'react-intersection-observer';
 import "./workList.scss";
 import ProjectDesc from "../ProjectDesc/projectDesc";
 import BalanceImg from "../../assets/Images/balanceImg.svg";
 
 export default function WorkList(props) {
-  const theme = props.theme;
+  const { ref: project1Ref, inView: project1IsVis } = useInView({triggerOnce: true});
+  const { ref: project2Ref, inView: project2IsVis } = useInView({triggerOnce: true});
+  const { ref: project3Ref, inView: project3IsVis } = useInView({triggerOnce: true});
+
 
   const project1 = {
     title: "Building Shopify Balance",
@@ -28,17 +31,17 @@ export default function WorkList(props) {
 
   return (
     <div className="worklist">
-      <div className="project">
-        <img src={BalanceImg} alt="hand with bank card"></img>
-        <ProjectDesc project={project1}/>
+      <div className={props.theme === "day" ? "project" : "projectDm"} ref={project1Ref}>
+        <img src={BalanceImg} alt="hand with bank card" className={project1IsVis ? "showImg" : "hideImg"}></img>
+        <ProjectDesc project={project1} theme={props.theme}/>
       </div>
-      <div className="project project--reverse">
-        <img src={BalanceImg} alt="hand with bank card"></img>
-        <ProjectDesc project={project2}/>
+      <div className={props.theme === "day" ? "project project--reverse" : "projectDm projectDm--reverse"} ref={project2Ref}>
+        <img src={BalanceImg} alt="hand with bank card" className={project2IsVis ? "showImg" : "hideImg"}></img>
+        <ProjectDesc project={project2} theme={props.theme}/>
       </div>
-      <div className="project">
-        <img src={BalanceImg} alt="hand with bank card"></img>
-        <ProjectDesc project={project3}/>
+      <div className={props.theme === "day" ? "project" : "projectDm"} ref={project3Ref}>
+        <img src={BalanceImg} alt="hand with bank card" className={project3IsVis ? "showImg" : "hideImg"}></img>
+        <ProjectDesc project={project3} theme={props.theme}/>
       </div>
     </div>
   );

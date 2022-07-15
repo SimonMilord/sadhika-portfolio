@@ -2,6 +2,9 @@
 @import "./styles/partials/mixins";
 @import "./styles/partials/variables";
 
+html {
+  height: 100%;
+}
 body {
   box-sizing: border-box;
   font-family: $font-main;
@@ -14,7 +17,12 @@ body {
 
 body.day {
   transition: 0.3s;
-  background-color: $background-day;
+  // background-color: $background-day;
+  @include backgroundGradientDay;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: $font-lm;
   a {
     color: $font-lm;
@@ -23,7 +31,12 @@ body.day {
 
 body.night {
   transition: 0.3s;
-  background-color: $background-night;
+  // background-color: $background-night;
+  @include backgroundGradientNight;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: $font-dm;
   a {
     color: $font-dm;

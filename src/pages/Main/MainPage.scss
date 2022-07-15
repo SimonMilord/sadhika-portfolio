@@ -2,8 +2,8 @@
 @import "../../styles/partials/variables";
 
 .mainPage {
+  // @include backgroundGradientDay;
   @include desktop {
-    // background-color: red;
   }
 
   &__main {
@@ -184,9 +184,7 @@
 
 // DM
 .mainPage-dm {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  // @include backgroundGradientNight;
   // to change later
   @include desktop {
   }
@@ -196,7 +194,14 @@
     @include display-flex(column-reverse,center,center);
     @include paddingSection;
     @include desktop {
-    @include display-flex(row,center,center);
+      @include display-flex(column,center,center);
+    }
+  }
+
+  &__top {
+    @include display-flex(column,center,center);
+    @include desktop {
+      @include display-flex(row,center,center);
     }
   }
 
@@ -289,6 +294,10 @@
     max-width: 575px;
     overflow: hidden;
     z-index: 1;
+  }
+
+  &__bottom {
+    @include display-flex(row,center,center);
   }
 
 }

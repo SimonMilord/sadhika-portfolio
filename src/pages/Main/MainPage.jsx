@@ -42,7 +42,7 @@ export default function MainPage(props) {
   const handleMouseDown = (e) => {
     toggleMenu();
     e.stopPropagation();
-  }
+  };
 
   document.title = "Sadhika Billa";
 
@@ -50,17 +50,29 @@ export default function MainPage(props) {
     <>
       {currTheme === "day" || currTheme === "" ? (
         <div className="mainPage">
-          <Header getTheme={getTheme} handleMouseDown={handleMouseDown} menuVis={visible}/>
-          <SlideoutMenu theme={currTheme} menuVis={visible} handleMouseDown={handleMouseDown}/>
+          <Header
+            getTheme={getTheme}
+            handleMouseDown={handleMouseDown}
+            menuVis={visible}
+          />
+          <SlideoutMenu
+            theme={currTheme}
+            menuVis={visible}
+            handleMouseDown={handleMouseDown}
+          />
           <div className="mainPage__main">
             <div className="mainPage__top">
               <div className="mainPage__left">
                 <h1 className="mainPage__title">
-                  I'm Sadhika, a Product Designer at <span style={{color: "#AD3862"}}>Shopify</span>. By day, I create
-                  beautiful, human and user-centric experiences for Shopify Money.
+                  I'm Sadhika, a Product Designer at{" "}
+                  <span style={{ color: "#AD3862" }}>Shopify</span>. By day, I
+                  create beautiful, human and user-centric experiences for
+                  Shopify Money.
                 </h1>
                 <p className="mainPage__content">
-                  Previously at <span style={{color: "#AD3862"}}>Cognizant</span> and <span style={{color: "#AD3862"}}>Accenture</span>.
+                  Previously at{" "}
+                  <span style={{ color: "#AD3862" }}>Cognizant</span> and{" "}
+                  <span style={{ color: "#AD3862" }}>Accenture</span>.
                 </p>
               </div>
 
@@ -79,51 +91,74 @@ export default function MainPage(props) {
             </div>
             <div className="mainPage__bottom">
               <ScrollLink
-                    activeClass="active"
-                    to="myWork"
-                    smooth={true}
-                    className="mainPage__arrow">
-                    <img src={ArrowDay} alt="arrow" className="arrow--day"></img>
+                activeClass="active"
+                to="myWork"
+                smooth={true}
+                className="mainPage__arrow"
+              >
+                <img src={ArrowDay} alt="arrow" className="arrow--day"></img>
               </ScrollLink>
             </div>
           </div>
         </div>
       ) : (
         <div className="mainPage-dm">
-        <Header getTheme={getTheme}/>
-        <div className="mainPage-dm__main">
-          <div className="mainPage-dm__left">
-            <h1 className="mainPage-dm__title">
-              I'm Sadhika, a Product Designer at <span style={{color: "#F5F488"}}>Shopify</span>. By night, I enjoy
-              spending my time painting, doodling and messing around with code.
-            </h1>
-            <p className="mainPage-dm__content">
-              I also love long walks with my dog.
-            </p>
-            <ScrollLink
-            activeClass="active"
-            to="myWork"
-            smooth={true}
-             className="mainPage-dm__arrow">
-              <img src={ArrowNight} alt="arrow" className="arrow--night"></img>
-            </ScrollLink>
-          </div>
+          <Header
+            getTheme={getTheme}
+            handleMouseDown={handleMouseDown}
+            menuVis={visible}
+          />
+          <SlideoutMenu
+            theme={currTheme}
+            menuVis={visible}
+            handleMouseDown={handleMouseDown}
+          />
+          <div className="mainPage-dm__main">
+            <div className="mainPage-dm__top">
+              <div className="mainPage-dm__left">
+                <h1 className="mainPage-dm__title">
+                  I'm Sadhika, a Product Designer at{" "}
+                  <span style={{ color: "#F5F488" }}>Shopify</span>. By night, I
+                  enjoy spending my time painting, doodling and messing around
+                  with code.
+                </h1>
+                <p className="mainPage-dm__content">
+                  I also love long walks with my dog.
+                </p>
+              </div>
 
-          <div className="mainPage-dm__right">
-            <img
-              src={NightIllo}
-              alt="illustration of me"
-              className="mainPage-dm__illustration"
-            ></img>
-            <img src={Fly1} alt="fly" className="fly fly1"></img>
-            <img src={Fly2} alt="fly" className="fly fly2"></img>
-            <img src={Fly3} alt="fly" className="fly fly3"></img>
+              <div className="mainPage-dm__right">
+                <img
+                  src={NightIllo}
+                  alt="illustration of me"
+                  className="mainPage-dm__illustration"
+                ></img>
+                <img src={Fly1} alt="fly" className="fly fly1"></img>
+                <img src={Fly2} alt="fly" className="fly fly2"></img>
+                <img src={Fly3} alt="fly" className="fly fly3"></img>
+              </div>
+            </div>
+            <div className="mainPage-dm__bottom">
+              <ScrollLink
+                activeClass="active"
+                to="myWork"
+                smooth={true}
+                className="mainPage-dm__arrow"
+              >
+                <img src={ArrowNight} alt="arrow" className="arrow--night"></img>
+              </ScrollLink>
+            </div>
           </div>
         </div>
-      </div>
       )}
-      <Element name="myWork" id="myWork" className={currTheme === "day" ? "myWork section" : "myWork--dm section"}>
-        <WorkList theme={currTheme}/>
+      <Element
+        name="myWork"
+        id="myWork"
+        className={
+          currTheme === "day" ? "myWork section" : "myWork--dm section"
+        }
+      >
+        <WorkList theme={currTheme} />
       </Element>
     </>
   );

@@ -4,7 +4,7 @@
 #slideoutmenu {
   width: 60vw;
   height: 100vh;
-  background-color: lightgray;
+  background-color: $accent-day;
   position: fixed;
   top: 0;
   left: -15px;
@@ -30,6 +30,23 @@
   width: 100%;
   position: absolute;
   top: 100px;
+
+  &__item {
+    font-size: 32px;
+    margin: 0.5rem 0rem;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  li {
+    a {
+      color: white;
+    }
+  }
 }
 
 #slideoutmenu.hide {
@@ -37,6 +54,51 @@
 
 }
 #slideoutmenu.show {
+  transform: translate3d(40vw, 0, 0);
+  overflow: hidden;
+}
+
+
+
+// DM
+
+#slideoutmenuNight {
+  width: 60vw;
+  height: 100vh;
+  background-color: $accent-night;
+  position: fixed;
+  top: 0;
+  left: -15px;
+  transition: transform .3s
+              cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 9002;
+
+  .top {
+    width: 100%;
+    @include display-flex(row,flex-end,center);
+
+    .btn {
+      top: 1rem;
+      right: 1rem;
+      position: absolute;
+    }
+  }
+  .menu {
+
+    li {
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+#slideoutmenuNight.hide {
+  transform: translate3d(200vw, 0, 0);
+
+}
+#slideoutmenuNight.show {
   transform: translate3d(40vw, 0, 0);
   overflow: hidden;
 }

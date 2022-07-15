@@ -177,9 +177,9 @@ export default function TaxLiab(props) {
         </div>
       </section>
       <div className="bottom">
-        <Link to="/work" className="bottom__link">
+        <Link to="/balance" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
-          Back to projects
+          Back
         </Link>
         <Link to="/salesTax" className="bottom__link">
           Next
