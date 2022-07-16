@@ -2,7 +2,6 @@
 @import "../../styles/partials/variables";
 
 .mainPage {
-  // @include backgroundGradientDay;
   @include desktop {
   }
 
@@ -23,7 +22,7 @@
   }
 
   &__left {
-    @include display-flex(column,center,flex-start);
+    width: 80%;
     @include desktop {
       width: 50%;
       height: 100%;
@@ -110,7 +109,7 @@
       }
       @include wide {
         left: 67%;
-        top: 33%;
+        top: 29%;
       }
     }
     .cloud4 {
@@ -123,8 +122,8 @@
         animation: float1 8s linear infinite;
       }
       @include wide {
-        left: 73%;
-        top: 30%;
+        left: 74%;
+        top: 25%;
       }
     }
     .cloud5 {
@@ -137,8 +136,8 @@
         animation: float1 6s linear infinite;
       }
       @include wide {
-        left: 79%;
-        top: 33%;
+        left: 82%;
+        top: 32%;
       }
     }
   }
@@ -156,7 +155,7 @@
 }
 
 .myWork {
-  padding-top: 5rem;
+  // padding-top: 5rem;
   @include desktop {
     height: 100vh;
   }
@@ -201,15 +200,23 @@
   }
 
   &__left {
-    width: 50%;
-    height: 100%;
-    @include display-flex(column,center,flex-start);
+    width: 80%;
+    @include desktop {
+      width: 50%;
+      height: 100%;
+      @include display-flex(column,center,flex-start);
+    }
   }
 
   &__title {
     font-weight: 600;
-    font-size: 42px;
-    line-height: 60px;
+    font-size: 21px;
+    line-height: 30px;
+    @include desktop {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 60px;
+    }
   }
 
   &__content {
@@ -233,9 +240,18 @@
   }
 
   &__right {
-    width: 50%;
+    width: 75%;
     height: 100%;
-    @include display-flex(row,flex-end,center);
+    @include display-flex(row,center,center);
+    @include tablet {
+      width: 75%;
+      margin-top: 200px;
+    }
+    @include desktop {
+      @include display-flex(row,flex-end,center);
+      margin-top: 0px;
+      width: 50%;
+    }
     .fly {
       z-index: 9000;
       position: absolute;
@@ -298,8 +314,9 @@
 }
 
 .myWork--dm {
-  height: 100vh;
-  padding-top: 5rem;
+  @include desktop {
+    height: 100vh;
+  }
 
 
   .subtitle {

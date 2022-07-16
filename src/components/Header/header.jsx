@@ -83,10 +83,10 @@ export default function Header(props) {
             <ScrollLink
             className={theme === "night" ? "nav__link nav__link--night" : "nav__link nav__link--day"}
             activeClass="active"
-            to="about"
+            to="contact"
             smooth={true}
             >
-              About
+              Contact
             </ScrollLink>
           </li>
           <li className="nav__item">

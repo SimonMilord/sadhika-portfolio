@@ -3,7 +3,6 @@
 
 header {
   @include display-flex(row,space-between,center);
-  // background-color: $background-day;
   transition: 0.3s all ease;
   max-width: 1200px;
   margin: 0 auto;
@@ -32,9 +31,9 @@ header {
     }
     &__item {
       @include display-flex(row,center,center);
-      width: 6%;
-      padding: 7px 0px;
-      margin: 0px 32px;
+      // width: 100px;
+      // margin: 0px 32px;
+      padding-left: 3rem;
       letter-spacing: 2.5px;
 
       &--day {
