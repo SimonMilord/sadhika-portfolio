@@ -3,6 +3,7 @@
 
 .contact {
   @include display-flex(column,center,center);
+  margin: 3rem 0rem;
 
   &__title {
     font-size: 45px;
@@ -20,5 +21,8 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+  &__img {
+    margin: 3rem 0rem;
   }
 }
