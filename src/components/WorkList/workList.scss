@@ -8,11 +8,10 @@
   @include display-flex(column,center,center);
 
   .project {
-    position: relative;
+    // position: relative;
     width: 100%;
     height: 100vh;
     padding: 0;
-    // min-height: 712px;
     margin-bottom: 2rem;
     background-color: transparent;
     @include display-flex(column-reverse,space-between,center);
@@ -24,32 +23,20 @@
       @include display-flex(column-reverse,space-between,center);
       @include desktop {
         @include display-flex(row-reverse,space-between,center);
-      }    }
+      }
+    }
     .hideImg {
       opacity: 0;
-      // position: absolute;
-      // max-height: 712px;
-      // width: 100%;
-      // left: -100px;
     }
     .showImg {
-      // position: absolute;
-      // max-height: 712px;
-      // width: 100%;
-      // left: -100px;
       animation: fadeIn 5s;
-      // animation-delay: 2s;
-      // animation: slide 3s all ease;
 
       @keyframes fadeIn {
         0% { opacity: 0; }
         100% { opacity: 1;}
       }
-      @keyframes slideIn {
-        0% {left: -100px;}
-        100% { left: 0;}
-      }
     }
+
   }
 
   .projectDm {
@@ -62,14 +49,15 @@
     background-color: transparent;
 
     &--reverse {
-      @include display-flex(row-reverse, space-between, center);
+      @include display-flex(column-reverse,space-between,center);
+      @include desktop {
+        @include display-flex(row-reverse,space-between,center);
+      }
     }
     .hideImg {
-      // visibility: hidden;
       opacity: 0;
     }
     .showImg {
-      // visibility: visible;
       animation: fadeIn 5s;
 
       @keyframes fadeIn {

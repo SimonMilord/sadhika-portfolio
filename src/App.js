@@ -4,6 +4,7 @@ import MainPage from "./pages/Main/MainPage";
 import Balance from "./pages/Projects/Balance/Balance";
 import SalesTax from "./pages/Projects/SalesTax/SalesTax";
 import TaxLiab from "./pages/Projects/TaxLiab/TaxLiab";
+import MCCY from "./pages/Projects/MCCY/Mccy";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/taxliab" exact element={<TaxLiab />} />
           <Route path="/salesTax" exact element={<SalesTax />} />
           <Route path="/balance" exact element={<Balance />} />
+          <Route path="/mccy" exact element={<MCCY />} />
           <Route path="*" element={<MainPage />} />
         </Routes>
       </div>

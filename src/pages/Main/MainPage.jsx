@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./MainPage.scss";
 import Header from "../../components/Header/header";
 import SlideoutMenu from "../../components/SlideoutMenu/slideoutMenu";
+import Contact from "../../components/Contact/contact";
+import Footer from "../../components/Footer/footer";
 import DayIllo from "../../assets/Images/day-illo.svg";
 import NightIllo from "../../assets/Images/night-illo.svg";
 import ArrowDay from "../../assets/Icons/arrow-day.svg";
@@ -160,6 +162,16 @@ export default function MainPage(props) {
       >
         <WorkList theme={currTheme} />
       </Element>
+      <Element
+        name="contact"
+        id="contact"
+        className={
+          currTheme === "day" ? "contact section" : "contact--dm section"
+        }
+      >
+        <Contact />
+      </Element>
+      <Footer />
     </>
   );
 }

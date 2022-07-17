@@ -5,7 +5,6 @@ import Arrow from "../../assets/Icons/arrowWork.svg";
 
 export default function projectDesc(props) {
   const { title, description, link, linkText } = props.project;
-  // const {theme} = props.theme;
 
   return (
     <>

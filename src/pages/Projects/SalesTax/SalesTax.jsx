@@ -44,7 +44,7 @@ export default function SalesTax(props) {
           ></img>
           Back to projects
         </Link>
-        <Link to="/work" className="top__link">
+        <Link to="/balance" className="top__link">
           Next
           <img
             src={ArrowForward}
@@ -219,7 +219,7 @@ export default function SalesTax(props) {
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
           Back
         </Link>
-        <Link to="/work" className="bottom__link">
+        <Link to="/balance" className="bottom__link">
           Next
           <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
         </Link>

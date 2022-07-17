@@ -1,0 +1,26 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.footer {
+  @include display-flex(row,space-between,center);
+  background-color: $accent-day;
+  padding: 2.5rem;
+
+  &__left {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    a.footer__ref {
+      color: #fff;
+
+    }
+  }
+
+  &__right {
+
+    a {
+      margin: 0rem 1rem;
+    }
+  }
+}

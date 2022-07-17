@@ -1,0 +1,24 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.contact {
+  @include display-flex(column,center,center);
+
+  &__title {
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  &__content {
+    font-size: 25px;
+    line-height: 39px;
+    font-weight: 400;
+  }
+  &__email {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

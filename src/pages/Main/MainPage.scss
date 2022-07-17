@@ -2,8 +2,9 @@
 @import "../../styles/partials/variables";
 
 .mainPage {
-  @include desktop {
-  }
+  // height: 100vh;
+  // @include desktop {
+  // }
 
   &__main {
     height: calc(100vh - 94px);
@@ -155,11 +156,6 @@
 }
 
 .myWork {
-  // padding-top: 5rem;
-  @include desktop {
-    height: 100vh;
-  }
-
 
   .subtitle {
     font-size: 44px;
