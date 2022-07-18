@@ -12,14 +12,15 @@ export default function projectDesc(props) {
         <div className="projectDesc">
           <h2 className="projectDesc__title">{title}</h2>
           <p className="projectDesc__info">{description}</p>
-          <Link
-            to={link}
-            className="projectDesc__link"
-            style={{ color: "#AD3862" }}
-          >
-            {linkText}
-            <img src={Arrow} alt="arrow" className="projectDesc__arrow"></img>
-          </Link>
+          <div className="projectDesc__bottom">
+            <Link
+              to={link}
+              className="projectDesc__link"
+            >
+              {linkText}
+              <img src={Arrow} alt="arrow" className="projectDesc__arrow"></img>
+            </Link>
+          </div>
         </div>
       ) : (
         <div className="projectDesc">
@@ -27,7 +28,7 @@ export default function projectDesc(props) {
           <p className="projectDesc__info">{description}</p>
           <Link
             to={link}
-            className="projectDesc__link"
+            className="projectDesc__link projectDesc__link--dm"
             style={{ color: "#F5F488" }}
           >
             {linkText}

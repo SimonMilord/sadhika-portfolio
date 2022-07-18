@@ -22,7 +22,7 @@ export default function WorkList(props) {
   }
   const project2 = {
     title: "Rethinking Sales Tax Collection",
-    description: "Redesigning the sales tax collection experience in the United States.",
+    description: "Rethinking how the sales tax collection experience in the United States should work.",
     link: "/salesTax",
     linkText: "See case study"
   }

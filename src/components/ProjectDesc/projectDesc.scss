@@ -3,7 +3,7 @@
 
 .projectDesc {
   background-color: inherit;
-  width: 50%;
+  width: 42%;
   transition: 0.3s all ease;
 
 
@@ -11,26 +11,55 @@
     font-size: 45px;
     line-height: 70px;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
   &__info {
     font-size: 25px;
     line-height: 39px;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 45px;
+  }
+  &__bottom {
+    width: 100%;
   }
   &__link {
     text-decoration: none;
     font-size: 20px;
+    border: 2px solid $accent-day;
+    width: 210px;
+    height: 36px;
+    padding: 0.5rem;
+    color: $accent-day !important;
+    @include display-flex(row,center,center);
+    transition: 0.3s all ease;
+    &--dm {
+      color: $accent-night !important;
+      border-color: $accent-night;
+    }
+  }
 
-    color: $accent-day;
-    @include display-flex(row,flex-start,center);
+  &__link:hover {
+    background-color: $accent-day;
+    color: $background-day !important;
   }
   &__link:hover > .projectDesc__arrow {
     transform: translateX(10px);
+    filter: brightness(0) saturate(100%) invert(96%) sepia(8%) saturate(2195%) hue-rotate(316deg) brightness(108%) contrast(99%);
   }
   &__arrow {
     transition: 0.3s all ease;
     margin-left: 1rem;
+    &--dm {
+      filter: brightness(0) saturate(100%) invert(98%) sepia(65%) saturate(748%) hue-rotate(358deg) brightness(98%) contrast(96%);
+    }
   }
+  &__link--dm:hover {
+    background-color: $accent-night;
+    color: $background-night !important;
+  }
+  &__link--dm:hover > .projectDesc__arrow--dm {
+    transform: translateX(10px);
+    filter: brightness(0) saturate(100%) invert(20%) sepia(42%) saturate(2966%) hue-rotate(251deg) brightness(91%) contrast(95%);
+  }
+
 }

@@ -310,10 +310,6 @@
 }
 
 .myWork--dm {
-  @include desktop {
-    height: 100vh;
-  }
-
 
   .subtitle {
     font-size: 44px;

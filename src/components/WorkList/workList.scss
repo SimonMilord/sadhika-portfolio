@@ -8,11 +8,9 @@
   @include display-flex(column,center,center);
 
   .project {
-    // position: relative;
     width: 100%;
-    height: 100vh;
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     background-color: transparent;
     @include display-flex(column-reverse,space-between,center);
     @include desktop {
@@ -40,13 +38,14 @@
   }
 
   .projectDm {
-    position: relative;
     width: 100%;
-    height: 100vh;
     padding: 0;
-    margin-bottom: 2rem;
-    @include display-flex(row,space-between,center);
+    margin-bottom: 10rem;
     background-color: transparent;
+    @include display-flex(column-reverse,space-between,center);
+    @include desktop {
+      @include display-flex(row,space-between,center);
+    }
 
     &--reverse {
       @include display-flex(column-reverse,space-between,center);

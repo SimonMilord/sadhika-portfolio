@@ -2,14 +2,21 @@
 @import "../../styles/partials/mixins";
 
 .footer {
-  @include display-flex(row,space-between,center);
   background-color: $accent-day;
-  padding: 2.5rem;
+  padding: 2rem;
 
+  &__wrap {
+    @include display-flex(column-reverse,space-between,center);
+    max-width: 1300px;
+    margin: 0 auto;
+    @include tablet {
+      @include display-flex(row,space-between,center);
+    }
+  }
   &__left {
     color: #fff;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 31px;
     a.footer__ref {
       color: #fff;
@@ -18,7 +25,45 @@
   }
 
   &__right {
+    margin-bottom: 1rem;
+    @include tablet {
+      margin-bottom: 0rem;
+    }
+    a {
+      margin: 0rem 1rem;
+    }
+  }
+}
 
+.footerDM {
+  background-color: $accent-night;
+  padding: 2rem;
+
+  &__wrap {
+    @include display-flex(column-reverse,space-between,center);
+    max-width: 1300px;
+    margin: 0 auto;
+    @include tablet {
+      @include display-flex(row,space-between,center);
+    }
+  }
+
+  &__left {
+    color: $background-night;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 31px;
+    a.footerDM__ref {
+      color: $background-night;
+
+    }
+  }
+
+  &__right {
+    margin-bottom: 1rem;
+    @include tablet {
+      margin-bottom: 0rem;
+    }
     a {
       margin: 0rem 1rem;
     }
