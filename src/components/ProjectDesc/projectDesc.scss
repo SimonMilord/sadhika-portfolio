@@ -3,9 +3,11 @@
 
 .projectDesc {
   background-color: inherit;
-  width: 42%;
   transition: 0.3s all ease;
-
+  width: 70%;
+  @include tablet {
+    width: 42%;
+  }
 
   &__title {
     font-size: 45px;
@@ -43,7 +45,6 @@
     color: $background-day !important;
   }
   &__link:hover > .projectDesc__arrow {
-    transform: translateX(10px);
     filter: brightness(0) saturate(100%) invert(96%) sepia(8%) saturate(2195%) hue-rotate(316deg) brightness(108%) contrast(99%);
   }
   &__arrow {
@@ -58,7 +59,6 @@
     color: $background-night !important;
   }
   &__link--dm:hover > .projectDesc__arrow--dm {
-    transform: translateX(10px);
     filter: brightness(0) saturate(100%) invert(20%) sepia(42%) saturate(2966%) hue-rotate(251deg) brightness(91%) contrast(95%);
   }
 

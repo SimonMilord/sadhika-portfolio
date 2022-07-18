@@ -67,15 +67,29 @@ export default function MainPage(props) {
               <div className="mainPage__left">
                 <h1 className="mainPage__title">
                   I'm Sadhika, a Senior Product Designer at{" "}
-                  <span style={{ color: "#AD3862" }}>Shopify</span>. By day, I
-                  create beautiful, human, and user-centric experiences for
-                  Shopify Money.
+                  <span style={{ color: "#AD3862" }}>Shopify</span>. By day,{" "}
+                  <br />I create beautiful, human, and user-centric experiences
+                  for Shopify Money.
                 </h1>
                 <p className="mainPage__content">
                   Previously at{" "}
                   <span style={{ color: "#AD3862" }}>Cognizant</span> and{" "}
                   <span style={{ color: "#AD3862" }}>Accenture</span>.
                 </p>
+                <div className="mainPage__bottom">
+                  <ScrollLink
+                    activeClass="active"
+                    to="myWork"
+                    smooth={true}
+                    className="mainPage__arrow"
+                  >
+                    <img
+                      src={ArrowDay}
+                      alt="arrow"
+                      className="arrow--day"
+                    ></img>
+                  </ScrollLink>
+                </div>
               </div>
 
               <div className="mainPage__right">
@@ -90,16 +104,6 @@ export default function MainPage(props) {
                 <img src={Cloud4} alt="cloud" className="cloud cloud4"></img>
                 <img src={Cloud5} alt="cloud" className="cloud cloud5"></img>
               </div>
-            </div>
-            <div className="mainPage__bottom">
-              <ScrollLink
-                activeClass="active"
-                to="myWork"
-                smooth={true}
-                className="mainPage__arrow"
-              >
-                <img src={ArrowDay} alt="arrow" className="arrow--day"></img>
-              </ScrollLink>
             </div>
           </div>
         </div>
@@ -127,6 +131,20 @@ export default function MainPage(props) {
                 <p className="mainPage-dm__content">
                   I also love long walks with my dog.
                 </p>
+                <div className="mainPage-dm__bottom">
+                  <ScrollLink
+                    activeClass="active"
+                    to="myWork"
+                    smooth={true}
+                    className="mainPage-dm__arrow"
+                  >
+                    <img
+                      src={ArrowNight}
+                      alt="arrow"
+                      className="arrow--night"
+                    ></img>
+                  </ScrollLink>
+                </div>
               </div>
 
               <div className="mainPage-dm__right">
@@ -139,16 +157,6 @@ export default function MainPage(props) {
                 <img src={Fly2} alt="fly" className="fly fly2"></img>
                 <img src={Fly3} alt="fly" className="fly fly3"></img>
               </div>
-            </div>
-            <div className="mainPage-dm__bottom">
-              <ScrollLink
-                activeClass="active"
-                to="myWork"
-                smooth={true}
-                className="mainPage-dm__arrow"
-              >
-                <img src={ArrowNight} alt="arrow" className="arrow--night"></img>
-              </ScrollLink>
             </div>
           </div>
         </div>
@@ -166,12 +174,14 @@ export default function MainPage(props) {
         name="contact"
         id="contact"
         className={
-          currTheme === "day" ? "contact section" : "contact contact--dm section"
+          currTheme === "day"
+            ? "contact section"
+            : "contact contact--dm section"
         }
       >
-        <Contact theme={currTheme}/>
+        <Contact theme={currTheme} />
       </Element>
-      <Footer theme={currTheme}/>
+      <Footer theme={currTheme} />
     </>
   );
 }

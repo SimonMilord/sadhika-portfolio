@@ -32,7 +32,7 @@
   margin: 0 auto;
   // padding: 0rem 1rem;
   @include tablet {
-    // padding: 0rem 2rem;
+    padding: 0rem 2rem;
   }
   @include desktop {
     // padding: 0rem 5rem;
@@ -67,11 +67,12 @@
 @mixin backgroundGradientDay {
   background: linear-gradient(
     0deg,
-    #fef4d7,
-    #fdf0cb,
-    #FFEEC1,
-    #fce6a9,
-    #fbdf93
+    #FFE9E0,
+    #FFE6BE,
+    #FFE5B6,
+    #FEEEC2,
+    #FFF5D1,
+    #FFFEE4
   );
   }
 
@@ -79,10 +80,9 @@
 @mixin backgroundGradientNight {
   background: linear-gradient(
     0deg,
-    #844ac2,
-    #6936a0,
+    #9141E7,
+    #6B4AB2,
+    #5033A3,
     #5B2C8E,
-    #4f237e,
-    #421d69
   );
   }

@@ -8,13 +8,11 @@ header {
   margin: 0 auto;
   padding: 1rem 1rem;
   @include tablet {
-    padding: 2rem 2rem;
+    padding: 2.5rem 2rem;
   }
-  @include desktop {
-    padding: 2rem 5rem;
-  }
+
   @include wide {
-    padding: 2rem 10rem;
+    padding: 2.5rem 0rem;
   }
 
   &__homeLink {
@@ -34,7 +32,7 @@ header {
       // width: 100px;
       // margin: 0px 32px;
       padding-left: 3rem;
-      letter-spacing: 2.5px;
+      letter-spacing: 1.8px;
 
       &--day {
         &:hover {
@@ -52,7 +50,7 @@ header {
       cursor: pointer;
       text-decoration: none;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 12px;
 
       &--day {
@@ -81,6 +79,7 @@ header {
       cursor: pointer;
     }
   }
+
 }
 
 .header-night {
