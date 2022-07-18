@@ -16,9 +16,11 @@
   }
 
   &__top {
+    width: 100%;
     @include display-flex(column,center,center);
     @include desktop {
       @include display-flex(row,center,center);
+      // margin-bottom: 5rem;
     }
   }
 
@@ -189,6 +191,7 @@
   }
 
   &__top {
+    width: 100%;
     @include display-flex(column,center,center);
     @include desktop {
       @include display-flex(row,center,center);

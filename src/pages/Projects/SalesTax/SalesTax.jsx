@@ -215,9 +215,9 @@ export default function SalesTax(props) {
         </div>
       </section>
       <div className="bottom">
-        <Link to="/taxliab" className="bottom__link">
+        <Link to="/work" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
-          Back
+          Back to projects
         </Link>
         <Link to="/balance" className="bottom__link">
           Next

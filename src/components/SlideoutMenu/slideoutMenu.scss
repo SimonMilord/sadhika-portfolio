@@ -44,7 +44,7 @@
   }
   li {
     a {
-      color: white;
+      color: $background-day;
     }
   }
 }
@@ -88,7 +88,7 @@
 
     li {
       a {
-        color: black;
+        color: $background-night;
       }
     }
   }
