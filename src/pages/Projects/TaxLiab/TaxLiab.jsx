@@ -3,22 +3,41 @@ import { Link } from "react-router-dom";
 import "../project.scss";
 import ArrowBack from "../../../assets/Icons/arrowBack.svg";
 import ArrowForward from "../../../assets/Icons/arrowForward.svg";
+import ArrowDown from "../../../assets/Projects/taxLiab/arrowTaxLiab.svg";
+import TaxLiab1 from "../../../assets/Projects/taxLiab/1.svg";
+import TaxLiab2 from "../../../assets/Projects/taxLiab/2.png";
+import TaxLiab3 from "../../../assets/Projects/taxLiab/3.png";
+import TaxLiab4 from "../../../assets/Projects/taxLiab/4.png";
+import TaxLiab5 from "../../../assets/Projects/taxLiab/5.png";
+import TaxLiab6 from "../../../assets/Projects/taxLiab/6.png";
+import TaxLiab7 from "../../../assets/Projects/taxLiab/7.png";
+import TaxLiab8 from "../../../assets/Projects/taxLiab/8.png";
+import TaxLiab9 from "../../../assets/Projects/taxLiab/9.png";
+import TaxLiab10 from "../../../assets/Projects/taxLiab/10.png";
+import TaxLiab11 from "../../../assets/Projects/taxLiab/11.png";
+import TaxLiab12 from "../../../assets/Projects/taxLiab/12.png";
+
+
 
 export default function TaxLiab(props) {
   const content = {
     intro:
       "Collecting and paying sales tax is a legal obligation for every business owner but sales tax rules are complex. In the U.S., there are 45 different set of rules and regulations that determine where and when your business needs to collect sales tax.",
     section11:
-      "We had early indicators from support that merchants were struggling to understand and manage tax obligations.",
+      "I was the lead Product Designer on this project, responsible for both the interaction and visual design. I also represented UX in the trifecta.",
     section12:
-      "At the outset of the project we didn't have a clear idea of how we were going to support our merchants. Without pre-existing insights, I partnered with our researcher to understand how merchants dealt with sales tax.",
+      "In addition, I worked with a Researcher to plan and conduct exploratory research, with a Content Designer on messaging needs and IA and also led and conducted usability tests.",
     section21:
-      "Merchants were struggling with the very first step of tax management - Awareness. If they weren't sure where to collect taxes, they weren't able to register for and remit taxes in the right states.",
+      "We had early indicators from support that merchants were struggling to understand and manage tax obligations.",
     section22:
-      "To move forward, we needed to tackle the first step of awareness. Our goal was to make it really simple for merchants to understand if, where, and when they need to register and collect sales tax in a state.",
+      "At the outset of the project we didn't have a clear idea of how we were going to support our merchants. Without pre-existing insights, I partnered with our researcher to understand how merchants dealt with sales tax.",
     section31:
-      "During the iteration process, I spent time refining the visual language and creating design patterns that were scalable and could be easily extended to other countries and regions.",
+      "Merchants were struggling with the very first step of tax management - Awareness. If they weren't sure where to collect taxes, they weren't able to register for and remit taxes in the right states.",
     section32:
+      "To move forward, we needed to tackle the first step of awareness. Our goal was to make it really simple for merchants to understand if, where, and when they need to register and collect sales tax in a state.",
+    section41:
+      "During the iteration process, I spent time refining the visual language and creating design patterns that were scalable and could be easily extended to other countries and regions.",
+    section42:
       "I also led a round of usability testing and made improvements based on feedback before we shipped the final version.",
     final:
       "We launched the tax liability insights dashboard to over a million merchants in the U.S. in 2021. The feature has received an overwhelmingly positive response from UX leadership at Shopify and from our merchants.",
@@ -80,6 +99,24 @@ export default function TaxLiab(props) {
         </div>
       </section>
 
+      <div className="imgContainer">
+        <img src={TaxLiab1} alt="manage tax liability insights screen" className="imgContainer__img--full"></img>
+      </div>
+
+      <section className="subsection subsection1">
+        <div className="content">
+          <div className="content__left">
+            <h2 className="content__title">My role</h2>
+          </div>
+          <div className="content__right">
+            <p className="content__text" style={{ fontWeight: "bold" }}>
+              {content.section11}
+            </p>
+            <p className="content__text">{content.section12}</p>
+          </div>
+        </div>
+      </section>
+
       <section className="subsection subsection1">
         <div className="content">
           <div className="content__left">
@@ -87,9 +124,9 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text" style={{ fontWeight: "bold" }}>
-              {content.section11}
+              {content.section21}
             </p>
-            <p className="content__text">{content.section12}</p>
+            <p className="content__text">{content.section22}</p>
           </div>
         </div>
       </section>
@@ -111,7 +148,10 @@ export default function TaxLiab(props) {
         </div>
       </section>
 
-      {/* INSERT RESEARCH PLAN IMAGE OR JOURNEY MAP */}
+      <div className="imgContainer">
+        <img src={TaxLiab2} alt="manage tax liability insights screen" className="imgContainer__img"></img>
+        <p className="imgContainer__legend">Snippet of the research plan I created with the researcher</p>
+      </div>
 
       <section className="subsection subsection3">
         <div className="content">
@@ -119,31 +159,54 @@ export default function TaxLiab(props) {
             <h2 className="content__title">Identifying the opportunity</h2>
           </div>
           <div className="content__right">
-            <p className="content__text">{content.section21}</p>
-            <p className="content__text" style={{ fontWeight: "bold" }}>{content.section22}</p>
+            <p className="content__text">{content.section31}</p>
+            <p className="content__text" style={{ fontWeight: "bold" }}>{content.section32}</p>
           </div>
         </div>
       </section>
 
-      {/* INSERT STEPS IMAGE */}
+      <div className="imgContainer">
+        <img src={TaxLiab3} alt="tax journey map" className="imgContainer__img"></img>
+        <p className="imgContainer__legend">I created an end-to-end journey map based on research insights. Some information has been obfuscated.</p>
+      </div>
 
       <section className="subsection subsection4">
         <div className="content">
           <div className="content__left">
-            <h2 className="content__title">Content driven design</h2>
+            <h2 className="content__title">Content first design</h2>
           </div>
           <div className="content__right">
+            <p className="content__text">Given the complexity and granularity of tax rules, our challenge was to make sure we were providing enough context to the merchant so they’d feel confident enough to take action, but at the same time not bomboarding them with detailed tax laws and jargon.</p>
             <p className="content__text">
-              I started the design process by defining the core jobs to be done,
-              mapping out the end to end user flow, and identifying content
-              needs. <span style={{ fontWeight: "bold" }}>The content needs helped inform the visual hierarchy and
-              IA.</span>
+              I worked closely with the content designer to define the content and messaging needs for our product.
+              <span style={{ fontWeight: "bold" }}>The content needs helped inform the visual hierarchy and IA.</span>
             </p>
           </div>
         </div>
       </section>
 
-      {/* INSERT CONTENT IA */}
+      <div className="imgContainer">
+        <img src={TaxLiab4} alt="nexus content needs" className="imgContainer__img"></img>
+        <p className="imgContainer__legend">The research we did informed our messaging needs.</p>
+        <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
+      </div>
+
+      <div className="imgContainer">
+        <img src={TaxLiab5} alt="messaging needs" className="imgContainer__img"></img>
+        <p className="imgContainer__legend">The messaging needs informed the IA.</p>
+        <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
+      </div>
+
+      <div className="imgContainer">
+        <img src={TaxLiab6} alt="UI explorations" className="imgContainer__img"></img>
+        <p className="imgContainer__legend">The final IA helped guide my UI explorations.</p>
+        <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
+      </div>
+
+      <div className="imgContainer">
+        <img src={TaxLiab7} alt="UI explorations" className="imgContainer__img"></img>
+        <p className="imgContainer__legend">I built out the final components based on my UI explorations.</p>
+      </div>
 
       <section className="subsection subsection5">
         <div className="content">
@@ -153,18 +216,36 @@ export default function TaxLiab(props) {
             </h2>
           </div>
           <div className="content__right">
-            <p className="content__text">{content.section31}</p>
-            <p className="content__text">{content.section32}</p>
+            <p className="content__text">{content.section41}</p>
+            <p className="content__text">{content.section42}</p>
           </div>
         </div>
       </section>
 
-      {/* INSERT FINAL IMAGES */}
+      <div className="imgContainer">
+        <img src={TaxLiab8} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">Tax libability insights dashboard.</p>
+      </div>
+
+      <div className="imgContainer">
+        <img src={TaxLiab9} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">State tax sales data.</p>
+      </div>
+
+      <div className="imgContainer">
+        <img src={TaxLiab10} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">Collect sales tax modal.</p>
+      </div>
+
+      <div className="imgContainer">
+        <img src={TaxLiab11} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">Collecting taxes in Texas.</p>
+      </div>
 
       <section className="subsection subsection6">
         <div className="content">
           <div className="content__left">
-            <h2 className="content__title">The origin story</h2>
+            <h2 className="content__title">It pays to sweat the details</h2>
           </div>
           <div className="content__right">
             <p className="content__text">{content.final}</p>
@@ -176,6 +257,11 @@ export default function TaxLiab(props) {
           </div>
         </div>
       </section>
+
+      <div className="imgContainer">
+        <img src={TaxLiab12} alt="shopify sales tax in the news" className="imgContainer__img"></img>
+      </div>
+
       <div className="bottom">
         <Link to="/work" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
