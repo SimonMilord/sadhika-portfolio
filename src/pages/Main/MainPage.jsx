@@ -67,14 +67,14 @@ export default function MainPage(props) {
               <div className="mainPage__left">
                 <h1 className="mainPage__title">
                   I'm Sadhika, a Senior Product Designer at{" "}
-                  <span style={{ color: "#AD3862" }}>Shopify</span>. By day,{" "}
+                  <a href="https://www.shopify.ca/"><span style={{ color: "#AD3862" }}>Shopify</span></a>. By day,{" "}
                   <br />I create beautiful, human, and user-centric experiences
                   for Shopify Money.
                 </h1>
                 <p className="mainPage__content">
                   Previously at{" "}
-                  <span style={{ color: "#AD3862" }}>Cognizant</span> and{" "}
-                  <span style={{ color: "#AD3862" }}>Accenture</span>.
+                  <a href="https://www.cognizant.com/"><span style={{ color: "#AD3862" }}>Cognizant</span></a> and{" "}
+                  <a href="https://www.accenture.com/"><span style={{ color: "#AD3862" }}>Accenture</span></a>.
                 </p>
                 <div className="mainPage__bottom">
                   <ScrollLink
@@ -124,7 +124,7 @@ export default function MainPage(props) {
               <div className="mainPage-dm__left">
                 <h1 className="mainPage-dm__title">
                   I'm Sadhika, a Senior Product Designer at{" "}
-                  <span style={{ color: "#F5F488" }}>Shopify</span>. By night,<br /> I
+                  <a href="https://www.shopify.ca/"><span style={{ color: "#F5F488" }}>Shopify</span></a>. By night,<br /> I
                   enjoy spending my time painting, doodling, and messing around
                   with code.
                 </h1>
