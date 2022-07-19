@@ -45,7 +45,7 @@
     color: $background-day !important;
   }
   &__link:hover > .projectDesc__arrow {
-    filter: brightness(0) saturate(100%) invert(96%) sepia(8%) saturate(2195%) hue-rotate(316deg) brightness(108%) contrast(99%);
+    filter: brightness(0) saturate(100%) invert(88%) sepia(25%) saturate(421%) hue-rotate(337deg) brightness(104%) contrast(103%);
   }
   &__arrow {
     transition: 0.3s all ease;
@@ -59,7 +59,7 @@
     color: $background-night !important;
   }
   &__link--dm:hover > .projectDesc__arrow--dm {
-    filter: brightness(0) saturate(100%) invert(20%) sepia(42%) saturate(2966%) hue-rotate(251deg) brightness(91%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(19%) sepia(20%) saturate(421%) hue-rotate(255deg) brightness(88%) contrast(92%);
   }
 
 }
