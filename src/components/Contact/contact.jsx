@@ -7,7 +7,7 @@ export default function Contact(props) {
 
   return (
     <>
-      {props.theme === "day" ? (
+      {props.theme === "day" || props.theme === ""? (
         <div className="contact">
           <h2 className="contact__title">Let's chat</h2>
           <p className="contact__content">

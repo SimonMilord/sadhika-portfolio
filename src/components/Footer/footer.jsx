@@ -10,7 +10,7 @@ import LinkedinDM from "../../assets/Icons/linkedin-night.svg";
 export default function Footer(props) {
   return (
     <>
-      {props.theme === "day" ? (
+      {props.theme === "day" || props.theme === "" ? (
         <div className="footer">
           <div className="footer__wrap">
             <div className="footer__left">
