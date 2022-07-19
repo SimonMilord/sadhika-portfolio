@@ -84,7 +84,7 @@
       display: none;
       @include desktop {
         display: flex;
-        left: 51%;
+        left: 52%;
         top: 36%;
         @include animation-cloud(float1, 0, 30%);
         animation: float1 6s linear infinite;
@@ -94,7 +94,7 @@
       display: none;
       @include desktop {
         display: flex;
-        left: 55%;
+        left: 57%;
         top: 28%;
         @include animation-cloud(float1, 0, 90%);
         animation: float1 6s linear infinite;

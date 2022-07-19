@@ -42,7 +42,7 @@ export default function TaxLiab(props) {
     final:
       "We launched the tax liability insights dashboard to over a million merchants in the U.S. in 2021. The feature has received an overwhelmingly positive response from UX leadership at Shopify and from our merchants.",
     final2:
-      "In the first month of launch, hundreds of thousands of tax registrations were added and we've seen a reduction in the gap of outstanding liabilities. Our product also has a high conversion rate of over 30%.",
+      "In the first month of launch, over ~150,000 tax registrations were added. We've seen a significant reduction in the gap of outstanding liabilities and our product also has a high double-digit conversion rate.",
   };
 
   document.title = "Sadhika Billa - Tax Liability";
@@ -77,6 +77,7 @@ export default function TaxLiab(props) {
                 <li className="content__respItem">Interaction Design</li>
                 <li className="content__respItem">Visual Design</li>
                 <li className="content__respItem">Usability Testing</li>
+                <li className="content__respItem">Research</li>
               </ul>
             </div>
           </div>
@@ -86,8 +87,7 @@ export default function TaxLiab(props) {
             </h1>
             <p className="content__text">{content.intro}</p>
             <p className="content__text">
-              Our goal was to decode the complexities of tax laws for our
-              merchants and help them collect taxes in all the right states.
+              Our goal was to help merchants collect taxes in all the right states and our challenge was to decode the complexities of U.S. tax laws to make this possible.
               Today, the{" "}
               <span style={{ fontWeight: "bold" }}>
                 Tax Liability Insights dashboard is being used by merchants all
@@ -138,8 +138,8 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text">
-              I worked with the researcher to plan and conduct generative
-              research. Research revealed that there are five core steps of
+              I worked with the Researcher to plan and conduct generative
+              research. Our research revealed that there are five core steps of
               sales tax management - <span style={{ fontWeight: "bold" }}>Awareness, Registration, Collection,
               Reporting</span> and <span style={{ fontWeight: "bold" }}>Remittance</span> and the friction in our merchants journey
               began at the first step.
@@ -176,10 +176,10 @@ export default function TaxLiab(props) {
             <h2 className="content__title">Content first design</h2>
           </div>
           <div className="content__right">
-            <p className="content__text">Given the complexity and granularity of tax rules, our challenge was to make sure we were providing enough context to the merchant so they’d feel confident enough to take action, but at the same time not bomboarding them with detailed tax laws and jargon.</p>
+            <p className="content__text">Given the complexity and granularity of tax rules, our challenge was to make sure we were providing enough context to the merchant so they'd feel confident enough to take action, but at the same time not bomboarding them with detailed tax laws and jargon.</p>
             <p className="content__text">
               I worked closely with the content designer to define the content and messaging needs for our product.
-              <span style={{ fontWeight: "bold" }}>The content needs helped inform the visual hierarchy and IA.</span>
+              <span style={{ fontWeight: "bold" }}>{" "}The content needs helped inform the visual hierarchy and IA.</span>
             </p>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function TaxLiab(props) {
 
       <div className="imgContainer">
         <img src={TaxLiab11} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">Collecting taxes in Texas.</p>
+        <p className="imgContainer__legend imgContainer__legend--wide-end">Collecting taxes in Texas.</p>
       </div>
 
       <section className="subsection subsection6">

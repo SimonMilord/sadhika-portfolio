@@ -124,7 +124,7 @@ export default function MainPage(props) {
               <div className="mainPage-dm__left">
                 <h1 className="mainPage-dm__title">
                   I'm Sadhika, a Senior Product Designer at{" "}
-                  <span style={{ color: "#F5F488" }}>Shopify</span>. By night, I
+                  <span style={{ color: "#F5F488" }}>Shopify</span>. By night,<br /> I
                   enjoy spending my time painting, doodling, and messing around
                   with code.
                 </h1>
