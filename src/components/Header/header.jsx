@@ -96,9 +96,9 @@ export default function Header(props) {
           </li>
         </ul>
       </nav>
-      <div className="menuBtn">
+      {/* <div className="menuBtn">
         <MenuBtn handleMouseDown={props.handleMouseDown}/>
-      </div>
+      </div> */}
     </header>
   );
 }

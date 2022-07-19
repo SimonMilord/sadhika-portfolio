@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./MainPage.scss";
 import Header from "../../components/Header/header";
-import SlideoutMenu from "../../components/SlideoutMenu/slideoutMenu";
+// import SlideoutMenu from "../../components/SlideoutMenu/slideoutMenu";
 import Contact from "../../components/Contact/contact";
 import Footer from "../../components/Footer/footer";
 import DayIllo from "../../assets/Images/day-illo.svg";
@@ -57,11 +57,11 @@ export default function MainPage(props) {
             handleMouseDown={handleMouseDown}
             menuVis={visible}
           />
-          <SlideoutMenu
+          {/* <SlideoutMenu
             theme={currTheme}
             menuVis={visible}
             handleMouseDown={handleMouseDown}
-          />
+          /> */}
           <div className="mainPage__main">
             <div className="mainPage__top">
               <div className="mainPage__left">
@@ -114,11 +114,11 @@ export default function MainPage(props) {
             handleMouseDown={handleMouseDown}
             menuVis={visible}
           />
-          <SlideoutMenu
+          {/* <SlideoutMenu
             theme={currTheme}
             menuVis={visible}
             handleMouseDown={handleMouseDown}
-          />
+          /> */}
           <div className="mainPage-dm__main">
             <div className="mainPage-dm__top">
               <div className="mainPage-dm__left">
