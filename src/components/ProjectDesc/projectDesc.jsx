@@ -8,7 +8,7 @@ export default function projectDesc(props) {
 
   return (
     <>
-      {props.theme === "day" ? (
+      {props.theme === "day" || props.theme === "" ? (
         <div className="projectDesc">
           <h2 className="projectDesc__title">{title}</h2>
           <p className="projectDesc__info">{description}</p>
@@ -16,6 +16,7 @@ export default function projectDesc(props) {
             <Link
               to={link}
               className="projectDesc__link"
+              style={{color: "#AD3862"}}
             >
               {linkText}
               <img src={Arrow} alt="arrow" className="projectDesc__arrow"></img>
