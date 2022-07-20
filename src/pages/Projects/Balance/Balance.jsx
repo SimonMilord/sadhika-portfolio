@@ -38,7 +38,7 @@ export default function BalancePage(props) {
           ></img>
           Back to projects
         </Link>
-        <Link to="/work" className="top__link">
+        <Link to="/mccy" className="top__link">
           Next
           <img
             src={ArrowForward}
@@ -108,7 +108,7 @@ export default function BalancePage(props) {
         <p className="imgContainer__legend imgContainer__legend--wide">Empty state for Balance.</p>
       </div>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={Balance3} alt="Shopify balance screen" className="imgContainer__img"></img>
         <p className="imgContainer__legend imgContainer__legend--wide-end">Home page with transactions.</p>
       </div>
@@ -168,7 +168,7 @@ export default function BalancePage(props) {
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
           Back to projects
         </Link>
-        <Link to="/work" className="bottom__link">
+        <Link to="/mccy" className="bottom__link">
           Next
           <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
         </Link>

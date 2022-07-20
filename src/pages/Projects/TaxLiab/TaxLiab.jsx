@@ -148,7 +148,7 @@ export default function TaxLiab(props) {
         </div>
       </section>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={TaxLiab2} alt="manage tax liability insights screen" className="imgContainer__img"></img>
         <p className="imgContainer__legend">Snippet of the research plan I created with the researcher</p>
       </div>
@@ -165,7 +165,7 @@ export default function TaxLiab(props) {
         </div>
       </section>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={TaxLiab3} alt="tax journey map" className="imgContainer__img"></img>
         <p className="imgContainer__legend">I created an end-to-end journey map based on research insights. Some information has been obfuscated.</p>
       </div>
@@ -203,7 +203,7 @@ export default function TaxLiab(props) {
         <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
       </div>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={TaxLiab7} alt="UI explorations" className="imgContainer__img"></img>
         <p className="imgContainer__legend">I built out the final components based on my UI explorations.</p>
       </div>
@@ -237,7 +237,7 @@ export default function TaxLiab(props) {
         <p className="imgContainer__legend imgContainer__legend--wide">Collect sales tax modal.</p>
       </div>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={TaxLiab11} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
         <p className="imgContainer__legend imgContainer__legend--wide-end">Collecting taxes in Texas.</p>
       </div>
@@ -258,7 +258,7 @@ export default function TaxLiab(props) {
         </div>
       </section>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={TaxLiab12} alt="shopify sales tax in the news" className="imgContainer__img"></img>
       </div>
 

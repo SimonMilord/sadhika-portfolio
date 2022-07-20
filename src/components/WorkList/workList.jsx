@@ -48,8 +48,7 @@ export default function WorkList(props) {
     description:
       "Digitalising the grant application and administration process for the government of Singapore.",
     link: "/mccy",
-    // linkText: "See case study"
-    linkText: "Coming soon in a browser near you.",
+    linkText: "See case study"
   };
 
   return (
@@ -105,22 +104,7 @@ export default function WorkList(props) {
           alt="web form for MCCY"
           className={project4IsVis ? "showImg" : "hideImg"}
         ></img>
-        {/* <ProjectDesc project={project4} theme={props.theme}/> */}
-        <>
-          {props.theme === "day" ? (
-            <div className="projectDesc">
-              <h2 className="projectDesc__title">{project4.title}</h2>
-              <p className="projectDesc__info">{project4.description}</p>
-              {project4.linkText}
-            </div>
-          ) : (
-            <div className="projectDesc">
-              <h2 className="projectDesc__title">{project4.title}</h2>
-              <p className="projectDesc__info">{project4.description}</p>
-              {project4.linkText}
-            </div>
-          )}
-        </>
+        <ProjectDesc project={project4} theme={props.theme}/>
       </div>
     </div>
   );

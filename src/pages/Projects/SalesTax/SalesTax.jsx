@@ -95,7 +95,7 @@ export default function SalesTax(props) {
         </div>
       </section>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={SalesTax1} alt="collect sales tax screen" className="imgContainer__img--full"></img>
       </div>
 
@@ -154,7 +154,7 @@ export default function SalesTax(props) {
         <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
       </div>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={SalesTax3} alt="table of tax zip codes" className="imgContainer__img"></img>
         <p className="imgContainer__legend">Merchants were forced to translate the map above into a table of ZIP codes.</p>
       </div>
@@ -194,7 +194,7 @@ export default function SalesTax(props) {
         </div>
       </section>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={SalesTax4} alt="mental model mapping" className="imgContainer__img"></img>
         <p className="imgContainer__legend">I mapped out the mental models to help visualize where the disconnect was coming from.</p>
       </div>
@@ -218,7 +218,7 @@ export default function SalesTax(props) {
         </div>
       </section>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--last">
         <img src={SalesTax5} alt="designing principles" className="imgContainer__img"></img>
       </div>
 
@@ -246,7 +246,7 @@ export default function SalesTax(props) {
         <p className="imgContainer__legend imgContainer__legend--wide">Adding states where you need to collect sales tax.</p>
       </div>
 
-      <div className="imgContainer">
+      <div className="imgContainer imgContainer--spec">
         <img src={SalesTax8} alt="design" className="imgContainer__img"></img>
         <p className="imgContainer__legend imgContainer__legend--wide">State based tax collection.</p>
       </div>
