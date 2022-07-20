@@ -67,7 +67,7 @@ export default function BalancePage(props) {
             <h1 className="content__mainTitle">
               Designing a money management account
             </h1>
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text" style={{ fontWeight: "600" }}>
               {content.intro}
             </p>
             <p className="content__text">{content.intro2}</p>
@@ -123,16 +123,16 @@ export default function BalancePage(props) {
               To learn more about Balance, check out the{" "}
               <a
                 href="https://www.shopify.com/balance"
-                style={{ fontWeight: "bold" }}
+                style={{ fontWeight: "600" }}
               >
                 Balance home page
               </a>
             </p>
             <p className="content__text">
               You can also read about Balance in articles from{" "}
-              <a href="https://www.shopify.com/balance">Forbes</a>,{" "}
-              <a href="https://www.shopify.com/balance">TechCrunch</a> and{" "}
-              <a href="https://www.shopify.com/balance">BetaKit</a>.
+              <a href="https://www.forbes.com/sites/christopherwalton/2020/07/22/5-reasons-why-shopify-balance-is-great-news-for-retail-entrepreneurs/?sh=b6ab1b73f7bb">Forbes</a>,{" "}
+              <a href="https://betakit.com/shopify-balance-to-be-powered-by-stripe-evolve-bancorp/">TechCrunch</a> and{" "}
+              <a href="https://techcrunch.com/2020/05/20/shopify-balance/">BetaKit</a>.
             </p>
           </div>
         </div>

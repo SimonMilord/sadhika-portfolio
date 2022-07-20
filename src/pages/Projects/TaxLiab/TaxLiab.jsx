@@ -89,7 +89,7 @@ export default function TaxLiab(props) {
             <p className="content__text">
               Our goal was to help merchants collect taxes in all the right states and our challenge was to decode the complexities of U.S. tax laws to make this possible.
               Today, the{" "}
-              <span style={{ fontWeight: "bold" }}>
+              <span style={{ fontWeight: "600" }}>
                 Tax Liability Insights dashboard is being used by merchants all
                 over the U.S. to understand their tax obligations and remain
                 compliant with tax laws.
@@ -109,7 +109,7 @@ export default function TaxLiab(props) {
             <h2 className="content__title">My role</h2>
           </div>
           <div className="content__right">
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text" style={{ fontWeight: "600" }}>
               {content.section11}
             </p>
             <p className="content__text">{content.section12}</p>
@@ -123,7 +123,7 @@ export default function TaxLiab(props) {
             <h2 className="content__title">The origin story</h2>
           </div>
           <div className="content__right">
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text" style={{ fontWeight: "600" }}>
               {content.section21}
             </p>
             <p className="content__text">{content.section22}</p>
@@ -140,8 +140,8 @@ export default function TaxLiab(props) {
             <p className="content__text">
               I worked with the Researcher to plan and conduct generative
               research. Our research revealed that there are five core steps of
-              sales tax management - <span style={{ fontWeight: "bold" }}>Awareness, Registration, Collection,
-              Reporting</span> and <span style={{ fontWeight: "bold" }}>Remittance</span> and the friction in our merchants journey
+              sales tax management - <span style={{ fontWeight: "600" }}>Awareness, Registration, Collection,
+              Reporting</span> and <span style={{ fontWeight: "600" }}>Remittance</span> and the friction in our merchants journey
               began at the first step.
             </p>
           </div>
@@ -160,7 +160,7 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.section31}</p>
-            <p className="content__text" style={{ fontWeight: "bold" }}>{content.section32}</p>
+            <p className="content__text" style={{ fontWeight: "600" }}>{content.section32}</p>
           </div>
         </div>
       </section>
@@ -179,7 +179,7 @@ export default function TaxLiab(props) {
             <p className="content__text">Given the complexity and granularity of tax rules, our challenge was to make sure we were providing enough context to the merchant so they'd feel confident enough to take action, but at the same time not bomboarding them with detailed tax laws and jargon.</p>
             <p className="content__text">
               I worked closely with the content designer to define the content and messaging needs for our product.
-              <span style={{ fontWeight: "bold" }}>{" "}The content needs helped inform the visual hierarchy and IA.</span>
+              <span style={{ fontWeight: "600" }}>{" "}The content needs helped inform the visual hierarchy and IA.</span>
             </p>
           </div>
         </div>
@@ -249,10 +249,10 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.final}</p>
-            <p className="content__text" style={{ fontWeight: "bold" }}>{content.final2}</p>
+            <p className="content__text" style={{ fontWeight: "600" }}>{content.final2}</p>
             <p className="content__text">
               To learn more about this feature, check out Shopify's{" "}
-              <a href="https://www.shopify.ca/">blog post</a>.
+              <a href="https://www.shopify.ca/blog/us-canada-sales-tax-insights">blog post</a>.
             </p>
           </div>
         </div>

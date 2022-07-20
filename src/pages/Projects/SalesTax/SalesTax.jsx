@@ -88,7 +88,7 @@ export default function SalesTax(props) {
               Redesigning the sales tax collection experience
             </h1>
             <p className="content__text">{content.intro}</p>
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text" style={{ fontWeight: "600" }}>
               {content.intro2}
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function SalesTax(props) {
             <h2 className="content__title">My role</h2>
           </div>
           <div className="content__right">
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text" style={{ fontWeight: "600" }}>
               {content.section11}
             </p>
             <p className="content__text">{content.section12}</p>
@@ -122,7 +122,7 @@ export default function SalesTax(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.section21}</p>
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text" style={{ fontWeight: "600" }}>
               {content.section22}
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function SalesTax(props) {
             <p className="content__text">
               With the U.S. having over ~41,000 ZIP codes and with the new
               ruling in place,{" "}
-              <span style={{ fontWeight: "bold" }}>
+              <span style={{ fontWeight: "600" }}>
                 merchants were having to manually enter in 1000's of ZIP codes
                 which was a slow and frustrating experience and we were getting a large number of support calls related to tax setup.
               </span>
@@ -166,7 +166,7 @@ export default function SalesTax(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.section31}</p>
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text" style={{ fontWeight: "600" }}>
               {content.section32}
             </p>
           </div>
@@ -183,7 +183,7 @@ export default function SalesTax(props) {
           <div className="content__right">
             <p className="content__text">{content.section41}</p>
             <p className="content__text">
-              <span style={{ fontWeight: "bold" }}>
+              <span style={{ fontWeight: "600" }}>
                 One of the core things that stood out from research was that our
                 experience did not align with the real-world mental model for
                 sales tax.
@@ -209,7 +209,7 @@ export default function SalesTax(props) {
               Our key goal was to ensure that the new design aligned with the
               mental model that merchants had. I also led a workshop to
               establish{" "}
-              <span style={{ fontWeight: "bold" }}>
+              <span style={{ fontWeight: "600" }}>
                 design principles that would inform the redesign and act as a
                 compass for the tax product.
               </span>
@@ -259,7 +259,7 @@ export default function SalesTax(props) {
           <div className="content__right">
             <p className="content__text">{content.final}</p>
             <p className="content__text">
-              <span style={{ fontWeight: "bold" }}>
+              <span style={{ fontWeight: "600" }}>
                 In the first month of launching the Beta, support tickets
                 related to the sales tax setup fell from 37% of all tax related
                 tickets to 21%.

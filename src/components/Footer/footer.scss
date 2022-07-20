@@ -2,7 +2,6 @@
 @import "../../styles/partials/mixins";
 
 .footer {
-  background-color: $accent-day;
   padding: 1.80rem;
 
   &__wrap {
@@ -14,12 +13,12 @@
     // }
   }
   &__left {
-    color: #fff;
+    color: $accent-day;
     font-weight: 500;
     font-size: 16px;
     line-height: 31px;
     a.footer__ref {
-      color: #fff;
+      color: $accent-day;
 
     }
   }
@@ -39,7 +38,6 @@
 }
 
 .footerDM {
-  background-color: $accent-night;
   padding: 1.80rem;
 
   &__wrap {
@@ -52,12 +50,12 @@
   }
 
   &__left {
-    color: $background-night;
+    color: $accent-night;
     font-weight: 500;
     font-size: 16px;
     line-height: 31px;
     a.footerDM__ref {
-      color: $background-night;
+      color: $accent-night;
 
     }
   }
