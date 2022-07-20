@@ -6,7 +6,9 @@
   color: $font-lm;
   .top {
     @include display-flex(row,space-between,center);
-    padding: 2rem;
+    max-width: 1100px;
+    padding: 2rem 0rem;
+    margin: 0 auto;
     &__link {
       color: $font-lm;
       text-decoration: none;
@@ -114,7 +116,9 @@
   }
   .bottom {
     @include display-flex(row,space-between,center);
-    padding: 2.5rem;
+    max-width: 1100px;
+    padding: 2rem 0rem;
+    margin: 0 auto;
     margin-top: 3rem;
     &__link {
       color: $font-lm;
