@@ -12,6 +12,7 @@
       text-decoration: none;
       text-transform: uppercase;
       font-size: 14px;
+      font-weight: 600;
       @include display-flex(row,center,center);
 
       .arrowIcon-left {
@@ -120,6 +121,7 @@
       text-decoration: none;
       text-transform: uppercase;
       font-size: 14px;
+      font-weight: 600;
       @include display-flex(row,center,center);
 
       .arrowIcon-left {

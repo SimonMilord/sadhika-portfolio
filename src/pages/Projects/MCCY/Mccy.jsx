@@ -6,13 +6,13 @@ import ArrowForward from "../../../assets/Icons/arrowForward.svg";
 export default function BalancePage(props) {
   const content = {
     intro:
-      "Shopify Balance is an all-in-one money management account made for business owners.",
-    intro2:
-      "Dealing with banking and financial services is an essential part of running a business, but today's banking products aren't always designed around the needs of independent business owners. Shopify Balance allows merchants to manage their money from the same place they run their business.",
+      "The Ministry of Culture, Communication and Youth (MCCY) grants portal - now known as the SG Grants Portal - brings together government grants for the arts, community, heritage, social good, sports and youth into one place.",
     section11:
-      "Balance consolidates all the money a business owner makes, tracks their payments and allows them to get faster access to their funds. Merchants also have the option to sign up for a physical card for spending online and making in-store purchases and get rewards and cashback for their busines when they spend.",
-    section21: "",
-    section22: "",
+      "As a Product Designer on the project, I worked alongside a Lead Designer and a Content Designer to design the MVP of the grants portal.",
+    section12:
+      "I also worked with a UX Researcher to conduct contextual enquiry studies to understand how government officers disburse grants, with the Lead Designer and Product Manager to establish product principles and design guidelines for the product and with a Visual Designer to refine the visual identity.",
+    section21: "A significant part of this project was working closely with the core government agencies - the National Environment Agency (NEA), the National Arts Council (NAC), the National Heritage Board (NHB) and the National Youth Council (NYC) to understand how government officials receive applications, review them and issue grants to applicants.",
+    section22: "To do this I worked with our researcher to conduct interviews and contextual inquiry studies over two weeks.",
     section31: "",
     section32: "",
     final: "",
@@ -49,36 +49,39 @@ export default function BalancePage(props) {
           <div className="content__leftIntro">
             <div className="content__yearBox">
               <div className="content__introTitle">Year</div>
-              <div className="content__year">2022</div>
+              <div className="content__year">2019</div>
             </div>
             <div className="content__resp">
               <div className="content__introTitle">Responsibilities</div>
               <ul className="content__respList">
                 <li className="content__respItem">Interaction Design</li>
                 <li className="content__respItem">Visual Design</li>
-                <li className="content__respItem">UX Strategy</li>
+                <li className="content__respItem">Research</li>
               </ul>
             </div>
           </div>
           <div className="content__right">
             <h1 className="content__mainTitle">
-              Designing a money management account
+              Designing a grants portal for the Government of Singapore
             </h1>
-            <p className="content__text" style={{ fontWeight: "bold" }}>
+            <p className="content__text">
               {content.intro}
             </p>
-            <p className="content__text">{content.intro2}</p>
+            <p className="content__text"><span style={{fontWeight: "600"}}>The goal of the online portal is to streamline the grant application process and make it a lot easier for Singaporeans to apply for government grants and for government agencies to administer these grants to its citizens.</span><br/>This project was built as a part of the Singapore Digital initiative.</p>
           </div>
         </div>
       </section>
 
+      {/* INSERT MCCY IMAGE 1 */}
+
       <section className="subsection subsection1">
         <div className="content">
           <div className="content__left">
-            <h2 className="content__title">What does Balance do?</h2>
+            <h2 className="content__title">My role</h2>
           </div>
           <div className="content__right">
-            <p className="content__text">{content.section11}</p>
+            <p className="content__text" style={{fontWeight: "600"}}>{content.section11}</p>
+            <p className="content__text">{content.section12}</p>
           </div>
         </div>
       </section>
@@ -86,44 +89,63 @@ export default function BalancePage(props) {
       <section className="subsection subsection2">
         <div className="content">
           <div className="content__left">
-            <h2 className="content__title">Launch and press</h2>
+            <h2 className="content__title">Learning by observing</h2>
           </div>
           <div className="content__right">
-            <p className="content__text">
-              To learn more about Balance, check out the{" "}
-              <a
-                href="https://www.shopify.com/balance"
-                style={{ fontWeight: "bold" }}
-              >
-                Balance home page
-              </a>
-            </p>
-            <p className="content__text">
-              You can also read about Balance in articles from{" "}
-              <a href="https://www.shopify.com/balance">Forbes</a>,{" "}
-              <a href="https://www.shopify.com/balance">TechCrunch</a> and{" "}
-              <a href="https://www.shopify.com/balance">BetaKit</a>.
-            </p>
+            <p className="content__text">{content.section21}</p>
+            <p className="content__text" style={{fontWeight: "600"}}>{content.section22}</p>
           </div>
         </div>
       </section>
 
-      {/* Launch video */}
+      {/* INSERT IMAGE 2 */}
 
       <section className="subsection subsection3">
         <div className="content">
           <div className="content__left">
-            <h2 className="content__title">More to come</h2>
+            <h2 className="content__title">Consolidating insights</h2>
           </div>
           <div className="content__right">
-            <p className="content__text">
-              This project is still ongoing and due to my NDA, I will not be
-              able to provide more details at this moment.
-            </p>
-            <p className="content__text">Stay tuned for more soon.</p>
+            <p className="content__text">After conducting interviews, contextual inquiry and analyzing the data I was able to categorize the insights into three main categories - <span style={{fontWeigth: "600"}}>Communication, Workflow management and Security.</span></p>
           </div>
         </div>
       </section>
+
+      <section className="subsection subsection3">
+        <div className="content">
+          <div className="content__left">
+            <h2 className="content__title">Introducing the MCCY grants portal</h2>
+          </div>
+          <div className="content__right">
+            <p className="content__text">Based on the research we'd done and insights we'd gathered, I defined the Information Architecture and created some low-fidelity concepts for us to test.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="subsection subsection3">
+        <div className="content">
+          <div className="content__left">
+            <h2 className="content__title">Illustrations</h2>
+          </div>
+          <div className="content__right">
+            <p className="content__text">I also created illustrations for us to use in the online portal.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* INSERT IMAGE 3 */}
+
+      <section className="subsection subsection3">
+        <div className="content">
+          <div className="content__left">
+            <h2 className="content__title">Video of final product</h2>
+          </div>
+          <div className="content__right">
+            <p className="content__text">INSERT SOME TEXT HERE</p>
+          </div>
+        </div>
+      </section>
+
       <div className="bottom">
         <Link to="/work" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>

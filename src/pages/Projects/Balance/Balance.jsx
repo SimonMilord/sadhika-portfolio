@@ -86,8 +86,8 @@ export default function BalancePage(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.section11}</p>
-            <p className="content__text">My role on this project requires <span style={{fontWeight: "bold"}}>deep systems thinking, spans across multiple domains and teams</span> within Shopify - Capital, Payments, Risk - and external partners like Stripe and Evolve.</p>
-            <p className="content__text">I also work with a Staff Designer and Brand designer to <span style={{fontWeight: "bold"}}>define the visual identity for the product</span>.</p>
+            <p className="content__text">My role on this project requires <span style={{fontWeight: "600"}}>deep systems thinking, spans across multiple domains and teams</span> within Shopify - Capital, Payments, Risk - and external partners like Stripe and Evolve.</p>
+            <p className="content__text">I also work with a Staff Designer and Brand designer to <span style={{fontWeight: "600"}}>define the visual identity for the product</span>.</p>
           </div>
         </div>
       </section>
