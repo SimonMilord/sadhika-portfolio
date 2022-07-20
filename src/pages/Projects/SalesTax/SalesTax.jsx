@@ -55,7 +55,7 @@ export default function SalesTax(props) {
             className="arrowIcon-left"
             alt="back arrow"
           ></img>
-          Back to projects
+          Home
         </Link>
         <Link to="/balance" className="top__link">
           Next
@@ -273,7 +273,7 @@ export default function SalesTax(props) {
       <div className="bottom">
         <Link to="/work" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
-          Back to projects
+          Home
         </Link>
         <Link to="/balance" className="bottom__link">
           Next

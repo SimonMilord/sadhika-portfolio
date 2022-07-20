@@ -56,7 +56,7 @@ export default function TaxLiab(props) {
       <div className="top">
         <Link to="/work" className="top__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
-          Back to projects
+          Home
         </Link>
         <Link to="/salesTax" className="top__link">
           Next
@@ -265,7 +265,7 @@ export default function TaxLiab(props) {
       <div className="bottom">
         <Link to="/work" className="bottom__link">
           <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
-          Back to projects
+          Home
         </Link>
         <Link to="/salesTax" className="bottom__link">
           Next
