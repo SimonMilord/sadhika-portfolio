@@ -12,7 +12,8 @@ export default function BalancePage(props) {
       "Shopify Balance is an all-in-one money management account made for business owners.",
     intro2:
       "Dealing with banking and financial services is an essential part of running a business, but today's banking products aren't always designed around the needs of independent business owners. Shopify Balance allows merchants to manage their money from the same place they run their business.",
-    section11: "I work closely with Product and Engineering partners to define the product strategy and with UX leadership to define and execute the UX strategy.",
+    section11:
+      "I work closely with Product and Engineering partners to define the product strategy and with UX leadership to define and execute the UX strategy.",
     section21:
       "Balance consolidates all the money a business owner makes, tracks their payments and allows them to get faster access to their funds. Merchants also have the option to sign up for a physical card for spending online and making in-store purchases and get rewards and cashback for their busines when they spend.",
     section22: "",
@@ -76,7 +77,11 @@ export default function BalancePage(props) {
       </section>
 
       <div className="imgContainer">
-        <img src={Balance1} alt="collect sales tax screen" className="imgContainer__img--full"></img>
+        <img
+          src={Balance1}
+          alt="collect sales tax screen"
+          className="imgContainer__img--full"
+        ></img>
       </div>
 
       <section className="subsection subsection1">
@@ -86,8 +91,21 @@ export default function BalancePage(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.section11}</p>
-            <p className="content__text">My role on this project requires <span style={{fontWeight: "600"}}>deep systems thinking, spans across multiple domains and teams</span> within Shopify - Capital, Payments, Risk - and external partners like Stripe and Evolve.</p>
-            <p className="content__text">I also work with a Staff Designer and Brand designer to <span style={{fontWeight: "600"}}>define the visual identity for the product</span>.</p>
+            <p className="content__text">
+              My role on this project requires{" "}
+              <span style={{ fontWeight: "600" }}>
+                deep systems thinking, spans across multiple domains and teams
+              </span>{" "}
+              within Shopify - Capital, Payments, Risk - and external partners
+              like Stripe and Evolve.
+            </p>
+            <p className="content__text">
+              I also work with a Staff Designer and Brand designer to{" "}
+              <span style={{ fontWeight: "600" }}>
+                define the visual identity for the product
+              </span>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -104,13 +122,27 @@ export default function BalancePage(props) {
       </section>
 
       <div className="imgContainer">
-        <img src={Balance2} alt="Shopify balance screen" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">Empty state for Balance.</p>
+        <img
+          loading="lazy"
+          src={Balance2}
+          alt="Shopify balance screen"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">
+          Empty state for Balance.
+        </p>
       </div>
 
       <div className="imgContainer imgContainer--last">
-        <img src={Balance3} alt="Shopify balance screen" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide-end">Home page with transactions.</p>
+        <img
+          loading="lazy"
+          src={Balance3}
+          alt="Shopify balance screen"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide-end">
+          Home page with transactions.
+        </p>
       </div>
 
       <section className="subsection subsection2">
@@ -130,9 +162,18 @@ export default function BalancePage(props) {
             </p>
             <p className="content__text">
               You can also read about Balance in articles from{" "}
-              <a href="https://www.forbes.com/sites/christopherwalton/2020/07/22/5-reasons-why-shopify-balance-is-great-news-for-retail-entrepreneurs/?sh=b6ab1b73f7bb">Forbes</a>,{" "}
-              <a href="https://betakit.com/shopify-balance-to-be-powered-by-stripe-evolve-bancorp/">TechCrunch</a> and{" "}
-              <a href="https://techcrunch.com/2020/05/20/shopify-balance/">BetaKit</a>.
+              <a href="https://www.forbes.com/sites/christopherwalton/2020/07/22/5-reasons-why-shopify-balance-is-great-news-for-retail-entrepreneurs/?sh=b6ab1b73f7bb">
+                Forbes
+              </a>
+              ,{" "}
+              <a href="https://betakit.com/shopify-balance-to-be-powered-by-stripe-evolve-bancorp/">
+                TechCrunch
+              </a>{" "}
+              and{" "}
+              <a href="https://techcrunch.com/2020/05/20/shopify-balance/">
+                BetaKit
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -140,6 +181,7 @@ export default function BalancePage(props) {
 
       <div className="imgContainer__vidBox">
         <iframe
+          loading="lazy"
           className="imgContainer__video"
           src="https://www.youtube.com/embed/h9JjyqCiX0s"
           frameborder="0"
@@ -165,12 +207,20 @@ export default function BalancePage(props) {
       </section>
       <div className="bottom">
         <Link to="/work" className="bottom__link">
-          <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
+          <img
+            src={ArrowBack}
+            className="arrowIcon-left"
+            alt="back arrow"
+          ></img>
           Home
         </Link>
         <Link to="/mccy" className="bottom__link">
           Next
-          <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
+          <img
+            src={ArrowForward}
+            className="arrowIcon-right"
+            alt="back arrow"
+          ></img>
         </Link>
       </div>
     </div>

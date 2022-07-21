@@ -59,6 +59,7 @@ export default function WorkList(props) {
       >
         <img
           src={TaxLiab}
+          loading="lazy"
           alt="texas card for tax liability"
           className={project1IsVis ? "showImg" : "hideImg"}
         ></img>
@@ -74,6 +75,7 @@ export default function WorkList(props) {
       >
         <img
           src={SalesTax}
+          loading="lazy"
           alt="sales tax collection window"
           className={project2IsVis ? "showImg" : "hideImg"}
         ></img>
@@ -85,12 +87,12 @@ export default function WorkList(props) {
       >
         <img
           src={BalanceImg}
+          loading="lazy"
           alt="hand with bank card"
           className={project3IsVis ? "showImg" : "hideImg"}
         ></img>
         <ProjectDesc project={project3} theme={props.theme} />
       </div>
-      {/* MCCY */}
       <div
         className={
           props.theme === "day"
@@ -101,6 +103,7 @@ export default function WorkList(props) {
       >
         <img
           src={Mccy}
+          loading="lazy"
           alt="web form for MCCY"
           className={project4IsVis ? "showImg" : "hideImg"}
         ></img>

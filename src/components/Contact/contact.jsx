@@ -7,7 +7,7 @@ export default function Contact(props) {
 
   return (
     <>
-      {props.theme === "day" || props.theme === ""? (
+      {props.theme === "day" || props.theme === "" ? (
         <div className="contact">
           <h2 className="contact__title">Let's chat</h2>
           <p className="contact__content">
@@ -21,6 +21,7 @@ export default function Contact(props) {
             </a>
           </p>
           <img
+            loading="lazy"
             src={PaintBrush}
             alt="paint brush and paint"
             className="contact__img"
@@ -40,6 +41,7 @@ export default function Contact(props) {
             </a>
           </p>
           <img
+            loading="lazy"
             src={PaintBrushDM}
             alt="paint brush and paint"
             className="contact__img"

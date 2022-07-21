@@ -96,7 +96,11 @@ export default function SalesTax(props) {
       </section>
 
       <div className="imgContainer imgContainer--last">
-        <img src={SalesTax1} alt="collect sales tax screen" className="imgContainer__img--full"></img>
+        <img
+          src={SalesTax1}
+          alt="collect sales tax screen"
+          className="imgContainer__img--full"
+        ></img>
       </div>
 
       <section className="subsection subsection1">
@@ -141,7 +145,8 @@ export default function SalesTax(props) {
               ruling in place,{" "}
               <span style={{ fontWeight: "600" }}>
                 merchants were having to manually enter in 1000's of ZIP codes
-                which was a slow and frustrating experience and we were getting a large number of support calls related to tax setup.
+                which was a slow and frustrating experience and we were getting
+                a large number of support calls related to tax setup.
               </span>
             </p>
           </div>
@@ -149,14 +154,34 @@ export default function SalesTax(props) {
       </section>
 
       <div className="imgContainer">
-        <img src={SalesTax2} alt="map how US zip codes" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">Map of the US with all it's tax rates and ZIP codes.</p>
-        <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
+        <img
+          loading="lazy"
+          src={SalesTax2}
+          alt="map how US zip codes"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          Map of the US with all it's tax rates and ZIP codes.
+        </p>
+        <img
+          loading="lazy"
+          src={ArrowDown}
+          alt="arrow pointing down"
+          className="imgContainer__arrow"
+        ></img>
       </div>
 
       <div className="imgContainer imgContainer--last">
-        <img src={SalesTax3} alt="table of tax zip codes" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">Merchants were forced to translate the map above into a table of ZIP codes.</p>
+        <img
+          loading="lazy"
+          src={SalesTax3}
+          alt="table of tax zip codes"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          Merchants were forced to translate the map above into a table of ZIP
+          codes.
+        </p>
       </div>
 
       <section className="subsection subsection3">
@@ -195,8 +220,16 @@ export default function SalesTax(props) {
       </section>
 
       <div className="imgContainer imgContainer--last">
-        <img src={SalesTax4} alt="mental model mapping" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">I mapped out the mental models to help visualize where the disconnect was coming from.</p>
+        <img
+          loading="lazy"
+          src={SalesTax4}
+          alt="mental model mapping"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          I mapped out the mental models to help visualize where the disconnect
+          was coming from.
+        </p>
       </div>
 
       <section className="subsection subsection5">
@@ -219,7 +252,12 @@ export default function SalesTax(props) {
       </section>
 
       <div className="imgContainer imgContainer--last">
-        <img src={SalesTax5} alt="designing principles" className="imgContainer__img"></img>
+        <img
+          loading="lazy"
+          src={SalesTax5}
+          alt="designing principles"
+          className="imgContainer__img"
+        ></img>
       </div>
 
       <section className="subsection subsection6">
@@ -237,18 +275,39 @@ export default function SalesTax(props) {
       </section>
 
       <div className="imgContainer">
-        <img src={SalesTax6} alt="design" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">Empty state for tax collection.</p>
+        <img
+          loading="lazy"
+          src={SalesTax6}
+          alt="design"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">
+          Empty state for tax collection.
+        </p>
       </div>
 
       <div className="imgContainer">
-        <img src={SalesTax7} alt="design" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">Adding states where you need to collect sales tax.</p>
+        <img
+          loading="lazy"
+          src={SalesTax7}
+          alt="design"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">
+          Adding states where you need to collect sales tax.
+        </p>
       </div>
 
       <div className="imgContainer imgContainer--spec">
-        <img src={SalesTax8} alt="design" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">State based tax collection.</p>
+        <img
+          loading="lazy"
+          src={SalesTax8}
+          alt="design"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">
+          State based tax collection.
+        </p>
       </div>
 
       <section className="subsection subsection7">
@@ -272,12 +331,20 @@ export default function SalesTax(props) {
       </section>
       <div className="bottom">
         <Link to="/work" className="bottom__link">
-          <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
+          <img
+            src={ArrowBack}
+            className="arrowIcon-left"
+            alt="back arrow"
+          ></img>
           Home
         </Link>
         <Link to="/balance" className="bottom__link">
           Next
-          <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
+          <img
+            src={ArrowForward}
+            className="arrowIcon-right"
+            alt="back arrow"
+          ></img>
         </Link>
       </div>
     </div>

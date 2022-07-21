@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import "../project.scss";
 import ArrowBack from "../../../assets/Icons/arrowBack.svg";
@@ -16,8 +16,6 @@ import TaxLiab9 from "../../../assets/Projects/taxLiab/9.png";
 import TaxLiab10 from "../../../assets/Projects/taxLiab/10.png";
 import TaxLiab11 from "../../../assets/Projects/taxLiab/11.png";
 import TaxLiab12 from "../../../assets/Projects/taxLiab/12.png";
-
-
 
 export default function TaxLiab(props) {
   const content = {
@@ -48,19 +46,27 @@ export default function TaxLiab(props) {
   document.title = "Sadhika Billa - Tax Liability";
 
   useLayoutEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   });
 
   return (
     <div className="project taxLiab">
       <div className="top">
         <Link to="/work" className="top__link">
-          <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
+          <img
+            src={ArrowBack}
+            className="arrowIcon-left"
+            alt="back arrow"
+          ></img>
           Home
         </Link>
         <Link to="/salesTax" className="top__link">
           Next
-          <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
+          <img
+            src={ArrowForward}
+            className="arrowIcon-right"
+            alt="back arrow"
+          ></img>
         </Link>
       </div>
       <section className="subsection subsection__intro">
@@ -87,8 +93,9 @@ export default function TaxLiab(props) {
             </h1>
             <p className="content__text">{content.intro}</p>
             <p className="content__text">
-              Our goal was to help merchants collect taxes in all the right states and our challenge was to decode the complexities of U.S. tax laws to make this possible.
-              Today, the{" "}
+              Our goal was to help merchants collect taxes in all the right
+              states and our challenge was to decode the complexities of U.S.
+              tax laws to make this possible. Today, the{" "}
               <span style={{ fontWeight: "600" }}>
                 Tax Liability Insights dashboard is being used by merchants all
                 over the U.S. to understand their tax obligations and remain
@@ -100,7 +107,11 @@ export default function TaxLiab(props) {
       </section>
 
       <div className="imgContainer">
-        <img src={TaxLiab1} alt="manage tax liability insights screen" className="imgContainer__img--full"></img>
+        <img
+          src={TaxLiab1}
+          alt="manage tax liability insights screen"
+          className="imgContainer__img--full"
+        ></img>
       </div>
 
       <section className="subsection subsection1">
@@ -140,17 +151,27 @@ export default function TaxLiab(props) {
             <p className="content__text">
               I worked with the Researcher to plan and conduct generative
               research. Our research revealed that there are five core steps of
-              sales tax management - <span style={{ fontWeight: "600" }}>Awareness, Registration, Collection,
-              Reporting</span> and <span style={{ fontWeight: "600" }}>Remittance</span> and the friction in our merchants journey
-              began at the first step.
+              sales tax management -{" "}
+              <span style={{ fontWeight: "600" }}>
+                Awareness, Registration, Collection, Reporting
+              </span>{" "}
+              and <span style={{ fontWeight: "600" }}>Remittance</span> and the
+              friction in our merchants journey began at the first step.
             </p>
           </div>
         </div>
       </section>
 
       <div className="imgContainer imgContainer--last">
-        <img src={TaxLiab2} alt="manage tax liability insights screen" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">Snippet of the research plan I created with the researcher</p>
+        <img
+          loading="lazy"
+          src={TaxLiab2}
+          alt="manage tax liability insights screen"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          Snippet of the research plan I created with the researcher
+        </p>
       </div>
 
       <section className="subsection subsection3">
@@ -160,14 +181,24 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.section31}</p>
-            <p className="content__text" style={{ fontWeight: "600" }}>{content.section32}</p>
+            <p className="content__text" style={{ fontWeight: "600" }}>
+              {content.section32}
+            </p>
           </div>
         </div>
       </section>
 
       <div className="imgContainer imgContainer--last">
-        <img src={TaxLiab3} alt="tax journey map" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">I created an end-to-end journey map based on research insights. Some information has been obfuscated.</p>
+        <img
+          loading="lazy"
+          src={TaxLiab3}
+          alt="tax journey map"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          I created an end-to-end journey map based on research insights. Some
+          information has been obfuscated.
+        </p>
       </div>
 
       <section className="subsection subsection4">
@@ -176,36 +207,88 @@ export default function TaxLiab(props) {
             <h2 className="content__title">Content first design</h2>
           </div>
           <div className="content__right">
-            <p className="content__text">Given the complexity and granularity of tax rules, our challenge was to make sure we were providing enough context to the merchant so they'd feel confident enough to take action, but at the same time not bomboarding them with detailed tax laws and jargon.</p>
             <p className="content__text">
-              I worked closely with the content designer to define the content and messaging needs for our product.
-              <span style={{ fontWeight: "600" }}>{" "}The content needs helped inform the visual hierarchy and IA.</span>
+              Given the complexity and granularity of tax rules, our challenge
+              was to make sure we were providing enough context to the merchant
+              so they'd feel confident enough to take action, but at the same
+              time not bomboarding them with detailed tax laws and jargon.
+            </p>
+            <p className="content__text">
+              I worked closely with the content designer to define the content
+              and messaging needs for our product.
+              <span style={{ fontWeight: "600" }}>
+                {" "}
+                The content needs helped inform the visual hierarchy and IA.
+              </span>
             </p>
           </div>
         </div>
       </section>
 
       <div className="imgContainer">
-        <img src={TaxLiab4} alt="nexus content needs" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">The research we did informed our messaging needs.</p>
-        <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
+        <img
+          loading="lazy"
+          src={TaxLiab4}
+          alt="nexus content needs"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          The research we did informed our messaging needs.
+        </p>
+        <img
+          loading="lazy"
+          src={ArrowDown}
+          alt="arrow pointing down"
+          className="imgContainer__arrow"
+        ></img>
       </div>
 
       <div className="imgContainer">
-        <img src={TaxLiab5} alt="messaging needs" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">The messaging needs informed the IA.</p>
-        <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
+        <img
+          loading="lazy"
+          src={TaxLiab5}
+          alt="messaging needs"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          The messaging needs informed the IA.
+        </p>
+        <img
+          loading="lazy"
+          src={ArrowDown}
+          alt="arrow pointing down"
+          className="imgContainer__arrow"
+        ></img>
       </div>
 
       <div className="imgContainer">
-        <img src={TaxLiab6} alt="UI explorations" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">The final IA helped guide my UI explorations.</p>
-        <img src={ArrowDown} alt="arrow pointing down" className="imgContainer__arrow"></img>
+        <img
+          loading="lazy"
+          src={TaxLiab6}
+          alt="UI explorations"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          The final IA helped guide my UI explorations.
+        </p>
+        <img
+          loading="lazy"
+          src={ArrowDown}
+          alt="arrow pointing down"
+          className="imgContainer__arrow"
+        ></img>
       </div>
 
       <div className="imgContainer imgContainer--last">
-        <img src={TaxLiab7} alt="UI explorations" className="imgContainer__img"></img>
-        <p className="imgContainer__legend">I built out the final components based on my UI explorations.</p>
+        <img
+          loading="lazy"
+          src={TaxLiab7}
+          alt="UI explorations"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend">
+          I built out the final components based on my UI explorations.
+        </p>
       </div>
 
       <section className="subsection subsection5">
@@ -223,23 +306,51 @@ export default function TaxLiab(props) {
       </section>
 
       <div className="imgContainer">
-        <img src={TaxLiab8} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">Tax libability insights dashboard.</p>
+        <img
+          loading="lazy"
+          src={TaxLiab8}
+          alt="Tax libability insights dashboard"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">
+          Tax libability insights dashboard.
+        </p>
       </div>
 
       <div className="imgContainer">
-        <img src={TaxLiab9} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">State tax sales data.</p>
+        <img
+          loading="lazy"
+          src={TaxLiab9}
+          alt="Tax libability insights dashboard"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">
+          State tax sales data.
+        </p>
       </div>
 
       <div className="imgContainer">
-        <img src={TaxLiab10} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide">Collect sales tax modal.</p>
+        <img
+          loading="lazy"
+          src={TaxLiab10}
+          alt="Tax libability insights dashboard"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide">
+          Collect sales tax modal.
+        </p>
       </div>
 
       <div className="imgContainer imgContainer--last">
-        <img src={TaxLiab11} alt="Tax libability insights dashboard" className="imgContainer__img"></img>
-        <p className="imgContainer__legend imgContainer__legend--wide-end">Collecting taxes in Texas.</p>
+        <img
+          loading="lazy"
+          src={TaxLiab11}
+          alt="Tax libability insights dashboard"
+          className="imgContainer__img"
+        ></img>
+        <p className="imgContainer__legend imgContainer__legend--wide-end">
+          Collecting taxes in Texas.
+        </p>
       </div>
 
       <section className="subsection subsection6">
@@ -249,27 +360,45 @@ export default function TaxLiab(props) {
           </div>
           <div className="content__right">
             <p className="content__text">{content.final}</p>
-            <p className="content__text" style={{ fontWeight: "600" }}>{content.final2}</p>
+            <p className="content__text" style={{ fontWeight: "600" }}>
+              {content.final2}
+            </p>
             <p className="content__text">
               To learn more about this feature, check out Shopify's{" "}
-              <a href="https://www.shopify.ca/blog/us-canada-sales-tax-insights">blog post</a>.
+              <a href="https://www.shopify.ca/blog/us-canada-sales-tax-insights">
+                blog post
+              </a>
+              .
             </p>
           </div>
         </div>
       </section>
 
       <div className="imgContainer imgContainer--last">
-        <img src={TaxLiab12} alt="shopify sales tax in the news" className="imgContainer__img"></img>
+        <img
+          loading="lazy"
+          src={TaxLiab12}
+          alt="shopify sales tax in the news"
+          className="imgContainer__img"
+        ></img>
       </div>
 
       <div className="bottom">
         <Link to="/work" className="bottom__link">
-          <img src={ArrowBack} className="arrowIcon-left" alt="back arrow"></img>
+          <img
+            src={ArrowBack}
+            className="arrowIcon-left"
+            alt="back arrow"
+          ></img>
           Home
         </Link>
         <Link to="/salesTax" className="bottom__link">
           Next
-          <img src={ArrowForward} className="arrowIcon-right" alt="back arrow"></img>
+          <img
+            src={ArrowForward}
+            className="arrowIcon-right"
+            alt="back arrow"
+          ></img>
         </Link>
       </div>
     </div>
