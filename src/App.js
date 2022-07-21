@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <h1 className="App__mobileMsg">Hi! Please see the site on a tablet or desktop for better experience</h1>
+        <h1 className="App__mobileMsg">Hi! Please see this site on a larger screen for a better experience</h1>
         <div className="App__core">
           <Routes>
             <Route path="/" exact element={<MainPage />} />
