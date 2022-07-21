@@ -28,7 +28,9 @@
 
   &__left {
     width: 80%;
+    margin-bottom: 2rem;
     @include desktop {
+      margin-bottom: 0rem;
       width: 50%;
       height: 100%;
       @include display-flex(column,center,flex-start);
@@ -205,7 +207,9 @@
 
   &__left {
     width: 80%;
+    margin-bottom: 2rem;
     @include desktop {
+      margin-bottom: 0rem;
       width: 50%;
       height: 100%;
       @include display-flex(column,center,flex-start);

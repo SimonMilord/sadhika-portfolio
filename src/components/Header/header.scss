@@ -6,10 +6,7 @@ header {
   transition: 0.3s all ease;
   max-width: 1300px;
   margin: 0 auto;
-  // padding: 1rem 1rem;
-  // @include tablet {
-    padding: 2.5rem 2rem;
-  // }
+  padding: 2.5rem 2rem;
 
   @include wide {
     padding: 2.5rem 0rem;
@@ -20,10 +17,6 @@ header {
   }
 
   .nav {
-    // display: none;
-    // @include tablet {
-    //   display: flex;
-    // }
     &__list {
       @include display-flex(row,flex-end,center);
     }
@@ -74,13 +67,5 @@ header {
 }
 
 .header-night {
-  // background-color: $background-night;
   transition: 0.3s all ease;
 }
-
-// .menuBtn {
-//   display: flex;
-//   @include tablet {
-//     display: none;
-//   }
-// }
