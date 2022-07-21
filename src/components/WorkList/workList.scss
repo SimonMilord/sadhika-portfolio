@@ -12,16 +12,16 @@
     padding: 0;
     margin-bottom: 10rem;
     background-color: transparent;
-    // @include display-flex(column-reverse,space-between,center);
-    // @include desktop {
+    @include display-flex(column-reverse,space-between,center);
+    @include desktop {
       @include display-flex(row,space-between,center);
-    // }
+    }
 
     &--reverse {
-      // @include display-flex(column-reverse,space-between,center);
-      // @include desktop {
+      @include display-flex(column-reverse,space-between,center);
+      @include desktop {
         @include display-flex(row-reverse,space-between,center);
-      // }
+      }
     }
     .hideImg {
       opacity: 0;
@@ -30,10 +30,10 @@
       animation: fadeIn 3s;
       width: 100%;
       margin-top: 5rem;
-      // @include tablet {
+      @include tablet {
         width: auto;
-        margin-top: 0;
-      // }
+        // margin-top: 0;
+      }
 
       @keyframes fadeIn {
         0% { opacity: 0; }
@@ -48,16 +48,16 @@
     padding: 0;
     margin-bottom: 10rem;
     background-color: transparent;
-    // @include display-flex(column-reverse,space-between,center);
-    // @include desktop {
+    @include display-flex(column-reverse,space-between,center);
+    @include desktop {
       @include display-flex(row,space-between,center);
-    // }
+    }
 
     &--reverse {
-      // @include display-flex(column-reverse,space-between,center);
-      // @include desktop {
+      @include display-flex(column-reverse,space-between,center);
+      @include desktop {
         @include display-flex(row-reverse,space-between,center);
-      // }
+      }
     }
     .hideImg {
       opacity: 0;

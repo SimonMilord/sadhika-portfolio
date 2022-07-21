@@ -4,10 +4,10 @@
 .projectDesc {
   background-color: inherit;
   transition: 0.3s all ease;
-  // width: 70%;
-  // @include tablet {
+  width: 70%;
+  @include desktop {
     width: 42%;
-  // }
+  }
 
   &__title {
     font-size: 45px;

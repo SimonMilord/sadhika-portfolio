@@ -3,44 +3,47 @@
 
 .mainPage {
   // height: 100vh;
-  // @include desktop {
-  // }
+  @include desktop {
+
+  }
 
   &__main {
     height: calc(100vh - 94px);
-    // @include display-flex(column-reverse,center,center);
+    @include display-flex(column-reverse,center,center);
     @include paddingSection;
-    // @include desktop {
+    margin-bottom: 5rem;
+    @include desktop {
+    margin-bottom: 0rem;
     @include display-flex(column,center,center);
-    // }
+    }
   }
 
   &__top {
     width: 100%;
-    // @include display-flex(column,center,center);
-    // @include desktop {
+    @include display-flex(column,center,center);
+    @include desktop {
       @include display-flex(row,center,center);
-    // }
+    }
   }
 
   &__left {
-    // width: 80%;
-    // @include desktop {
+    width: 80%;
+    @include desktop {
       width: 50%;
       height: 100%;
       @include display-flex(column,center,flex-start);
-    // }
+    }
   }
 
   &__title {
-    // font-weight: 600;
-    // font-size: 21px;
-    // line-height: 30px;
-    // @include desktop {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    @include desktop {
       font-weight: 600;
       font-size: 43px;
       line-height: 60px;
-    // }
+    }
     a {
       text-decoration: none;
     }
@@ -58,7 +61,7 @@
 
   &__arrow {
     margin-top: 3rem;
-    // display: none;
+    display: none;
     cursor: pointer;
     transition: 0.3s all ease;
     @include desktop {
@@ -87,62 +90,62 @@
       position: absolute;
     }
     .cloud1 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 52%;
         top: 36%;
         @include animation-cloud(float1, 0, 30%);
         animation: float1 6s linear infinite;
-      // }
+      }
     }
     .cloud2 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 57%;
         top: 28%;
         @include animation-cloud(float1, 0, 90%);
         animation: float1 6s linear infinite;
-      // }
+      }
     }
     .cloud3 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 72%;
         top: 23%;
         @include animation-cloud(float1, 0, 40%);
         animation: float1 6s linear infinite;
-      // }
+      }
       @include wide {
         left: 67%;
         top: 29%;
       }
     }
     .cloud4 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 80%;
         top: 22%;
         @include animation-cloud(float1, 0, 20%);
         animation: float1 8s linear infinite;
-      // }
+      }
       @include wide {
         left: 74%;
         top: 25%;
       }
     }
     .cloud5 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 88%;
         top: 33%;
         @include animation-cloud(float1, 0, 90%);
         animation: float1 6s linear infinite;
-      // }
+      }
       @include wide {
         left: 82%;
         top: 32%;
@@ -183,39 +186,41 @@
 
   &__main {
     height: calc(100vh - 94px);
-    // @include display-flex(column-reverse,center,center);
+    @include display-flex(column-reverse,center,center);
     @include paddingSection;
-    // @include desktop {
+    margin-bottom: 5rem;
+    @include desktop {
+      margin-bottom: 0rem;
       @include display-flex(column,center,center);
-    // }
+    }
   }
 
   &__top {
     width: 100%;
-    // @include display-flex(column,center,center);
-    // @include desktop {
+    @include display-flex(column,center,center);
+    @include desktop {
       @include display-flex(row,center,center);
-    // }
+    }
   }
 
   &__left {
-    // width: 80%;
-    // @include desktop {
+    width: 80%;
+    @include desktop {
       width: 50%;
       height: 100%;
       @include display-flex(column,center,flex-start);
-    // }
+     }
   }
 
   &__title {
-    // font-weight: 600;
-    // font-size: 21px;
-    // line-height: 30px;
-    // @include desktop {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    @include desktop {
       font-weight: 600;
       font-size: 42px;
       line-height: 60px;
-    // }
+    }
     a {
       text-decoration: none;
     }
@@ -223,7 +228,7 @@
 
   &__content {
     margin: 1.5rem 0rem;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 34px;
     font-weight: 400;
     a {
@@ -233,12 +238,12 @@
 
   &__arrow {
     margin-top: 3rem;
-    // display: none;
+    display: none;
     cursor: pointer;
     transition: 0.3s all ease;
-    // @include desktop {
+    @include desktop {
       display: flex;
-    // }
+    }
     &:hover {
       transform: translateY(0.5rem);
     }
@@ -262,42 +267,42 @@
       position: absolute;
     }
     .fly1 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 53%;
         top: 40%;
         @include animation-fly(bug2, 0, 0);
         animation: bug2 6s linear infinite;
-      // }
+      }
       @include wide {
         left: 53%;
         top: 40%;
       }
     }
     .fly2 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 73%;
         top: 26%;
         @include animation-fly(bug1, 0, 0);
         animation: bug1 8s linear infinite;
-      // }
+      }
       @include wide {
         left: 66%;
         top: 26%;
       }
     }
     .fly3 {
-      // display: none;
-      // @include desktop {
+      display: none;
+      @include desktop {
         display: flex;
         left: 85%;
         top: 29%;
         @include animation-fly(bug2, 0, 0);
         animation: bug2 7s linear infinite;
-      // }
+      }
       @include wide {
         left: 78%;
         top: 29%;

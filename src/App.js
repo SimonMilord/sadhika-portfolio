@@ -10,14 +10,17 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" exact element={<MainPage />} />
-          <Route path="/taxliab" exact element={<TaxLiab />} />
-          <Route path="/salesTax" exact element={<SalesTax />} />
-          <Route path="/balance" exact element={<Balance />} />
-          <Route path="/mccy" exact element={<MCCY />} />
-          <Route path="*" element={<MainPage />} />
-        </Routes>
+        <h1 className="App__mobileMsg">Hi! Please see the site on a tablet or desktop for better experience</h1>
+        <div className="App__core">
+          <Routes>
+            <Route path="/" exact element={<MainPage />} />
+            <Route path="/taxliab" exact element={<TaxLiab />} />
+            <Route path="/salesTax" exact element={<SalesTax />} />
+            <Route path="/balance" exact element={<Balance />} />
+            <Route path="/mccy" exact element={<MCCY />} />
+            <Route path="*" element={<MainPage />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
