@@ -63,10 +63,10 @@ export default function MainPage(props) {
                   I'm Sadhika, a Senior Product Designer at{" "}
                   <a href="https://www.shopify.ca/"><span style={{ color: "#AD3862" }}>Shopify</span></a>. By day,{" "}
                   <br />I create beautiful, human, and user-centric experiences
-                  for Shopify Money.
+                  for millions of merchants.
                 </h1>
                 <p className="mainPage__content">
-                  Previously at{" "}
+                  I previously worked at{" "}
                   <a href="https://www.cognizant.com/"><span style={{ color: "#AD3862" }}>Cognizant</span></a> and{" "}
                   <a href="https://www.accenture.com/"><span style={{ color: "#AD3862" }}>Accenture</span></a>.
                 </p>
@@ -114,11 +114,11 @@ export default function MainPage(props) {
                 <h1 className="mainPage-dm__title">
                   I'm Sadhika, a Senior Product Designer at{" "}
                   <a href="https://www.shopify.ca/"><span style={{ color: "#F5F488" }}>Shopify</span></a>. By night,<br /> I
-                  enjoy spending my time painting, doodling, and messing around
+                  spend my time painting, doodling, and messing around
                   with code.
                 </h1>
                 <p className="mainPage-dm__content">
-                  I also love long walks with my dog.
+                  I also love going on adventures with my dog.
                 </p>
                 <div className="mainPage-dm__bottom">
                   <ScrollLink
@@ -145,6 +145,7 @@ export default function MainPage(props) {
                 <img src={Fly1} alt="fly" className="fly fly1"></img>
                 <img src={Fly2} alt="fly" className="fly fly2"></img>
                 <img src={Fly3} alt="fly" className="fly fly3"></img>
+                <img src={Fly1} alt="fly" className="fly fly4"></img>
               </div>
             </div>
           </div>

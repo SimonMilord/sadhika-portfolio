@@ -2,10 +2,6 @@
 @import "../../styles/partials/variables";
 
 .mainPage {
-  // height: 100vh;
-  @include desktop {
-
-  }
 
   &__main {
     height: calc(100vh - 94px);
@@ -52,7 +48,7 @@
   }
 
   &__content {
-    margin: 1.5rem 0rem;
+    margin: 2rem 0rem 1.5rem 0rem;
     font-size: 21px;
     line-height: 34px;
     font-weight: 400;
@@ -75,18 +71,10 @@
   }
 
   &__right {
-    // width: 75%;
     height: 100%;
-    // @include display-flex(row,center,center);
-    // @include tablet {
-    //   width: 75%;
-    //   margin-top: 200px;
-    // }
-    // @include desktop {
-      @include display-flex(row,flex-end,flex-start);
-      margin-top: 0px;
-      width: 50%;
-    // }
+    @include display-flex(row,flex-end,flex-start);
+    margin-top: 0px;
+    width: 50%;
     .cloud {
       z-index: 9000;
       position: absolute;
@@ -128,10 +116,11 @@
     .cloud4 {
       display: none;
       @include desktop {
+        width: 70px;
         display: flex;
         left: 80%;
-        top: 22%;
-        @include animation-cloud(float1, 0, 20%);
+        top: 24%;
+        @include animation-cloud(float1, 0, 40%);
         animation: float1 8s linear infinite;
       }
       @include wide {
@@ -156,7 +145,8 @@
   }
 
   &__illustration {
-    max-width: 575px;
+    // max-width: 575px;
+    max-width: 605px;
     overflow: hidden;
     z-index: 1;
   }
@@ -231,7 +221,7 @@
   }
 
   &__content {
-    margin: 1.5rem 0rem;
+    margin: 2rem 0rem 1.5rem 0rem;
     font-size: 21px;
     line-height: 34px;
     font-weight: 400;
@@ -254,18 +244,10 @@
   }
 
   &__right {
-    // width: 75%;
     height: 100%;
-    // @include display-flex(row,center,center);
-    // @include tablet {
-    //   width: 75%;
-    //   margin-top: 200px;
-    // }
-    // @include desktop {
-      @include display-flex(row,flex-end,flex-start);
-      margin-top: 0px;
-      width: 50%;
-    // }
+    @include display-flex(row,flex-end,flex-start);
+    margin-top: 0px;
+    width: 50%;
     .fly {
       z-index: 9000;
       position: absolute;
@@ -286,6 +268,21 @@
     }
     .fly2 {
       display: none;
+      max-width: 50px;
+      @include desktop {
+        display: flex;
+        left: 57%;
+        top: 28%;
+        @include animation-fly(bug2, 0, 0);
+        animation: bug2 7s linear infinite;
+      }
+      @include wide {
+        left: 55%;
+        top: 26%;
+      }
+    }
+    .fly3 {
+      display: none;
       @include desktop {
         display: flex;
         left: 73%;
@@ -294,12 +291,13 @@
         animation: bug1 8s linear infinite;
       }
       @include wide {
-        left: 66%;
+        left: 68%;
         top: 26%;
       }
     }
-    .fly3 {
+    .fly4 {
       display: none;
+      max-width: 50px;
       @include desktop {
         display: flex;
         left: 85%;
@@ -308,14 +306,14 @@
         animation: bug2 7s linear infinite;
       }
       @include wide {
-        left: 78%;
-        top: 29%;
+        left: 79%;
+        top: 32%;
       }
     }
   }
 
   &__illustration {
-    max-width: 575px;
+    max-width: 605px;
     overflow: hidden;
     z-index: 1;
   }

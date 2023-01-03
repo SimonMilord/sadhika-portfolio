@@ -59,26 +59,47 @@
   }
 }
 
+@mixin backgroundAnimation {
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
 // gradient day
 @mixin backgroundGradientDay {
   background: linear-gradient(
-    0deg,
-    #FFFEE4,
-    #FFF5D1,
-    #FEEEC2,
-    #FFE5B6,
-    #FFE6BE,
-    #FEDAD5,
+    132deg,
+    #FEECBD,
+    #FFDFE2,
+    #FEE7BD,
+    #FFE0CC,
   );
-  }
+  animation: gradient 12s ease infinite;
+  @include backgroundAnimation;
+}
 
 // gradient night
 @mixin backgroundGradientNight {
   background: linear-gradient(
-    0deg,
-    #9141E7,
-    #6B4AB2,
-    #5033A3,
+    132deg,
     #5B2C8E,
+    #5033C6,
+    #3F34E1,
+    #5B35D6,
+    #650FC1,
+    #4F0084,
   );
-  }
+  @include backgroundAnimation;
+  // background-size: 400% 400%;
+  // height: 100vh;
+  animation: gradient 12s ease infinite;
+}
+
