@@ -28,6 +28,8 @@ export default function WorkList(props) {
       "Helping merchants understand where, when, and why they're required to collect sales tax in the United States.",
     link: "/taxliab",
     linkText: "See case study",
+    // otherLink: "https://www.shopify.com/tax",
+    // otherText: "See Shopify Tax"
   };
   const project2 = {
     title: "Rethinking Sales Tax Collection",
@@ -42,6 +44,8 @@ export default function WorkList(props) {
       "Building an all-in-one money management account for independent business owners to manage their finances.",
     link: "/balance",
     linkText: "See overview",
+    // otherLink: "https://www.shopify.com/balance",
+    // otherText: "See Shopify Balance"
   };
   const project4 = {
     title: "MCCY grants portal",

@@ -23,6 +23,7 @@
   }
   &__bottom {
     width: 100%;
+    @include display-flex(row,flex-start,center);
   }
   &__link {
     text-decoration: none;
@@ -37,6 +38,17 @@
     &--dm {
       color: $accent-night !important;
       border-color: $accent-night;
+    }
+  }
+  &__otherLink {
+    margin: 2rem 0rem 1.5rem 4rem;
+    font-size: 21px;
+    line-height: 34px;
+    font-weight: 400;
+    color: $accent-day !important;
+    text-decoration: none;
+    &--dm {
+      color: $accent-night !important;
     }
   }
 
