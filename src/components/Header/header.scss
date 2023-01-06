@@ -56,16 +56,10 @@ header {
       }
     }
   }
-
-  &__dmIcon img{
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
 }
-
+#dmIcon {
+  cursor: pointer;
+}
 .header-night {
   transition: 0.3s all ease;
 }

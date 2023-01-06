@@ -45,9 +45,9 @@ export default function Header(props) {
     <header className={theme === dayTheme ? "header" : "header-night"}>
       <div className="header__dmIcon">
         {theme === "day" ? (
-          <img src={Sun} alt="sun icon" onClick={(e) => switchTheme(e)} />
+          <img src={Sun} alt="sun icon" onClick={(e) => switchTheme(e)} id="dmIcon"/>
         ) : (
-          <img src={Moon} alt="moon icon" onClick={(e) => switchTheme(e)} />
+          <img src={Moon} alt="moon icon" onClick={(e) => switchTheme(e)} id="dmIcon"/>
         )}
       </div>
 
