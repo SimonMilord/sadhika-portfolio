@@ -39,7 +39,7 @@
     line-height: 40px;
     @include desktop {
       font-weight: 600;
-      font-size: 43px;
+      font-size: 42px;
       line-height: 60px;
     }
     a {
@@ -64,6 +64,7 @@
     transition: 0.3s all ease;
     @include desktop {
       display: flex;
+      height: 48px;
     }
     &:hover {
       transform: translateY(0.5rem);
@@ -145,8 +146,7 @@
   }
 
   &__illustration {
-    // max-width: 575px;
-    max-width: 605px;
+    max-width: 612px;
     overflow: hidden;
     z-index: 1;
   }
@@ -237,6 +237,7 @@
     transition: 0.3s all ease;
     @include desktop {
       display: flex;
+      height: 48px;
     }
     &:hover {
       transform: translateY(0.5rem);
@@ -313,7 +314,7 @@
   }
 
   &__illustration {
-    max-width: 605px;
+    max-width: 612px;
     overflow: hidden;
     z-index: 1;
   }

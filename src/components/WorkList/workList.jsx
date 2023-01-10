@@ -6,7 +6,6 @@ import BalanceImg from "../../assets/Images/balanceImg.svg";
 import Mccy from "../../assets/Images/mccy.svg";
 import SalesTax from "../../assets/Images/taxes.svg";
 import TaxLiab from "../../assets/Images/liab.svg";
-import { Link } from "react-router-dom";
 
 export default function WorkList(props) {
   const { ref: project1Ref, inView: project1IsVis } = useInView({

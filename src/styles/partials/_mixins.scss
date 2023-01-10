@@ -82,8 +82,10 @@
     #FEE7BD,
     #FFE0CC,
   );
-  animation: gradient 12s ease infinite;
   @include backgroundAnimation;
+  background-size: 400% 400%;
+  height: 100vh;
+  animation: gradient 12s ease infinite;
 }
 
 // gradient night
@@ -98,8 +100,8 @@
     #4F0084,
   );
   @include backgroundAnimation;
-  // background-size: 400% 400%;
-  // height: 100vh;
+  background-size: 400% 400%;
+  height: 100vh;
   animation: gradient 12s ease infinite;
 }
 

@@ -363,13 +363,29 @@ export default function TaxLiab(props) {
             <p className="content__text" style={{ fontWeight: "600" }}>
               {content.final2}
             </p>
-            <p className="content__text">
+            {/* <p className="content__text">
               To learn more about this feature, check out Shopify's{" "}
               <a href="https://www.shopify.ca/blog/us-canada-sales-tax-insights">
                 blog post
               </a>
               .
-            </p>
+            </p> */}
+          </div>
+        </div>
+      </section>
+
+      <section className="subsection subsection5">
+        <div className="content">
+          <div className="content__left">
+            <h2 className="content__title">
+              Launch and press
+            </h2>
+          </div>
+          <div className="content__right">
+            <p className="content__text">To learn more about our product,
+            go to <a href="https://www.shopify.com/tax">Shopify Tax</a>. You can also check out this{" "}
+            <a href="https://twitter.com/harleyf/status/1580630316326481920">tweet</a> from Harley Finkelstein,
+            president of Shopify, or this <a href="https://www.businessinsider.com/shopify-launches-tax-product-for-merchants-calculating-sales-tax-2022-10">article</a> on Business Insider.</p>
           </div>
         </div>
       </section>
